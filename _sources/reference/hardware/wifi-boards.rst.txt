@@ -1,35 +1,27 @@
+.. include:: /include/include.rst
+.. include:: /include/include-l2.rst
+|EX-REF-LOGO|
+
+************
 WiFi Boards
-===========
+************
 
-For more information see `Wifi Setup <..//get-started/wifi-setup.html>`_
+|conductor| |tinkerer| |engineer|
 
-Makerfabs WiFi Shield
-^^^^^^^^^^^^^^^^^^^^^
+You can connect up to 5 WiFi throttles. For the standard Mega board, we recommend the Conductor-Friendly Makerfabs WiFi shield below. Keep in mind you can also purchase a Mega+WiFi board online that has both a Mega clone and an ESP8266 built onto the same board. However, you will have to upload new firmware to that board, so that would be a Tinkerer option. See the :doc:`Mega+WiFi page </reference/hardware/wifi-boards/mega-wifi>`
 
-* `Makerfabs ESP-8266 WiFi Shield (recommended) <https://www.makerfabs.com/esp8266-wifi-shield.html>`_
+For more information on how to configure your Command Station to use the boards below, see :doc:`Wifi Setup </ex-commandstation/get-started/wifi-setup>`
 
-.. image:: ../../_static/images/wifi_jumpers1.jpg
-   :alt: Makerfabs ESP-8266 WiFi Shield
-   :scale: 80%
+.. toctree::
+    :maxdepth: 1
 
-Duinopeak WiFi Shield
-^^^^^^^^^^^^^^^^^^^^^
+    /reference/hardware/wifi-boards/makerfabs-esp8266
+    /reference/hardware/wifi-boards/duinopeak-esp8266
+    /reference/hardware/wifi-boards/esp-01
+    /reference/hardware/wifi-boards/wangtongze-board
+    /reference/hardware/wifi-boards/mega-wifi
+    /reference/hardware/wifi-boards/sparkfun-thing-plus
+    /reference/hardware/wifi-boards/esp32-ant-01
+    /reference/hardware/wifi-boards/hc12-bridge
 
-* `Duinopeak ESP-8266 WiFi Expansion Board (plus an ESP-01 or 01s) <https://usa.banggood.com/Duinopeak-ESP8266-ESP-01-WiFi-Expansion-Board-Shield-Without-ESP8266-Module-p-1391961.html?cur_warehouse=CN>`_
-
-.. image:: ../../_static/images/duinopeak.jpg
-   :alt: Duinopeak ESP-8266 WiFi Shield
-   :scale: 80%
-
-See the ESP-01S below that installs on this board
-
-ESP-01S
-^^^^^^^
-
-* `ESP-01 or ESP-01S Board (This is not a shield. You will need to use jumpers) <https://www.amzn.com/B00O34AGSU/>`_
-
-.. image:: ../../_static/images/esp-01s_2.jpg
-   :alt: ESP-01S
-   :scale: 80%
-
-You can use this board stand-alone with jumpers, or use the Duiopeak ESP-8266 Wifi Expansion Board above and plug this board into it.
+.. NOTE:: This is NOT to make a connection to |JMRI|. Use a USB cable instead. The WiFi and Ethernet solutions are designed to allow throttles to connect directly to the |EX-CS| without the need for any other software such as |JMRI|. While using a WiFi/Ethernet connection to |JMRI| will work, the overhead required internally will slow performance, take up valuable system memory, and prevent broadcast messages for sensors and power state.

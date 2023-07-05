@@ -1,31 +1,40 @@
+.. include:: /include/include.rst
+.. include:: /include/include-l2.rst
+|EX-REF-LOGO|
+
+***********************
 Microcontroller Boards
-======================
+***********************
 
-CommandStation-EX currently is designed exclusively for Arduino microcontollers. Out of the box, it is compatible with the following boards:
+|tinkerer| |engineer|
 
-* Arduino Mega **[RECOMMENDED]**
-* Arduino Uno
-* Arduino Nano
+.. sidebar::
 
-Why do you recommend the Mega?
-------------------------------
+  .. contents:: On this page
+    :depth: 1
+    :local:
 
-* When compiled, our code just barely squeezes onto an Arduino Uno. **A mega allows you to add more features** like networking and displays because it has more memory.
-* The Mega has many more GPIOs (General Purpose Input/Outputs) available to you for constructing control panels and controlling turnouts or signals.
-* The mega is only modestly more expensive than an Uno, with clones available for less than $10 USD.
+Current list of Microcontrollers
+================================
 
-.. image:: ../../_static/images/mega.jpg
-   :alt: Arduino Mega Microcontroller
-   :scale: 100%
+|EX-CS| currently is designed for Atmel AVR based Arduino and compatible microcontrollers, and some ARM based boards such as the Teensy range. Out of the box, it is compatible with the following boards:
 
-What about the Nano?
---------------------
+.. toctree::
+    :maxdepth: 1
 
-The Arduino nano shares the same processor with the Arduino Uno, so we support it. The nano has a different form factor than the Uno or Mega, so motor driver shields will usually need to be attached with jumper wires. Other than that difference, it is in every way as capable as an Arduino Uno. 
+    /reference/hardware/microcontrollers/arduino-mega
+    /reference/hardware/microcontrollers/arduino-uno
+    /reference/hardware/microcontrollers/nano
+    /reference/hardware/microcontrollers/nano-every
+    /reference/hardware/microcontrollers/teensy
+    /reference/hardware/microcontrollers/wifi-mega
 
 Will you support other microcontrollers in the future?
-------------------------------------------------------
+=======================================================
 
-Yes, that is on our roadmap.
+Yes, that is on our :doc:`roadmap </about/roadmap>`, and the current state of progress can be found in our :doc:`features under development </under-development/index>` area. New microcontrollers being ported to include ESP32, SAMD21, and the STM32F4xx range as can be seen in :doc:`under development microcontrollers</under-development/microcontrollers>`.
 
-Click here for a complete `Shopping List <./shopping-list.html>`_
+Boards that will NOT work
+==========================
+
+**WAVGAT Uno clone** - This board is NOT 100% Uno compatible. It uses a LGT8F328P processor from a company in China called "Logic Green". It has no EEPROM and requires a bit of configuration in the Arduino IDE to get it to be seen correctly and compile sketches. It is, however, a good board for developing other applications on because it can be switched to run at 32mHz instead of 16. It also has 12 bit analog pins instead of 10 bit. That means higher resolution readings, 0-4096 instead of 0-1024. It could potentially work as a Command Station with more testing and some code changes, but we will leave that to someone else to attempt. Various other microcontrollers offer more memory, more serial ports and more GPIO pins and are just a better way to go for the future.

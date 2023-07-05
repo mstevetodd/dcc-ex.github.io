@@ -1,43 +1,39 @@
+.. include:: /include/include.rst
+.. include:: /include/include-l1.rst
+|EX-REF-LOGO|
+
+*********
 Reference
-=========
+*********
+
+|conductor| |tinkerer| |engineer|
+
+Glossary
+========
+
+.. toctree::
+    :maxdepth: 1
+
+    glossary
 
 Videos
-^^^^^^^
-
-* Please visit our Youtube Channel at `www.youtube.com/c/DCCEX <https://www.youtube.com/c/DCCEX>`_
-
-Command Station
-^^^^^^^^^^^^^^^^
-
-Hardware
--------------------------
+======
 
 .. toctree::
     :maxdepth: 1
 
-    hardware/microcontroller-boards
-    hardware/motor-boards
-    hardware/wifi-boards
-    hardware/ethernet-boards
-    hardware/i2c-displays
-    hardware/power-supplies
-    hardware/shopping-list
-    
-Software
--------------------------
+    videos/index
+ 
+Hardware, Software, tools
+=========================
 
 .. toctree::
     :maxdepth: 1
 
-    software/command-reference
-    software/diagnostic-d-ack-command
-    software/diagnostic-d-command
-
-Accessories
---------------
-
-.. toctree::
-    :maxdepth: 1
-
-    accessories/suppliers
-
+    downloads/index
+    hardware/index
+    software/index
+    software/index-dcpp-commands
+    developers/index
+    accessories/index
+    tools/index

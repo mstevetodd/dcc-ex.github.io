@@ -2,8 +2,9 @@
 <html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-<meta content="DCC-EX is a team of dedicated enthusiasts producing, easy to use, affordable, do-it-yourself, open source, DCC solutions to allow you to run your complete model railroad layout." name="description" />
-<meta content="DCC DCC++ EX DCC++EX DCC-EX" name="keywords" />
+<meta content="DCC-EX DCC DCC++ EX DCC++EX" name="keywords" />
+<meta content="EX-Turntable is a fully integrated turntable controller for EX-CommandStation. [DCC-EX is a team of dedicated enthusiasts producing, easy to use, affordable, do-it-yourself, open source, DCC solutions to allow you to run your complete model railroad layout.]" name="description" />
+<meta content="EX-Turntable EX-CommandStation EX-CS" name="keywords" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Assembly &amp; Setup &mdash; DCC-EX Model Railroading  documentation</title>
@@ -13,6 +14,8 @@
       <link rel="stylesheet" href="../_static/css/dccex_theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/big_picture_theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/sphinx_design_overrides.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/dark_mode_css/general.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/dark_mode_css/dark.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="canonical" href="https://dcc-ex.com/ex-turntable/assembly.html" />
   <!--[if lt IE 9]>
@@ -28,6 +31,8 @@
         <script src="../_static/design-tabs.js"></script>
         <script src="../_static/js/platform.js"></script>
         <script src="../_static/js/extra.js"></script>
+        <script src="../_static/dark_mode_js/default_light.js"></script>
+        <script src="../_static/dark_mode_js/theme_switcher.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -68,14 +73,25 @@
           <a href="../index.html">
             
               <img src="../_static/logo.png" class="logo" alt="Logo"/>
-          </a>
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
+          </a><script async src="https://cse.google.com/cse.js?cx=f19437345086341ed">
+</script>
+<div class="gcse-search"></div>
+
+<!-- DDG search widget,@author Juri Wornowitski,@version 3.0,@link https://www.plainlight.com/ddg -->
+<!-- <div id="widdget" style="width:100%;margin:10px 0;">
+    <style type="text/css">
+        #widdget input {display:block;height:30px;padding:4px;outline:none;border:1px solid #8d8d8d;border-right:0;box-sizing:border-box;border-radius:3px 0 0 3px;width:calc(100% - 41px);font-size:15px;} 
+        #widdget button {float:left;cursor:pointer;width:43px;height:30px;color:#fff;background-image:linear-gradient(#cacaca,#929292);border:0;border-radius:0 3px 3px 0;padding:0;} 
+        #widdget button:active {background-image:linear-gradient(#909090,#585858);} 
+        #widdget button:focus {outline:none;}
+    </style>
+    <form style="position:relative" onsubmit="this.elements[0].click();">
+        <div style="float:right;position:absolute;top:0;right:-2px;z-index:3">
+            <button type="submit" onclick="var v=this.parentElement.parentElement.elements[1].value;if (typeof gtag !== 'undefined') try{gtag('event','search',{'event_label':v});} catch(e){} else if (typeof ga !== 'undefined') try{ga('send','event','engagement','search',v);} catch(e){} window.open('https://duckduckgo.com?q='+encodeURIComponent(v)+'+site%3Ahttps%3A%2F%2Fdcc-ex.com%2F&kj=00a3b9ff&kx=%236c00a2&k9=%2300353d&k8=%23262626');return false;">&#128269;</button>
+        </div>
+        <input type="text" name="q" placeholder="Search with Duck Duck Go" />
+    </form>
+</div> -->
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
     
               <ul>
@@ -93,6 +109,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../ex-commandstation/get-started/controllers.html">Choosing a Throttle (Controller)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../ex-commandstation/get-started/testing.html">Test Your Setup</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../support/ex-cs-troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../support/wifi-at-version.html">ESP8266 (WiFi Boards) - AT Version Issues and Solutions</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../ex-commandstation/advanced-setup/index.html">Advanced Options</a><ul>
@@ -139,6 +156,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/wifi-boards/esp-01.html">ESP-01 and ESP-01s</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/wifi-boards/mega-wifi.html">Mega+WiFi Combo Board</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../ex-commandstation/advanced-setup/supported-wifi/wifi-config.html">WiFi Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../support/wifi-at-version.html">ESP8266 (WiFi Boards) - AT Version Issues and Solutions</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../ex-commandstation/advanced-setup/supported-ethernet/index.html">Supported Ethernet Boards</a><ul>
@@ -164,8 +182,9 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../ex-commandstation/advanced-setup/startup-config.html">Startup Configuration</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../ex-commandstation/advanced-setup/controllers.html">Choosing a Throttle (Controller) - Advanced</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../reference/software/command-reference.html">DCC-EX Command Reference</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../reference/software/command-summary.html">DCC-EX Command Summary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/software/command-reference.html"></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/software/command-reference.html#dcc-ex-native-command-reference">DCC-EX Native Command Reference</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/software/command-summary.html">DCC-EX Native Command Summary</a></li>
 </ul>
 </li>
 <li class="toctree-l2 current"><a class="reference internal" href="../ex-commandstation/accessories/index.html">Adding and Controlling Accessories</a><ul class="current">
@@ -203,20 +222,26 @@
 <li class="toctree-l5"><a class="reference internal" href="../support/ex-io-troubleshooting.html">EX-IOExpander FAQ and Troubleshooting</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="toctree-l3 current"><a class="reference internal" href="index.html">EX-Turntable</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="overview.html">Overview</a></li>
-<li class="toctree-l4"><a class="reference internal" href="purchasing.html">Purchasing</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">Assembly &amp; Setup</a></li>
-<li class="toctree-l4"><a class="reference internal" href="test-and-tune.html">Testing, Tuning, and Control</a></li>
-<li class="toctree-l4"><a class="reference internal" href="layout-wiring.html">Layout Connections and Wiring</a></li>
-<li class="toctree-l4"><a class="reference internal" href="configure.html">Configuration options</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../support/ex-tt-troubleshooting.html">EX-Turntable FAQ and Troubleshooting</a></li>
-<li class="toctree-l4"><a class="reference internal" href="traverser.html">Traversers and Limited Rotation Turntables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../ex-commandstation/accessories/inputs-outputs/duinonodes.html">Lew’s Duino Gear duinoNodes</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../ex-commandstation/accessories/animation.html">Automation and Animation</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../ex-commandstation/accessories/turntables/index.html">Turntables and traversers</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../ex-commandstation/accessories/turntables/overview.html">Overview - types and options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../ex-commandstation/accessories/turntables/dcc-turntables.html">DCC Turntables/traversers</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="index.html">EX-Turntable</a><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l5"><a class="reference internal" href="purchasing.html">Purchasing</a></li>
+<li class="toctree-l5 current"><a class="current reference internal" href="#">Assembly &amp; Setup</a></li>
+<li class="toctree-l5"><a class="reference internal" href="test-and-tune.html">Testing, Tuning, and Control</a></li>
+<li class="toctree-l5"><a class="reference internal" href="layout-wiring.html">Layout Connections and Wiring</a></li>
+<li class="toctree-l5"><a class="reference internal" href="configure.html">Configuration options</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../support/ex-tt-troubleshooting.html">EX-Turntable FAQ and Troubleshooting</a></li>
+<li class="toctree-l5"><a class="reference internal" href="traverser.html">Traversers and Limited Rotation Turntables</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -244,11 +269,11 @@
 <li class="toctree-l2"><a class="reference internal" href="../ex-rail/getting-started.html">Sequences - an Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ex-rail/examples.html">Example Objects and Sequences</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ex-rail/tips.html">Tips and Techniques</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ex-rail/EX-RAIL-reference.html">EX-RAIL Detailed Reference</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ex-rail/EX-RAIL-summary.html">EX-RAIL Command List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ex-rail/EX-RAIL-command-reference.html">EX-RAIL Command Reference</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ex-rail/about.html">About and History</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../trackmanager/index.html">TrackManager (DCC &amp; DC)</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">EX-Turntable</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="overview.html">Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="purchasing.html">Purchasing</a></li>
@@ -278,6 +303,34 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Support &amp; Info</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../throttles/index.html">Throttles (Controllers)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../throttles/protocols.html">WiThrottle Server, Web Server, DCC-EX Native Protocol Explained</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../throttles/software/index.html">Throttles (Software)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/software/ex-webthrottle.html">EX-Web-Throttle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/software/jmri.html">JMRI (Java Model Railroad Interface)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/software/engine-driver.html">Engine Driver (Android)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/software/dccpp-cab.html">DCCpp CAB (android)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/software/cab-engineer.html">Cab Engineer: DCC Throttle (Android)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/software/digitrainspro.html">DigiTrainsPro (Android)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/software/withrottle.html">WiThrottle (iOS)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/software/locontrol.html">Locontrol (iOS)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/software/srcpclient.html">SRCP Client (iOS)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/software/rtdrive-dccpp.html">RtDtive DCC++ (Android)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/software/train-driver.html">Train Driver (iOS)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../throttles/hardware/index.html">Throttles (Hardware)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/hardware/minithrottle.html">miniThrottle (Physical)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/hardware/witcontroller.html">WiTcontroller (Physical)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/hardware/engine-driver-physical-knobs.html">Adding a Physical Dial/Knob to Engine Driver</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/hardware/streamdeck.html">Elgato Stream Deck</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/hardware/uwt50.html">TCS UWT-50 &amp; UWT-100 WiFi Throttles (Physical)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../throttles/connect_wifi_throttle_via_usb.html">Connecting WiFi Throttles via USB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../throttles/tech-reference.html">Technical Reference for Throttle Developers</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../support/index.html">Troubleshooting &amp; Getting Help</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../support/index-ex-cs.html">EX-CommandStation</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../support/ex-cs-faq.html">Frequently Asked Questions (FAQ)</a></li>
@@ -314,33 +367,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../throttles/index.html">Throttles (Controllers)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../throttles/protocols.html">WiThrottle Server, Web Server, DCC++ API Explained</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../throttles/software/index.html">Throttles (Software)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/software/ex-webthrottle.html">EX-Web-Throttle</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/software/jmri.html">JMRI</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/software/engine-driver.html">Engine Driver (Android)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/software/dccpp-cab.html">DCCpp CAB (android)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/software/cab-engineer.html">Cab Engineer: DCC Throttle (Android)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/software/digitrainspro.html">DigiTrainsPro (Android)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/software/withrottle.html">WiThrottle (iOS)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/software/locontrol.html">Locontrol (iOS)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/software/srcpclient.html">SRCP Client (iOS)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/software/rtdrive-dccpp.html">RtDtive DCC++ (Android)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/software/train-driver.html">Train Driver (iOS)</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../throttles/hardware/index.html">Throttles (Hardware)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/hardware/minithrottle.html">miniThrottle (Physical)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/hardware/witcontroller.html">WiTcontroller (Physical)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/hardware/engine-driver-physical-knobs.html">Adding a Physical Dial/Knob to Engine Driver</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/hardware/streamdeck.html">Elgato Stream Deck</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/hardware/uwt50.html">TCS UWT-50 &amp; UWT-100 WiFi Throttles (Physical)</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../throttles/tech-reference.html">Technical Reference for Throttle Developers</a></li>
-</ul>
-</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Downloads</span></p>
 <ul>
@@ -353,7 +379,7 @@
 </ul>
 </li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<p class="caption" role="heading"><span class="caption-text">Detailed Information</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../reference/index.html">Reference</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../reference/glossary.html">Glossary</a></li>
@@ -370,9 +396,10 @@
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/arduino-mega.html">Arduino Mega Setup</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/arduino-uno.html">Arduino Uno Setup</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/nano.html">Arduino Nano Setup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/microcontrollers.html">Beta microcontrollers - STM32 Nucleo, ESP32, and SAMD</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/wifi-mega.html">Mega+WiFi Setup</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/nano-every.html">Nano Every</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/teensy.html">Teensy</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/wifi-mega.html">Mega+WiFi Setup</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../reference/hardware/pin-vpin-allocations.html">Default Pin/VPin Allocations and Recommendations</a></li>
@@ -424,6 +451,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/i2c-devices.html">I2C Devices</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/gpio-module.html">I2C GPIO Expander Modules</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/servo-module.html">Connecting a Servo Module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/hardware/i2c-multiplexers.html">I2C Multiplexers</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../reference/hardware/accessory-controllers.html">Accessory Controllers</a></li>
@@ -435,18 +463,15 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../reference/software/index.html">Software</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../reference/software/programming-locos.html">Programming Locos (CVs)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/software/programming-locos.html"></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/software/programming-locos.html#programming-locos-cvs">Programming Locos (CVs)</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../reference/software/index-dcpp-commands.html">DCC++ Commands</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../reference/software/command-reference.html">DCC-EX Command Reference</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../reference/software/command-summary.html">DCC-EX Command Summary</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../reference/software/command-summary-consolidated.html">DCC-EX Consolidated Command Summary</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="../reference/software/command-summary-consolidated.html">DCC-EX Native Commands - Consolidated Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ex-rail/EX-RAIL-command-reference.html">EX-RAIL Command Reference</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../reference/developers/index.html">Developer and API reference</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../throttles/tech-reference.html">Technical Reference for Throttle Developers</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../reference/developers/api.html">EX-CommandStation API Reference</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/developers/api.html">DCC-EX Native API Reference</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../reference/developers/hal.html">DCC-EX HAL Architecture</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../reference/developers/hal-config.html">I/O Device Drivers and HAL</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../reference/developers/writing-hal-driver.html">Writing a HAL Driver</a></li>
@@ -469,17 +494,21 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../under-development/index.html">Features under development</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../under-development/microcontrollers.html"><em>Under Development:</em> Microcontrollers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../under-development/track-manager.html"><em>Under Development:</em> DCC-EX TrackManager</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../under-development/duinonodes.html"><em>Under Development:</em> Lew’s Duino Gear duinoNodes</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../under-development/index.html">Features under development</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../projects/index.html">Related Projects</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../projects/railsnail-bluetooth.html">RailSnail’s Complete Bluetooth EX-CommandStation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../throttles/hardware/minithrottle.html">miniThrottle (Physical)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../throttles/hardware/witcontroller.html">WiTcontroller (Physical)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../throttles/hardware/streamdeck.html">Elgato Stream Deck</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">External References</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../external-references/index.html">Articles and Videos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/accessories/index.html">DCC-EX Third Party Suppliers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../reference/accessories/suppliers-full-cs.html">Full Command Stations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../reference/accessories/suppliers-cases.html">Cases / Enclosures</a></li>
 </ul>
 </li>
 </ul>
@@ -538,6 +567,7 @@
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../ex-commandstation/index.html">EX-CommandStation</a></li>
           <li class="breadcrumb-item"><a href="../ex-commandstation/accessories/index.html">Adding and Controlling Accessories</a></li>
+          <li class="breadcrumb-item"><a href="../ex-commandstation/accessories/turntables/index.html">Turntables and traversers</a></li>
           <li class="breadcrumb-item"><a href="index.html">EX-Turntable</a></li>
       <li class="breadcrumb-item active">Assembly &amp; Setup</li>
   
@@ -561,35 +591,43 @@
 <nav class="contents local" id="on-this-page">
 <p class="topic-title">On this page</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#assembly" id="id1">Assembly</a></p>
+<li><p><a class="reference internal" href="#assembly" id="id8">Assembly</a></p>
 <ul>
-<li><p><a class="reference internal" href="#connection-summary" id="id2">Connection summary</a></p>
+<li><p><a class="reference internal" href="#connection-summary" id="id9">Connection summary</a></p>
 <ul>
-<li><p><a class="reference internal" href="#using-a-two-wire-stepper-driver-eg-a4988-drv8825" id="id3">Using a two wire stepper driver (eg. A4988/DRV8825)</a></p></li>
+<li><p><a class="reference internal" href="#using-a-two-wire-stepper-driver-eg-a4988-drv8825" id="id10">Using a two wire stepper driver (eg. A4988/DRV8825)</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#before-you-start" id="id4">1. BEFORE you start</a></p></li>
-<li><p><a class="reference internal" href="#insert-the-nano-into-the-shield" id="id5">2. Insert the Nano into the shield</a></p></li>
-<li><p><a class="reference internal" href="#connect-the-stepper-controller-and-motor" id="id6">3. Connect the stepper controller and motor</a></p></li>
-<li><p><a class="reference internal" href="#connect-the-hall-effect-sensor" id="id7">4. Connect the hall effect sensor</a></p></li>
-<li><p><a class="reference internal" href="#connect-the-dual-relay-board" id="id8">5. Connect the dual relay board</a></p></li>
-<li><p><a class="reference internal" href="#connect-power-and-test" id="id9">6. Connect power and test</a></p></li>
-<li><p><a class="reference internal" href="#load-the-ex-turntable-software" id="id10">7. Load the EX-Turntable software</a></p>
+<li><p><a class="reference internal" href="#before-you-start" id="id11">1. BEFORE you start</a></p></li>
+<li><p><a class="reference internal" href="#insert-the-nano-into-the-shield" id="id12">2. Insert the Nano into the shield</a></p></li>
+<li><p><a class="reference internal" href="#connect-the-stepper-controller-and-motor" id="id13">3. Connect the stepper controller and motor</a></p></li>
+<li><p><a class="reference internal" href="#connect-the-hall-effect-sensor" id="id14">4. Connect the hall effect sensor</a></p></li>
+<li><p><a class="reference internal" href="#connect-the-dual-relay-board" id="id15">5. Connect the dual relay board</a></p></li>
+<li><p><a class="reference internal" href="#connect-power-and-test" id="id16">6. Connect power and test</a></p></li>
+<li><p><a class="reference internal" href="#load-the-ex-turntable-software" id="id17">7. Load the EX-Turntable software</a></p>
 <ul>
-<li><p><a class="reference internal" href="#configuration-for-two-wire-stepper-drivers-eg-a4988-drv8825" id="id11">Configuration for two wire stepper drivers (eg. A4988/DRV8825)</a></p></li>
-<li><p><a class="reference internal" href="#first-start-and-automatic-calibration" id="id12">First start and automatic calibration</a></p></li>
+<li><p><a class="reference internal" href="#installing-with-ex-installer" id="id18">Installing with EX-Installer</a></p></li>
+<li><p><a class="reference internal" href="#installing-with-the-arduino-ide" id="id19">Installing with the Arduino IDE</a></p></li>
+<li><p><a class="reference internal" href="#configuration-for-two-wire-stepper-drivers-eg-a4988-drv8825" id="id20">Configuration for two wire stepper drivers (eg. A4988/DRV8825)</a></p></li>
+<li><p><a class="reference internal" href="#first-start-and-automatic-calibration" id="id21">First start and automatic calibration</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#add-the-ex-turntable-device-driver-to-ex-commandstation" id="id13">8. Add the EX-Turntable device driver to EX-CommandStation</a></p></li>
-<li><p><a class="reference internal" href="#connect-ex-turntable-to-your-ex-commandstation" id="id14">9. Connect EX-Turntable to your EX-CommandStation</a></p></li>
+<li><p><a class="reference internal" href="#add-the-ex-turntable-device-driver-to-ex-commandstation" id="id22">8. Add the EX-Turntable device driver to EX-CommandStation</a></p>
+<ul>
+<li><p><a class="reference internal" href="#add-with-ex-installer" id="id23">Add with EX-Installer</a></p></li>
+<li><p><a class="reference internal" href="#add-manually" id="id24">Add manually</a></p></li>
+<li><p><a class="reference internal" href="#new-development-functionality-and-changes" id="id25">New development functionality and changes</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#now-you-re-ready" id="id15">Now you’re ready!</a></p></li>
+<li><p><a class="reference internal" href="#connect-ex-turntable-to-your-ex-commandstation" id="id26">9. Connect EX-Turntable to your EX-CommandStation</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#now-you-re-ready" id="id27">Now you’re ready!</a></p></li>
 </ul>
 </nav>
 </aside>
 <section id="assembly">
-<h2><a class="toc-backref" href="#id1" role="doc-backlink">Assembly</a><a class="headerlink" href="#assembly" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id8" role="doc-backlink">Assembly</a><a class="headerlink" href="#assembly" title="Permalink to this heading"></a></h2>
 <p>For assembly, we will assume the default ULN2003/28BYJ-48 combo is in use with an Arduino Nano V3, a standard 3 pin Arduino compatible hall effect sensor, and a dual relay board.</p>
 <p>We will also assume a prototyping shield is available that provides regulated 5V power sufficient for driving the ULN2003/28BYJ-48 stepper combo, and that there is a power supply with a suitable DC power plug to suit the prototyping shield.</p>
 <p>Throughout the assembly process, you can refer to this Fritzing diagram to help validate your connections are correct (open this image in a new tab or window and zoom in to see the detail):</p>
@@ -600,7 +638,7 @@
 <p>For the Tinkerers and Engineers, a much neater solution is to use a prototyping or strip board with much shorter (and soldered) connections to ensure reliability of the connections.</p>
 </aside>
 <section id="connection-summary">
-<h3><a class="toc-backref" href="#id2" role="doc-backlink">Connection summary</a><a class="headerlink" href="#connection-summary" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id9" role="doc-backlink">Connection summary</a><a class="headerlink" href="#connection-summary" title="Permalink to this heading"></a></h3>
 <p>Summary table of all connections required during assembly:</p>
 <table class="command-table docutils align-default">
 <thead>
@@ -678,7 +716,7 @@
 </table>
 <p>Of course for the Tinkerers and Engineers, if you’re not using a Nano or a prototyping shield, adapt the details as suits your configuration.</p>
 <section id="using-a-two-wire-stepper-driver-eg-a4988-drv8825">
-<h4><a class="toc-backref" href="#id3" role="doc-backlink">Using a two wire stepper driver (eg. A4988/DRV8825)</a><a class="headerlink" href="#using-a-two-wire-stepper-driver-eg-a4988-drv8825" title="Permalink to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id10" role="doc-backlink">Using a two wire stepper driver (eg. A4988/DRV8825)</a><a class="headerlink" href="#using-a-two-wire-stepper-driver-eg-a4988-drv8825" title="Permalink to this heading"></a></h4>
 <p>For those using a NEMA17 or similar stepper motor with a two wire type driver (eg. A4988 or DRV8825), then the four Arduino pins A0 - A3 map like this, with the rest remaining the same as the table above:</p>
 <table class="command-table docutils align-default">
 <thead>
@@ -707,17 +745,29 @@
 </tbody>
 </table>
 <p>Note when using a stepper motor such as the NEMA17 with a two wire driver, you should also incorporate a 47uF electrolytic capacitor as physically close to the stepper driver motor power input as possible to protect from surges generated by the stepper motor.</p>
+<figure class="align-default" id="id1">
 <a class="reference internal image-reference" href="../_images/drv8825-nema17-nano.png"><img alt="NEMA Option" src="../_images/drv8825-nema17-nano.png" style="width: 669.5px; height: 372.5px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figure 155 </span><span class="caption-text">Connections for a DRV8825 stepper driver with NEMA17 stepper motor</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Credit to Dejan at HowToMechatronics.com for outlining the connections for a TMC2208 stepper driver with a NEMA17 stepper motor along with the microsteps table included below.</p>
+<figure class="align-default" id="id2">
+<a class="reference internal image-reference" href="../_images/tmc2208.jpg"><img alt="TMC2208" src="../_images/tmc2208.jpg" style="width: 576.0px; height: 324.0px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figure 156 </span><span class="caption-text">Connections for a TMC2208 stepper driver with NEMA17 stepper motor</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
 </section>
 </section>
 <section id="before-you-start">
-<h3><a class="toc-backref" href="#id4" role="doc-backlink">1. BEFORE you start</a><a class="headerlink" href="#before-you-start" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id11" role="doc-backlink">1. BEFORE you start</a><a class="headerlink" href="#before-you-start" title="Permalink to this heading"></a></h3>
 <p>Gather all your components and visually check them all for any obvious damage, paying particular attention to pins on the Arduino to make sure they are straight.</p>
 <a class="reference internal image-reference" href="../_images/components.png"><img alt="Components" src="../_images/components.png" style="width: 400.0px; height: 300.0px;" /></a>
 <a class="reference internal image-reference" href="../_images/check-pins.png"><img alt="Nano Pins" src="../_images/check-pins.png" style="width: 400.0px; height: 300.0px;" /></a>
 </section>
 <section id="insert-the-nano-into-the-shield">
-<h3><a class="toc-backref" href="#id5" role="doc-backlink">2. Insert the Nano into the shield</a><a class="headerlink" href="#insert-the-nano-into-the-shield" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id12" role="doc-backlink">2. Insert the Nano into the shield</a><a class="headerlink" href="#insert-the-nano-into-the-shield" title="Permalink to this heading"></a></h3>
 <p>Insert the Nano into the prototype shield socket, taking care to ensure the USB socket is located at the same end as the DC power jack, and that all pins are straight and aligned correctly with the female headers.</p>
 <p>The various pin numbers may also be printed on the prototyping shield to confirm the correct orientation.</p>
 <a class="reference internal image-reference" href="../_images/insert-nano.png"><img alt="Insert Nano" src="../_images/insert-nano.png" style="width: 400.0px; height: 300.0px;" /></a>
@@ -727,7 +777,7 @@
 <a class="reference internal image-reference" href="../_images/proto-shield-pins.png"><img alt="Prototype Shield Pins" src="../_images/proto-shield-pins.png" style="width: 400.0px; height: 300.0px;" /></a>
 </section>
 <section id="connect-the-stepper-controller-and-motor">
-<h3><a class="toc-backref" href="#id6" role="doc-backlink">3. Connect the stepper controller and motor</a><a class="headerlink" href="#connect-the-stepper-controller-and-motor" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id13" role="doc-backlink">3. Connect the stepper controller and motor</a><a class="headerlink" href="#connect-the-stepper-controller-and-motor" title="Permalink to this heading"></a></h3>
 <p>Firstly, note that the ULN2003 controller will have four pins marked “IN1” through “IN4”, as well as a pair of pins with “+” and “-”. There is a likely a jumper installed across two pins beside these that is unmarked, leave this in place.</p>
 <p>You will need to connect six of the female to female Dupont wires from the ULN2003 pins to the Arduino prototype shield as below:</p>
 <table class="command-table docutils align-default">
@@ -764,7 +814,7 @@
 <a class="reference internal image-reference" href="../_images/28byj-48-connector2.png"><img alt="28BYJ-48 Connector" src="../_images/28byj-48-connector2.png" style="width: 400.0px; height: 300.0px;" /></a>
 </section>
 <section id="connect-the-hall-effect-sensor">
-<h3><a class="toc-backref" href="#id7" role="doc-backlink">4. Connect the hall effect sensor</a><a class="headerlink" href="#connect-the-hall-effect-sensor" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id14" role="doc-backlink">4. Connect the hall effect sensor</a><a class="headerlink" href="#connect-the-hall-effect-sensor" title="Permalink to this heading"></a></h3>
 <p>The hall effect sensor has three pins, and likely only two of these pins are marked, the left with “-” and right with “S”. The middle pin is likely to be unmarked, and will be the 5V pin. There are probably many different varieties of sensors and designs out there, but both that I have (from different suppliers) are marked identically.</p>
 <p>Use three of the Dupont wires and connect these from the hall effect sensor to the Arduino prototype shield as below:</p>
 <table class="command-table docutils align-default">
@@ -789,7 +839,7 @@
 <a class="reference internal image-reference" href="../_images/hall-effect-shield.png"><img alt="Hall Effect to Shield" src="../_images/hall-effect-shield.png" style="width: 400.0px; height: 300.0px;" /></a>
 </section>
 <section id="connect-the-dual-relay-board">
-<h3><a class="toc-backref" href="#id8" role="doc-backlink">5. Connect the dual relay board</a><a class="headerlink" href="#connect-the-dual-relay-board" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id15" role="doc-backlink">5. Connect the dual relay board</a><a class="headerlink" href="#connect-the-dual-relay-board" title="Permalink to this heading"></a></h3>
 <p>Note there should be six pins on the dual relay board marked “VCC”, “GND”, “IN1”, “IN2”, “COM”, and “GND”. The “COM” and “GND” pins should have a jumper installed to connect these together. Leave this in place.</p>
 <p>Use four Dupont wires to connect the other four pins as below:</p>
 <table class="command-table docutils align-default">
@@ -817,23 +867,60 @@
 <a class="reference internal image-reference" href="../_images/dual-relay-shield-pins.png"><img alt="Dual Relay to Shield Pins" src="../_images/dual-relay-shield-pins.png" style="width: 400.0px; height: 300.0px;" /></a>
 </section>
 <section id="connect-power-and-test">
-<h3><a class="toc-backref" href="#id9" role="doc-backlink">6. Connect power and test</a><a class="headerlink" href="#connect-power-and-test" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id16" role="doc-backlink">6. Connect power and test</a><a class="headerlink" href="#connect-power-and-test" title="Permalink to this heading"></a></h3>
 <p>At this point, it should be safe to plug in the power supply to the DC power jack on the prototyping shield.</p>
-<p>When the power supply is turned on, the power LEDs on the Arduino Nano and dual relay board should be lit. Note there is likely no power LED on the ULN2003 stepper controller, and testing of this will require loading the <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;Turntable</span></span> software on to the Nano in step 7 below.</p>
+<p>When the power supply is turned on, the power LEDs on the Arduino Nano and dual relay board should be lit. Note there is likely no power LED on the ULN2003 stepper controller, and testing of this will require loading the <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Turntable</span> software on to the Nano in step 7 below.</p>
 <a class="reference internal image-reference" href="../_images/power-on.png"><img alt="Powered On" src="../_images/power-on.png" style="width: 400.0px; height: 300.0px;" /></a>
 <p>To validate the hall effect sensor is connected correctly, put a magnet in close proximity (within a millimetre or so) of the sensor IC, and the onboard LED should light up.</p>
 <a class="reference internal image-reference" href="../_images/hall-effect-inactive.png"><img alt="Hall Effect Inactive" src="../_images/hall-effect-inactive.png" style="width: 400.0px; height: 300.0px;" /></a>
 <a class="reference internal image-reference" href="../_images/hall-effect-active.png"><img alt="Hall Effect Active" src="../_images/hall-effect-active.png" style="width: 400.0px; height: 300.0px;" /></a>
 </section>
 <section id="load-the-ex-turntable-software">
-<h3><a class="toc-backref" href="#id10" role="doc-backlink">7. Load the EX-Turntable software</a><a class="headerlink" href="#load-the-ex-turntable-software" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id17" role="doc-backlink">7. Load the EX-Turntable software</a><a class="headerlink" href="#load-the-ex-turntable-software" title="Permalink to this heading"></a></h3>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>Please read through this entire section prior to loading any software onto your Arduino. It is also recommended that the turntable is able to trigger the homing sensor correctly to ensure the automatic calibration works correctly at first startup.</p>
-<p>Further to this, note that you will need to end up with two separate folders; one containing the <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;CommandStation</span></span> software as per  <a class="reference internal" href="../ex-commandstation/advanced-setup/installation-options/arduino-ide.html"><span class="doc">Install using the Arduino IDE</span></a>, and an additional folder containing the <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;Turntable</span></span> software. The <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;Turntable</span></span> software is not a component of <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;CommandStation</span></span> or vice versa, and as such they should not exist in the same folder.</p>
 </div>
-<p>At the time of writing, there is no installer for <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;Turntable</span></span> like there is for the CommandStation, so you will need to install the Arduino IDE and load the software onto the Arduino manually.</p>
-<p>As noted in the tip above, you should have a <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;Turntable</span></span> folder alongside the <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;Turntable</span></span> folder, and neither should reside in the other (the <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;Turntable</span></span> software is required in the next step):</p>
+<section id="installing-with-ex-installer">
+<h4><a class="toc-backref" href="#id18" role="doc-backlink">Installing with EX-Installer</a><a class="headerlink" href="#installing-with-ex-installer" title="Permalink to this heading"></a></h4>
+<p><span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Installer</span> can be used to install both <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;CommandStation</span> and <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Turntable</span>. The process is the same for both, with the exception of the configuration options, therefore we will only outline the configuration options here. Refer to <a class="reference internal" href="../ex-installer/installing.html"><span class="doc">Using the Installer</span></a> for the full documentation on using <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Installer</span>.</p>
+<p>When you reach the “Select Product” screen, select <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Turntable</span>.</p>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="../_images/select_product.png"><img alt="EX-Installer - Select Product" src="../_images/select_product.png" style="width: 320.8px; height: 265.6px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figure 157 </span><span class="caption-text">EX-Installer - Product Screen</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>We always recommend selecting the latest available version for <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Turntable</span> unless advised otherwise, but note you will only see Development versions while it remains in Beta testing.</p>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="../_images/select_tt_version.png"><img alt="EX-Installer - Select Version" src="../_images/select_tt_version.png" style="width: 320.8px; height: 265.6px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figure 158 </span><span class="caption-text">EX-Installer - Product Screen</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Once the version has been selected, you will be able to configure the necessary options.</p>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="../_images/ex_turntable.png"><img alt="EX-Installer - Configure EX-Turntable" src="../_images/ex_turntable.png" style="width: 320.8px; height: 265.6px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figure 159 </span><span class="caption-text">EX-Installer - EX-Turntable configuration</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>If you have a need to configure any other settings, you can enable <code class="docutils literal notranslate"><span class="pre">Advanced</span> <span class="pre">Config</span></code> and edit the config file on the following page. You will need to do this if you intend to manually specify the steps per rotation for the stepper.</p>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="../_images/ex_turntable_advanced.png"><img alt="EX-Installer - EX-Turntable advanced config" src="../_images/ex_turntable_advanced.png" style="width: 320.8px; height: 265.6px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figure 160 </span><span class="caption-text">EX-Installer - EX-Turntable Advanced Config</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Continue through the rest of the <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Installer</span> process to load the software on to your device, then skip to <a class="reference internal" href="#first-start-and-automatic-calibration"><span class="std std-ref">First start and automatic calibration</span></a> to continue.</p>
+</section>
+<section id="installing-with-the-arduino-ide">
+<h4><a class="toc-backref" href="#id19" role="doc-backlink">Installing with the Arduino IDE</a><a class="headerlink" href="#installing-with-the-arduino-ide" title="Permalink to this heading"></a></h4>
+<blockquote>
+<div><p>Further to this, note that you will need to end up with two separate folders; one containing the <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;CommandStation</span> software as per  <a class="reference internal" href="../ex-commandstation/advanced-setup/installation-options/arduino-ide.html"><span class="doc">Install using the Arduino IDE</span></a>, and an additional folder containing the <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Turntable</span> software. The <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Turntable</span> software is not a component of <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;CommandStation</span> or vice versa, and as such they should not exist in the same folder.</p>
+</div></blockquote>
+<p>We recommend using <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Installer</span> to install <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Turntable</span> as outlined above, however you can use the Arduino IDE to load the software onto the Arduino manually.</p>
+<p>As noted in the tip above, you should have a <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Turntable</span> folder alongside the <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;CommandStation</span> folder, and neither should reside in the other (the <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Turntable</span> software is required in the next step):</p>
 <a class="reference internal image-reference" href="../_images/two-folders.png"><img alt="Two folders" src="../_images/two-folders.png" style="width: 603.0px; height: 246.0px;" /></a>
 <p>The process here is the same as installing CommandStation-EX via the Arduino IDE which you can find on the <a class="reference internal" href="../ex-commandstation/advanced-setup/installation-options/arduino-ide.html"><span class="doc">Install using the Arduino IDE</span></a> page.</p>
 <p>When you get to the point of opening the sketch, ensure you open the EX-Turntable sketch:</p>
@@ -844,11 +931,12 @@
 <a class="reference internal image-reference" href="../_images/select-nano.png"><img alt="Select Nano" src="../_images/select-nano.png" style="width: 475.79999999999995px; height: 247.2px;" /></a>
 <p>After any adjustments are made and “config.h” has been created, the software can be uploaded to the Arduino with the upload button:</p>
 <a class="reference internal image-reference" href="../_images/upload_arrow.jpg"><img alt="Upload" src="../_images/upload_arrow.jpg" style="width: 162.39999999999998px; height: 102.89999999999999px;" /></a>
-<p>Once the software is loaded successfully on to <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;Turntable</span></span>, the stepper motor should automatically start rotating in an attempt to find its “home” position, which will be activated when the magnet at one end of the turntable comes in close proximity to the hall effect sensor.</p>
-<p>If you don’t have the magnet installed at this point, or if it is too far from the sensor, <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;Turntable</span></span> will rotate several turns prior to flagging that homing has failed, and will then cease turning. The automatic calibration process will not commence if homing has failed.</p>
+<p>Once the software is loaded successfully on to <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Turntable</span>, the stepper motor should automatically start rotating in an attempt to find its “home” position, which will be activated when the magnet at one end of the turntable comes in close proximity to the hall effect sensor.</p>
+<p>If you don’t have the magnet installed at this point, or if it is too far from the sensor, <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Turntable</span> will rotate several turns prior to flagging that homing has failed, and will then cease turning. The automatic calibration process will not commence if homing has failed.</p>
 <p>If your testing of the hall effect sensor in step 6 above succeeded, then the issue is likely to be the distance the magnet is from the sensor, and this will require adjustment. See <a class="reference internal" href="../support/ex-tt-troubleshooting.html"><span class="doc">EX-Turntable FAQ and Troubleshooting</span></a> for further assistance if required.</p>
+</section>
 <section id="configuration-for-two-wire-stepper-drivers-eg-a4988-drv8825">
-<h4><a class="toc-backref" href="#id11" role="doc-backlink">Configuration for two wire stepper drivers (eg. A4988/DRV8825)</a><a class="headerlink" href="#configuration-for-two-wire-stepper-drivers-eg-a4988-drv8825" title="Permalink to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id20" role="doc-backlink">Configuration for two wire stepper drivers (eg. A4988/DRV8825)</a><a class="headerlink" href="#configuration-for-two-wire-stepper-drivers-eg-a4988-drv8825" title="Permalink to this heading"></a></h4>
 <p>If using a two wire stepper driver such as the A4988 or DRV8825 with a bipolar stepper motor such as a NEMA17 or similar, you will need to update “config.h” to reflect this.</p>
 <p>While the provided “config.example.h” file includes instructions, they are repeated here for clarity, as well as being outlined on the <a class="reference internal" href="configure.html"><span class="doc">Configuration options</span></a> page.</p>
 <p>Locate this section in “config.h”, comment out the line defining the use of “ULN2003_HALF_CW” by adding <code class="docutils literal notranslate"><span class="pre">//</span></code>, and uncomment the line defining the use of “A4988” by removing <code class="docutils literal notranslate"><span class="pre">//</span></code>:</p>
@@ -882,14 +970,14 @@
 </div>
 </section>
 <section id="first-start-and-automatic-calibration">
-<h4><a class="toc-backref" href="#id12" role="doc-backlink">First start and automatic calibration</a><a class="headerlink" href="#first-start-and-automatic-calibration" title="Permalink to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id21" role="doc-backlink">First start and automatic calibration</a><a class="headerlink" href="#first-start-and-automatic-calibration" title="Permalink to this heading"></a></h4>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If you have loaded the code too soon, and the automatic calibration has succeeded and recorded an inaccurate step count, then have no fear as there is a command you can run on the CommandStation to reinitiate the calibration sequence which is outlined in the <a class="reference internal" href="test-and-tune.html#ex-turntable-commands"><span class="std std-ref">Ex-Turntable commands</span></a> section.</p>
 <p>As of v0.5.0-Beta, you can also execute the command <code class="docutils literal notranslate"><span class="pre">&lt;0</span> <span class="pre">3&gt;</span></code> in the serial console to initiate the calibration sequence.</p>
 <p>Also, if you have enabled the <cite>FULL_STEP_COUNT</cite> option in “config.h”, that will prevent automatic calibration occurring, refer to <a class="reference internal" href="configure.html#full-step-count"><span class="std std-ref">FULL_STEP_COUNT</span></a>.</p>
 </div>
-<p>When <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;Turntable</span></span> is first loaded onto your Arduino, and it has successfully performed the homing process outlined above, it will commence an automatic calibration sequence. This involves several rotations of the turntable to ensure it is homed accurately, and is then able to count the steps required to complete a full rotation of the turntable.</p>
+<p>When <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Turntable</span> is first loaded onto your Arduino, and it has successfully performed the homing process outlined above, it will commence an automatic calibration sequence. This involves several rotations of the turntable to ensure it is homed accurately, and is then able to count the steps required to complete a full rotation of the turntable.</p>
 <p>Once the calibration sequence has completed, it will display the step count for an entire rotation, which you should take note of for calculating the various positions in <a class="reference internal" href="test-and-tune.html#tuning-your-turntable-positions"><span class="std std-ref">Tuning your turntable positions</span></a>.</p>
 <p>On the first start, the output in the serial console should look similar to the below:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>License GPLv3 fsf.org (c) dcc-ex.com
@@ -911,89 +999,71 @@ Phase will switch at 495 steps from home, and revert at 2475 steps from home
 Turntable homed successfully
 </pre></div>
 </div>
-<p>At this point, the full turn step count is written to the Arduino’s EEPROM so that it can be retrieved each time <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;Turntable</span></span> starts up, preventing the need to repeat the calibration sequence at each subsequent start.</p>
-<p>You can now safely power off <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;Turntable</span></span> and remove the USB cable from your PC as it is no longer required for normal operation, and all further commands will be issued by the CommandStation.</p>
+<p>At this point, the full turn step count is written to the Arduino’s EEPROM so that it can be retrieved each time <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Turntable</span> starts up, preventing the need to repeat the calibration sequence at each subsequent start.</p>
+<p>You can now safely power off <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Turntable</span> and remove the USB cable from your PC as it is no longer required for normal operation, and all further commands will be issued by the CommandStation.</p>
 </section>
 </section>
 <section id="add-the-ex-turntable-device-driver-to-ex-commandstation">
-<h3><a class="toc-backref" href="#id13" role="doc-backlink">8. Add the EX-Turntable device driver to EX-CommandStation</a><a class="headerlink" href="#add-the-ex-turntable-device-driver-to-ex-commandstation" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id22" role="doc-backlink">8. Add the EX-Turntable device driver to EX-CommandStation</a><a class="headerlink" href="#add-the-ex-turntable-device-driver-to-ex-commandstation" title="Permalink to this heading"></a></h3>
+<section id="add-with-ex-installer">
+<h4><a class="toc-backref" href="#id23" role="doc-backlink">Add with EX-Installer</a><a class="headerlink" href="#add-with-ex-installer" title="Permalink to this heading"></a></h4>
+<p>If you are using <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Installer</span> to load software, you can add your <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Turntable</span> device and routes on the Advanced Configuration screen by adding them to your myAutomation.h file.</p>
+<figure class="align-center" id="id7">
+<a class="reference internal image-reference" href="../_images/ex_cs_advanced_turntable.png"><img alt="EX-Installer - Configure EX-Turntable in myAutomation.h" src="../_images/ex_cs_advanced_turntable.png" style="width: 320.8px; height: 265.6px;" /></a>
+<figcaption>
+<p><span class="caption-number">Figure 161 </span><span class="caption-text">EX-Installer - Add EX-Turntable support in myAutomation.h</span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="add-manually">
+<h4><a class="toc-backref" href="#id24" role="doc-backlink">Add manually</a><a class="headerlink" href="#add-manually" title="Permalink to this heading"></a></h4>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>As mentioned previously, your CommandStation needs to be running the “add-turntable-controller” branch of <a class="reference external" href="https://github.com/DCC-EX/CommandStation-EX/tree/add-turntable-controller">EX-CommandStation</a>.</p>
-<p>This will display in the serial console of your CommandStation as version 4.0.2.</p>
-<p>If the “myHal.cpp_example.txt” is missing the lines referred to below, or if you receive compile errors that the file “IO_EXTurntable” is missing when attempting to upload the CommandStation software later in this process, this indicates you are using the incorrect version of <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;CommandStation</span></span>.</p>
-<p>The zip file containing the correct version of <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;CommandStation</span></span> should also be attached to the <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;Turntable</span></span> release.</p>
+<p>As mentioned previously, your CommandStation needs to be running <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;CommandStation</span> version 5.0.0 or later.</p>
+<p>If you receive compile errors that the file “IO_EXTurntable.h” is missing when attempting to upload the CommandStation software later in this process, this indicates you are using the incorrect version of <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;CommandStation</span>.</p>
+<p>Previous versions of this documentation referred to editing “myHal.cpp”. While this is possible, the recommended method is to define your device in “myAutomation.h” instead.</p>
 </div>
-<p>Before you will be able to test or use <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;Turntable</span></span>, you need to configure the <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;CommandStation</span></span> software to load the appropriate device driver.</p>
-<p>This requires creating or editing the myHal.cpp file in the <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;CommandStation</span></span> code and uploading it to your CommandStation.</p>
+<p>Before you will be able to test or use <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Turntable</span>, you need to configure the <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;CommandStation</span> software to load the appropriate device driver.</p>
+<p>This requires creating or editing the myAutomation.h file in the <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;CommandStation</span> code and uploading it to your CommandStation.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>It is helpful to have a high level understanding of how device drivers and the HAL works in the CommandStation as explained on the <a class="reference internal" href="../reference/developers/hal-config.html"><span class="doc">I/O Device Drivers and HAL</span></a> page. However, if that page is more information than you require at this point, then follow the steps below to add the required <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;Turntable</span></span> device driver and device.</p>
+<p>It is helpful to have a high level understanding of how device drivers and the HAL works in the CommandStation as explained on the <a class="reference internal" href="../reference/developers/hal-config.html"><span class="doc">I/O Device Drivers and HAL</span></a> page. However, if that page is more information than you require at this point, then follow the steps below to add the required <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Turntable</span> device driver and device.</p>
 </div>
-<p>Before continuing, refer to the file “myHal.cpp_example.txt” included with the <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;CommandStation</span></span> software, and note the following.</p>
-<p>At the top of the file there are a number of lines beginning with “#include”:</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">// Include devices you need.</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;IODevice.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;IO_HCSR04.h&quot;</span><span class="c1">    // Ultrasonic range sensor</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;IO_VL53L0X.h&quot;</span><span class="c1">   // Laser time-of-flight sensor</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;IO_DFPlayer.h&quot;</span><span class="c1">  // MP3 sound player</span>
-<span class="c1">//#include &quot;IO_EXTurntable.h&quot;   // EX-Turntable turntable controller</span>
-</pre></div>
-</div>
-<p>Note the last line, this is the device driver required to enable <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;Turntable</span></span> support.</p>
-<p>Scrolling down towards the bottom of that file, you will also see this indented section:</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">//=======================================================================</span>
-<span class="c1">// The following directive defines an EX-Turntable turntable instance.</span>
-<span class="c1">//=======================================================================</span>
-<span class="c1">// EXTurntable::create(VPIN, Number of VPINs, I2C Address)</span>
-<span class="w">  </span><span class="c1">//</span>
-<span class="c1">// The parameters are:</span>
-<span class="c1">//   VPIN=600</span>
-<span class="c1">//   Number of VPINs=1 (Note there is no reason to change this)</span>
-<span class="c1">//   I2C address=0x60</span>
-<span class="c1">//</span>
-<span class="c1">// Note that the i2c address is defined in the EX-Turntable code, and 0x60 is the default.</span>
-
-<span class="c1">//EXTurntable::create(600, 1, 0x60);</span>
-</pre></div>
-</div>
-<p>If you don’t have an existing “myHal.cpp” file, then follow these steps to create a new one: <a class="reference internal" href="../reference/developers/hal-config.html#adding-a-new-device"><span class="std std-ref">Adding a New Device</span></a>. Note that you don’t need to worry about copying or providing device driver files, as these are already included with the <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;CommandStation</span></span> software.</p>
-<p>Copy and paste the relevant lines from the “myHal.cpp_example.txt” file as above, which should result in the following content in your new “myHal.cpp” file:</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;IODevice.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;IO_EXTurntable.h&quot;</span><span class="c1">   // EX-Turntable turntable controller</span>
-
-<span class="kt">void</span><span class="w"> </span><span class="nf">halSetup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="c1">//=======================================================================</span>
-<span class="w">  </span><span class="c1">// The following directive defines a EX-Turntable turntable instance.</span>
-<span class="w">  </span><span class="c1">//=======================================================================</span>
-<span class="w">  </span><span class="c1">// EXTurntable::create(VPIN, Number of VPINs, I2C Address)</span>
-<span class="w">  </span><span class="c1">//</span>
-<span class="w">  </span><span class="c1">// The default parameters are:</span>
-<span class="w">  </span><span class="c1">//   VPIN=600</span>
-<span class="w">  </span><span class="c1">//   Number of VPINs=1 (Note there is no reason to change this)</span>
-<span class="w">  </span><span class="c1">//   I2C address=0x60</span>
-<span class="w">  </span><span class="c1">//</span>
-<span class="w">  </span><span class="c1">// Note that the i2c address is defined in the EX-Turntable code, and 0x60 is the default.</span>
-
-<span class="w">  </span><span class="n">EXTurntable</span><span class="o">::</span><span class="n">create</span><span class="p">(</span><span class="mi">600</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mh">0x60</span><span class="p">);</span>
-<span class="p">}</span>
+<p>You will need to include the <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Turntable</span> device driver file “IO_EXTurntable.h” and add a <code class="docutils literal notranslate"><span class="pre">HAL()</span></code> command to create the device:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;IO_EXTurntable.h&quot;</span><span class="c1">     // Include the device driver</span>
+<span class="n">HAL</span><span class="p">(</span><span class="n">EXTurntable</span><span class="p">,</span><span class="w"> </span><span class="mi">600</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mh">0x60</span><span class="p">)</span><span class="w">  </span><span class="c1">// Create the device</span>
 </pre></div>
 </div>
 <p>In the device setup above, there are three parameters provided, but only two may need to change in your environment if you have other devices that may conflict with these two settings:</p>
 <ul class="simple">
-<li><p>VPIN=600 - This is the default virtual pin (Vpin) ID that is used to send <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;Turntable</span></span> commands to. Vpin IDs need to be unique, so if this ID is used elsewhere, change as necessary (refer <a class="reference internal" href="../reference/developers/hal.html#overview"><span class="std std-ref">Overview</span></a>).</p></li>
-<li><p>I<sup>2</sup>C address=0x60 - This is the default address on the I<sup>2</sup>C bus that the <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;Turntable</span></span> is configured to use. This address also needs to be unique, so change this also if it is in use elsewhere, both in “myHal.cpp” and in “config.h” in the <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;Turntable</span></span> software.</p></li>
+<li><p>VPIN=600 - This is the default virtual pin (Vpin) ID that is used to send <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Turntable</span> commands to. Vpin IDs need to be unique, so if this ID is used elsewhere, change as necessary (refer <a class="reference internal" href="../reference/developers/hal.html#overview"><span class="std std-ref">Overview</span></a>).</p></li>
+<li><p>I<sup>2</sup>C address=0x60 - This is the default address on the I<sup>2</sup>C bus that the <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Turntable</span> is configured to use. This address also needs to be unique, so change this also if it is in use elsewhere, both in “myAutomation.h” and in “config.h” in the <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Turntable</span> software.</p></li>
 </ul>
-<p>If you already have an existing “myHal.cpp” file, then you simply need to add these entries in the appropriate sections of your existing file, noting that the “#include” needs to be before “void halSetup() {” and the “EXTurntable::create…” needs to be before the final “}”.</p>
+<p>If you already have an existing “myAutomation.h” file, then you simply need to add these entries in the appropriate sections of your existing file, noting that the “#include” needs to be before <code class="docutils literal notranslate"><span class="pre">HAL()</span></code>.</p>
 <p>Follow the rest of the directions for <a class="reference internal" href="../reference/developers/hal-config.html#adding-a-new-device"><span class="std std-ref">Adding a New Device</span></a> all the way through to the <a class="reference internal" href="../reference/developers/hal-config.html#upload-the-new-version-of-the-software"><span class="std std-ref">Upload the new version of the software</span></a> step to upload your newly configured CommandStation.</p>
-<p>Note there is no point in checking the driver at this stage as <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;Turntable</span></span> is not connected, and will show as “OFFLINE”.</p>
+<p>Note there is no point in checking the driver at this stage as <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Turntable</span> is not connected, and will show as “OFFLINE”.</p>
+</section>
+<section id="new-development-functionality-and-changes">
+<h4><a class="toc-backref" href="#id25" role="doc-backlink">New development functionality and changes</a><a class="headerlink" href="#new-development-functionality-and-changes" title="Permalink to this heading"></a></h4>
+<p><span style="color:red">This feature is not available in the current 'Production' version</span></p>
+<p>If you are using the new developmental features for turntables and traversers available from development version 5.1.5 and on, there are some changes to the above:</p>
+<ul class="simple">
+<li><p>Remove any reference to including “IO_EXTurntable.h” as this file no longer exists, and the device driver is included automatically</p></li>
+<li><p>The new <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;RAIL</span> command <code class="docutils literal notranslate"><span class="pre">EXTT_TURNTABLE()</span></code> creates the device, meaning you will no longer need a separate <code class="docutils literal notranslate"><span class="pre">HAL()</span></code> command</p></li>
+</ul>
+<p>To create your turntable device in “myAutomation.h”, the new command required is:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>EXTT_TURNTABLE(id, vpin, i2c_address, home [, &quot;description&quot;])
+</pre></div>
+</div>
+<p>For complete information, refer to <a class="reference internal" href="test-and-tune.html#development-version-commands"><span class="std std-ref">Development version commands</span></a>.</p>
+</section>
 </section>
 <section id="connect-ex-turntable-to-your-ex-commandstation">
-<h3><a class="toc-backref" href="#id14" role="doc-backlink">9. Connect EX-Turntable to your EX-CommandStation</a><a class="headerlink" href="#connect-ex-turntable-to-your-ex-commandstation" title="Permalink to this heading"></a></h3>
-<p>To control <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;Turntable</span></span> from your CommandStation, you will need a connection to the I<sup>2</sup>C (SDA, SCL) pins.</p>
+<h3><a class="toc-backref" href="#id26" role="doc-backlink">9. Connect EX-Turntable to your EX-CommandStation</a><a class="headerlink" href="#connect-ex-turntable-to-your-ex-commandstation" title="Permalink to this heading"></a></h3>
+<p>To control <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Turntable</span> from your CommandStation, you will need a connection to the I<sup>2</sup>C (SDA, SCL) pins.</p>
 <div class="admonition danger">
 <p class="admonition-title">Danger</p>
-<p>Ensure you turn the power off to both your CommandStation and <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;Turntable</span></span> prior to making any of these connections.</p>
+<p>Ensure you turn the power off to both your CommandStation and <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Turntable</span> prior to making any of these connections.</p>
 </div>
 <p>On the CommandStation, assuming this is a Mega2560 or Mega2560 + WiFi, the SDA (pin 20) and SCL (pin 21) pins are typically labelled as such, so should be easy to identify.</p>
 <p>On an Arduino Nano (and Uno) however, the SDA and SCL pins are shared with analog pins A4 and A5, and therefore aren’t explicitly labelled. The SDA pin is A4, and the SCL pin is A5.</p>
@@ -1022,9 +1092,9 @@ Turntable homed successfully
 </section>
 </section>
 <section id="now-you-re-ready">
-<h2><a class="toc-backref" href="#id15" role="doc-backlink">Now you’re ready!</a><a class="headerlink" href="#now-you-re-ready" title="Permalink to this heading"></a></h2>
-<p>At this point, you should have a fully assembled <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;Turntable</span></span> with the software loaded, a default configuration, and the device driver installed and configured in your CommandStation.</p>
-<p>In addition, <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;Turntable</span></span> should be connected to your CommandStation ready to test, tune your turntable positions, and configure EX-RAIL ready for use on your layout.</p>
+<h2><a class="toc-backref" href="#id27" role="doc-backlink">Now you’re ready!</a><a class="headerlink" href="#now-you-re-ready" title="Permalink to this heading"></a></h2>
+<p>At this point, you should have a fully assembled <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Turntable</span> with the software loaded, a default configuration, and the device driver installed and configured in your CommandStation.</p>
+<p>In addition, <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Turntable</span> should be connected to your CommandStation ready to test, tune your turntable positions, and configure EX-RAIL ready for use on your layout.</p>
 <p>Click the “next” button to get cracking!</p>
 </section>
 </section>

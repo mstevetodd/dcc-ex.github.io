@@ -1,14 +1,25 @@
 .. include:: /include/include.rst
 .. include:: /include/include-l2.rst
+.. include:: /include/include-hardware.rst
 |EX-REF-LOGO|
 
-************
+***********
 WiFi Boards
-************
+***********
 
 |conductor| |tinkerer| |engineer|
 
 You can connect up to 5 WiFi throttles. For the standard Mega board, we recommend the Conductor-Friendly Makerfabs WiFi shield below. Keep in mind you can also purchase a Mega+WiFi board online that has both a Mega clone and an ESP8266 built onto the same board. However, you will have to upload new firmware to that board, so that would be a Tinkerer option. See the :doc:`Mega+WiFi page </reference/hardware/wifi-boards/mega-wifi>`
+
+.. warning:: 
+
+    Please be aware that the Espressif AT firmware currently being shipped with these devices **will probably NOT work** with |EX-CS| out of the box.
+
+    This can be corrected, but is probably beyond Conductor level and requires additional hardware.  
+
+    See :doc:`/support/wifi-at-version` for details on how to check the version and how to correct it if needed.
+
+    We are currently investigating other options.
 
 For more information on how to configure your Command Station to use the boards below, see :doc:`Wifi Setup </ex-commandstation/get-started/wifi-setup>`
 

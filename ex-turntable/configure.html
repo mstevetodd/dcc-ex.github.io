@@ -2,8 +2,9 @@
 <html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-<meta content="DCC-EX is a team of dedicated enthusiasts producing, easy to use, affordable, do-it-yourself, open source, DCC solutions to allow you to run your complete model railroad layout." name="description" />
-<meta content="DCC DCC++ EX DCC++EX DCC-EX" name="keywords" />
+<meta content="DCC-EX DCC DCC++ EX DCC++EX" name="keywords" />
+<meta content="EX-Turntable is a fully integrated turntable controller for EX-CommandStation. [DCC-EX is a team of dedicated enthusiasts producing, easy to use, affordable, do-it-yourself, open source, DCC solutions to allow you to run your complete model railroad layout.]" name="description" />
+<meta content="EX-Turntable EX-CommandStation EX-CS" name="keywords" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Configuration options &mdash; DCC-EX Model Railroading  documentation</title>
@@ -13,6 +14,8 @@
       <link rel="stylesheet" href="../_static/css/dccex_theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/big_picture_theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/sphinx_design_overrides.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/dark_mode_css/general.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/dark_mode_css/dark.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="canonical" href="https://dcc-ex.com/ex-turntable/configure.html" />
   <!--[if lt IE 9]>
@@ -28,6 +31,8 @@
         <script src="../_static/design-tabs.js"></script>
         <script src="../_static/js/platform.js"></script>
         <script src="../_static/js/extra.js"></script>
+        <script src="../_static/dark_mode_js/default_light.js"></script>
+        <script src="../_static/dark_mode_js/theme_switcher.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -68,14 +73,25 @@
           <a href="../index.html">
             
               <img src="../_static/logo.png" class="logo" alt="Logo"/>
-          </a>
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
+          </a><script async src="https://cse.google.com/cse.js?cx=f19437345086341ed">
+</script>
+<div class="gcse-search"></div>
+
+<!-- DDG search widget,@author Juri Wornowitski,@version 3.0,@link https://www.plainlight.com/ddg -->
+<!-- <div id="widdget" style="width:100%;margin:10px 0;">
+    <style type="text/css">
+        #widdget input {display:block;height:30px;padding:4px;outline:none;border:1px solid #8d8d8d;border-right:0;box-sizing:border-box;border-radius:3px 0 0 3px;width:calc(100% - 41px);font-size:15px;} 
+        #widdget button {float:left;cursor:pointer;width:43px;height:30px;color:#fff;background-image:linear-gradient(#cacaca,#929292);border:0;border-radius:0 3px 3px 0;padding:0;} 
+        #widdget button:active {background-image:linear-gradient(#909090,#585858);} 
+        #widdget button:focus {outline:none;}
+    </style>
+    <form style="position:relative" onsubmit="this.elements[0].click();">
+        <div style="float:right;position:absolute;top:0;right:-2px;z-index:3">
+            <button type="submit" onclick="var v=this.parentElement.parentElement.elements[1].value;if (typeof gtag !== 'undefined') try{gtag('event','search',{'event_label':v});} catch(e){} else if (typeof ga !== 'undefined') try{ga('send','event','engagement','search',v);} catch(e){} window.open('https://duckduckgo.com?q='+encodeURIComponent(v)+'+site%3Ahttps%3A%2F%2Fdcc-ex.com%2F&kj=00a3b9ff&kx=%236c00a2&k9=%2300353d&k8=%23262626');return false;">&#128269;</button>
+        </div>
+        <input type="text" name="q" placeholder="Search with Duck Duck Go" />
+    </form>
+</div> -->
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
     
               <ul>
@@ -93,6 +109,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../ex-commandstation/get-started/controllers.html">Choosing a Throttle (Controller)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../ex-commandstation/get-started/testing.html">Test Your Setup</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../support/ex-cs-troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../support/wifi-at-version.html">ESP8266 (WiFi Boards) - AT Version Issues and Solutions</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../ex-commandstation/advanced-setup/index.html">Advanced Options</a><ul>
@@ -139,6 +156,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/wifi-boards/esp-01.html">ESP-01 and ESP-01s</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/wifi-boards/mega-wifi.html">Mega+WiFi Combo Board</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../ex-commandstation/advanced-setup/supported-wifi/wifi-config.html">WiFi Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../support/wifi-at-version.html">ESP8266 (WiFi Boards) - AT Version Issues and Solutions</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../ex-commandstation/advanced-setup/supported-ethernet/index.html">Supported Ethernet Boards</a><ul>
@@ -164,8 +182,9 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../ex-commandstation/advanced-setup/startup-config.html">Startup Configuration</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../ex-commandstation/advanced-setup/controllers.html">Choosing a Throttle (Controller) - Advanced</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../reference/software/command-reference.html">DCC-EX Command Reference</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../reference/software/command-summary.html">DCC-EX Command Summary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/software/command-reference.html"></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/software/command-reference.html#dcc-ex-native-command-reference">DCC-EX Native Command Reference</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/software/command-summary.html">DCC-EX Native Command Summary</a></li>
 </ul>
 </li>
 <li class="toctree-l2 current"><a class="reference internal" href="../ex-commandstation/accessories/index.html">Adding and Controlling Accessories</a><ul class="current">
@@ -203,20 +222,26 @@
 <li class="toctree-l5"><a class="reference internal" href="../support/ex-io-troubleshooting.html">EX-IOExpander FAQ and Troubleshooting</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="toctree-l3 current"><a class="reference internal" href="index.html">EX-Turntable</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="overview.html">Overview</a></li>
-<li class="toctree-l4"><a class="reference internal" href="purchasing.html">Purchasing</a></li>
-<li class="toctree-l4"><a class="reference internal" href="assembly.html">Assembly &amp; Setup</a></li>
-<li class="toctree-l4"><a class="reference internal" href="test-and-tune.html">Testing, Tuning, and Control</a></li>
-<li class="toctree-l4"><a class="reference internal" href="layout-wiring.html">Layout Connections and Wiring</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">Configuration options</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../support/ex-tt-troubleshooting.html">EX-Turntable FAQ and Troubleshooting</a></li>
-<li class="toctree-l4"><a class="reference internal" href="traverser.html">Traversers and Limited Rotation Turntables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../ex-commandstation/accessories/inputs-outputs/duinonodes.html">Lew’s Duino Gear duinoNodes</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../ex-commandstation/accessories/animation.html">Automation and Animation</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../ex-commandstation/accessories/turntables/index.html">Turntables and traversers</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../ex-commandstation/accessories/turntables/overview.html">Overview - types and options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../ex-commandstation/accessories/turntables/dcc-turntables.html">DCC Turntables/traversers</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="index.html">EX-Turntable</a><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l5"><a class="reference internal" href="purchasing.html">Purchasing</a></li>
+<li class="toctree-l5"><a class="reference internal" href="assembly.html">Assembly &amp; Setup</a></li>
+<li class="toctree-l5"><a class="reference internal" href="test-and-tune.html">Testing, Tuning, and Control</a></li>
+<li class="toctree-l5"><a class="reference internal" href="layout-wiring.html">Layout Connections and Wiring</a></li>
+<li class="toctree-l5 current"><a class="current reference internal" href="#">Configuration options</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../support/ex-tt-troubleshooting.html">EX-Turntable FAQ and Troubleshooting</a></li>
+<li class="toctree-l5"><a class="reference internal" href="traverser.html">Traversers and Limited Rotation Turntables</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -244,11 +269,11 @@
 <li class="toctree-l2"><a class="reference internal" href="../ex-rail/getting-started.html">Sequences - an Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ex-rail/examples.html">Example Objects and Sequences</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ex-rail/tips.html">Tips and Techniques</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ex-rail/EX-RAIL-reference.html">EX-RAIL Detailed Reference</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ex-rail/EX-RAIL-summary.html">EX-RAIL Command List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ex-rail/EX-RAIL-command-reference.html">EX-RAIL Command Reference</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ex-rail/about.html">About and History</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../trackmanager/index.html">TrackManager (DCC &amp; DC)</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">EX-Turntable</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="overview.html">Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="purchasing.html">Purchasing</a></li>
@@ -278,6 +303,34 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Support &amp; Info</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../throttles/index.html">Throttles (Controllers)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../throttles/protocols.html">WiThrottle Server, Web Server, DCC-EX Native Protocol Explained</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../throttles/software/index.html">Throttles (Software)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/software/ex-webthrottle.html">EX-Web-Throttle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/software/jmri.html">JMRI (Java Model Railroad Interface)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/software/engine-driver.html">Engine Driver (Android)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/software/dccpp-cab.html">DCCpp CAB (android)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/software/cab-engineer.html">Cab Engineer: DCC Throttle (Android)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/software/digitrainspro.html">DigiTrainsPro (Android)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/software/withrottle.html">WiThrottle (iOS)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/software/locontrol.html">Locontrol (iOS)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/software/srcpclient.html">SRCP Client (iOS)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/software/rtdrive-dccpp.html">RtDtive DCC++ (Android)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/software/train-driver.html">Train Driver (iOS)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../throttles/hardware/index.html">Throttles (Hardware)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/hardware/minithrottle.html">miniThrottle (Physical)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/hardware/witcontroller.html">WiTcontroller (Physical)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/hardware/engine-driver-physical-knobs.html">Adding a Physical Dial/Knob to Engine Driver</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/hardware/streamdeck.html">Elgato Stream Deck</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/hardware/uwt50.html">TCS UWT-50 &amp; UWT-100 WiFi Throttles (Physical)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../throttles/connect_wifi_throttle_via_usb.html">Connecting WiFi Throttles via USB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../throttles/tech-reference.html">Technical Reference for Throttle Developers</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../support/index.html">Troubleshooting &amp; Getting Help</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../support/index-ex-cs.html">EX-CommandStation</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../support/ex-cs-faq.html">Frequently Asked Questions (FAQ)</a></li>
@@ -314,33 +367,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../throttles/index.html">Throttles (Controllers)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../throttles/protocols.html">WiThrottle Server, Web Server, DCC++ API Explained</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../throttles/software/index.html">Throttles (Software)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/software/ex-webthrottle.html">EX-Web-Throttle</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/software/jmri.html">JMRI</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/software/engine-driver.html">Engine Driver (Android)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/software/dccpp-cab.html">DCCpp CAB (android)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/software/cab-engineer.html">Cab Engineer: DCC Throttle (Android)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/software/digitrainspro.html">DigiTrainsPro (Android)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/software/withrottle.html">WiThrottle (iOS)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/software/locontrol.html">Locontrol (iOS)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/software/srcpclient.html">SRCP Client (iOS)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/software/rtdrive-dccpp.html">RtDtive DCC++ (Android)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/software/train-driver.html">Train Driver (iOS)</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../throttles/hardware/index.html">Throttles (Hardware)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/hardware/minithrottle.html">miniThrottle (Physical)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/hardware/witcontroller.html">WiTcontroller (Physical)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/hardware/engine-driver-physical-knobs.html">Adding a Physical Dial/Knob to Engine Driver</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/hardware/streamdeck.html">Elgato Stream Deck</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/hardware/uwt50.html">TCS UWT-50 &amp; UWT-100 WiFi Throttles (Physical)</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../throttles/tech-reference.html">Technical Reference for Throttle Developers</a></li>
-</ul>
-</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Downloads</span></p>
 <ul>
@@ -353,7 +379,7 @@
 </ul>
 </li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<p class="caption" role="heading"><span class="caption-text">Detailed Information</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../reference/index.html">Reference</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../reference/glossary.html">Glossary</a></li>
@@ -370,9 +396,10 @@
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/arduino-mega.html">Arduino Mega Setup</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/arduino-uno.html">Arduino Uno Setup</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/nano.html">Arduino Nano Setup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/microcontrollers.html">Beta microcontrollers - STM32 Nucleo, ESP32, and SAMD</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/wifi-mega.html">Mega+WiFi Setup</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/nano-every.html">Nano Every</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/teensy.html">Teensy</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/wifi-mega.html">Mega+WiFi Setup</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../reference/hardware/pin-vpin-allocations.html">Default Pin/VPin Allocations and Recommendations</a></li>
@@ -424,6 +451,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/i2c-devices.html">I2C Devices</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/gpio-module.html">I2C GPIO Expander Modules</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/servo-module.html">Connecting a Servo Module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/hardware/i2c-multiplexers.html">I2C Multiplexers</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../reference/hardware/accessory-controllers.html">Accessory Controllers</a></li>
@@ -435,18 +463,15 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../reference/software/index.html">Software</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../reference/software/programming-locos.html">Programming Locos (CVs)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/software/programming-locos.html"></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/software/programming-locos.html#programming-locos-cvs">Programming Locos (CVs)</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../reference/software/index-dcpp-commands.html">DCC++ Commands</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../reference/software/command-reference.html">DCC-EX Command Reference</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../reference/software/command-summary.html">DCC-EX Command Summary</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../reference/software/command-summary-consolidated.html">DCC-EX Consolidated Command Summary</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="../reference/software/command-summary-consolidated.html">DCC-EX Native Commands - Consolidated Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ex-rail/EX-RAIL-command-reference.html">EX-RAIL Command Reference</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../reference/developers/index.html">Developer and API reference</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../throttles/tech-reference.html">Technical Reference for Throttle Developers</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../reference/developers/api.html">EX-CommandStation API Reference</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/developers/api.html">DCC-EX Native API Reference</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../reference/developers/hal.html">DCC-EX HAL Architecture</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../reference/developers/hal-config.html">I/O Device Drivers and HAL</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../reference/developers/writing-hal-driver.html">Writing a HAL Driver</a></li>
@@ -469,17 +494,21 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../under-development/index.html">Features under development</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../under-development/microcontrollers.html"><em>Under Development:</em> Microcontrollers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../under-development/track-manager.html"><em>Under Development:</em> DCC-EX TrackManager</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../under-development/duinonodes.html"><em>Under Development:</em> Lew’s Duino Gear duinoNodes</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../under-development/index.html">Features under development</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../projects/index.html">Related Projects</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../projects/railsnail-bluetooth.html">RailSnail’s Complete Bluetooth EX-CommandStation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../throttles/hardware/minithrottle.html">miniThrottle (Physical)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../throttles/hardware/witcontroller.html">WiTcontroller (Physical)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../throttles/hardware/streamdeck.html">Elgato Stream Deck</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">External References</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../external-references/index.html">Articles and Videos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/accessories/index.html">DCC-EX Third Party Suppliers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../reference/accessories/suppliers-full-cs.html">Full Command Stations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../reference/accessories/suppliers-cases.html">Cases / Enclosures</a></li>
 </ul>
 </li>
 </ul>
@@ -538,6 +567,7 @@
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../ex-commandstation/index.html">EX-CommandStation</a></li>
           <li class="breadcrumb-item"><a href="../ex-commandstation/accessories/index.html">Adding and Controlling Accessories</a></li>
+          <li class="breadcrumb-item"><a href="../ex-commandstation/accessories/turntables/index.html">Turntables and traversers</a></li>
           <li class="breadcrumb-item"><a href="index.html">EX-Turntable</a></li>
       <li class="breadcrumb-item active">Configuration options</li>
   
@@ -575,24 +605,25 @@
 <li><p><a class="reference internal" href="#disable-outputs-idle" id="id11">DISABLE_OUTPUTS_IDLE</a></p></li>
 <li><p><a class="reference internal" href="#stepper-max-speed" id="id12">STEPPER_MAX_SPEED</a></p></li>
 <li><p><a class="reference internal" href="#stepper-acceleration" id="id13">STEPPER_ACCELERATION</a></p></li>
-<li><p><a class="reference internal" href="#led-fast" id="id14">LED_FAST</a></p></li>
-<li><p><a class="reference internal" href="#led-slow" id="id15">LED_SLOW</a></p></li>
+<li><p><a class="reference internal" href="#stepper-gearing-factor" id="id14">STEPPER_GEARING_FACTOR</a></p></li>
+<li><p><a class="reference internal" href="#led-fast" id="id15">LED_FAST</a></p></li>
+<li><p><a class="reference internal" href="#led-slow" id="id16">LED_SLOW</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#advanced-configuration-options" id="id16">Advanced configuration options</a></p>
+<li><p><a class="reference internal" href="#advanced-configuration-options" id="id17">Advanced configuration options</a></p>
 <ul>
-<li><p><a class="reference internal" href="#debug" id="id17">DEBUG</a></p></li>
-<li><p><a class="reference internal" href="#sanity-steps" id="id18">SANITY_STEPS</a></p></li>
-<li><p><a class="reference internal" href="#home-sensitivity" id="id19">HOME_SENSITIVITY</a></p></li>
-<li><p><a class="reference internal" href="#full-step-count" id="id20">FULL_STEP_COUNT</a></p></li>
-<li><p><a class="reference internal" href="#debounce-delay" id="id21">DEBOUNCE_DELAY</a></p></li>
+<li><p><a class="reference internal" href="#debug" id="id18">DEBUG</a></p></li>
+<li><p><a class="reference internal" href="#sanity-steps" id="id19">SANITY_STEPS</a></p></li>
+<li><p><a class="reference internal" href="#home-sensitivity" id="id20">HOME_SENSITIVITY</a></p></li>
+<li><p><a class="reference internal" href="#full-step-count" id="id21">FULL_STEP_COUNT</a></p></li>
+<li><p><a class="reference internal" href="#debounce-delay" id="id22">DEBOUNCE_DELAY</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#defining-custom-stepper-drivers" id="id22">Defining custom stepper drivers</a></p></li>
+<li><p><a class="reference internal" href="#defining-custom-stepper-drivers" id="id23">Defining custom stepper drivers</a></p></li>
 </ul>
 </nav>
 </aside>
-<p><span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;Turntable</span></span> has a number of different configuration options available to customise the behaviour to suit your needs.</p>
+<p><span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Turntable</span> has a number of different configuration options available to customise the behaviour to suit your needs.</p>
 <p>Configuration changes are made by editing the “config.h” file.</p>
 <p>The various configuration options are outlined below, and all are declared on their own line using the “#define” directive (eg. #define I2C_ADDRESS 0x60).</p>
 <section id="standard-configuration-options">
@@ -600,9 +631,9 @@
 <section id="i2c-address">
 <h3><a class="toc-backref" href="#id2" role="doc-backlink">I2C_ADDRESS</a><a class="headerlink" href="#i2c-address" title="Permalink to this heading"></a></h3>
 <p><cite>Default: 0x60</cite></p>
-<p>This is the address that <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;Turntable</span></span> will occupy on the I<sup>2</sup>C bus. The default address has been chosen as it is not expected to conflict with any of the existing know I/O expander modules or other known i2c devices.</p>
-<p>If you need to change this for any reason, ensure that the I<sup>2</sup>C address in “myHal.cpp” in the <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;CommandStation</span></span> software is also changed to the same value.</p>
-<p>Multiple instances of <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;Turntable</span></span> can be controlled by the same CommandStation by ensuring each has its own unique I<sup>2</sup>C address.</p>
+<p>This is the address that <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Turntable</span> will occupy on the I<sup>2</sup>C bus. The default address has been chosen as it is not expected to conflict with any of the existing know I/O expander modules or other known i2c devices.</p>
+<p>If you need to change this for any reason, ensure that the I<sup>2</sup>C address in “myHal.cpp” in the <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;CommandStation</span> software is also changed to the same value.</p>
+<p>Multiple instances of <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Turntable</span> can be controlled by the same CommandStation by ensuring each has its own unique I<sup>2</sup>C address.</p>
 </section>
 <section id="turntable-ex-mode">
 <h3><a class="toc-backref" href="#id3" role="doc-backlink">TURNTABLE_EX_MODE</a><a class="headerlink" href="#turntable-ex-mode" title="Permalink to this heading"></a></h3>
@@ -615,21 +646,21 @@
 <h3><a class="toc-backref" href="#id4" role="doc-backlink">SENSOR_TESTING</a><a class="headerlink" href="#sensor-testing" title="Permalink to this heading"></a></h3>
 <p><cite>Default: disabled</cite></p>
 <p>To enable sensor testing, uncomment this line by removing the “//” from in front of “#define”.</p>
-<p>When sensor testing is enabled, all <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;Turntable</span></span> operations are disabled. The state changes of HOME and LIMIT sensors are printed to the serial console when activated/deactivated, and no other activity is possible.</p>
+<p>When sensor testing is enabled, all <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Turntable</span> operations are disabled. The state changes of HOME and LIMIT sensors are printed to the serial console when activated/deactivated, and no other activity is possible.</p>
 <p>This is ideal for ensuring sensors are functional prior to enabling TRAVERSER mode.</p>
 </section>
 <section id="home-sensor-active-state">
 <h3><a class="toc-backref" href="#id5" role="doc-backlink">HOME_SENSOR_ACTIVE_STATE</a><a class="headerlink" href="#home-sensor-active-state" title="Permalink to this heading"></a></h3>
 <p><cite>Default: LOW</cite></p>
 <p><cite>Valid values: LOW, HIGH</cite></p>
-<p>This is the state that the homing sensor reports to <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;Turntable</span></span> when activated. Use LOW for sensors that activate by pulling the sensor output to ground, and HIGH for sensors that pull the output to 5V.</p>
+<p>This is the state that the homing sensor reports to <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Turntable</span> when activated. Use LOW for sensors that activate by pulling the sensor output to ground, and HIGH for sensors that pull the output to 5V.</p>
 </section>
 <section id="limit-sensor-active-state">
 <h3><a class="toc-backref" href="#id6" role="doc-backlink">LIMIT_SENSOR_ACTIVE_STATE</a><a class="headerlink" href="#limit-sensor-active-state" title="Permalink to this heading"></a></h3>
 <p><cite>Default: LOW</cite></p>
 <p><cite>Valid values: LOW, HIGH</cite></p>
-<p>This is the state that the limit sensor reports to <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;Turntable</span></span> when activated. Use LOW for sensors that activate by pulling the sensor output to ground, and HIGH for sensors that pull the output to 5V.</p>
-<p>The limit sensor is only used when <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;Turntable</span></span> is set to TRAVERSER mode.</p>
+<p>This is the state that the limit sensor reports to <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Turntable</span> when activated. Use LOW for sensors that activate by pulling the sensor output to ground, and HIGH for sensors that pull the output to 5V.</p>
+<p>The limit sensor is only used when <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Turntable</span> is set to TRAVERSER mode.</p>
 </section>
 <section id="relay-active-state">
 <h3><a class="toc-backref" href="#id7" role="doc-backlink">RELAY_ACTIVE_STATE</a><a class="headerlink" href="#relay-active-state" title="Permalink to this heading"></a></h3>
@@ -679,53 +710,60 @@
 <h3><a class="toc-backref" href="#id13" role="doc-backlink">STEPPER_ACCELERATION</a><a class="headerlink" href="#stepper-acceleration" title="Permalink to this heading"></a></h3>
 <p><cite>Default: 25</cite></p>
 <p><cite>Valid values: &gt; 0</cite></p>
-<p>The acceleration rate of the turntable, which is defined as steps per second, per second. This is what gives <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;Turntable</span></span> a more prototypical acceleration/deceleration rate when rotating.</p>
+<p>The acceleration rate of the turntable, which is defined as steps per second, per second. This is what gives <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Turntable</span> a more prototypical acceleration/deceleration rate when rotating.</p>
+</section>
+<section id="stepper-gearing-factor">
+<h3><a class="toc-backref" href="#id14" role="doc-backlink">STEPPER_GEARING_FACTOR</a><a class="headerlink" href="#stepper-gearing-factor" title="Permalink to this heading"></a></h3>
+<p><strong>Requires EX-Turntable version 0.6.0 or later</strong></p>
+<p><cite>Default: 1</cite></p>
+<p><cite>Valid values: 1 - 10</cite></p>
+<p>Step counts sent from <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;CommandStation</span> will be multiplied by this number, allowing for larger gear ratios and small microsteps that result in a steps per revolution of greater than 32767. The maximum number after multiplication is 4,294,967,295.</p>
 </section>
 <section id="led-fast">
-<h3><a class="toc-backref" href="#id14" role="doc-backlink">LED_FAST</a><a class="headerlink" href="#led-fast" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id15" role="doc-backlink">LED_FAST</a><a class="headerlink" href="#led-fast" title="Permalink to this heading"></a></h3>
 <p><cite>Default: 100</cite></p>
 <p><cite>Valid values: 0 to long time</cite></p>
 <p>This is the time in milliseconds that the LED is on and off when the set to a fast blink. With the default, it will be on for 100ms, then off for 100ms.</p>
 </section>
 <section id="led-slow">
-<h3><a class="toc-backref" href="#id15" role="doc-backlink">LED_SLOW</a><a class="headerlink" href="#led-slow" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id16" role="doc-backlink">LED_SLOW</a><a class="headerlink" href="#led-slow" title="Permalink to this heading"></a></h3>
 <p><cite>Default: 500</cite></p>
 <p><cite>Valid values: 0 to long time</cite></p>
 <p>This is the time in milliseconds that the LED is on and off when the set to a slow blink. With the default, it will be on for 500ms, then off for 500ms.</p>
 </section>
 </section>
 <section id="advanced-configuration-options">
-<h2><a class="toc-backref" href="#id16" role="doc-backlink">Advanced configuration options</a><a class="headerlink" href="#advanced-configuration-options" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id17" role="doc-backlink">Advanced configuration options</a><a class="headerlink" href="#advanced-configuration-options" title="Permalink to this heading"></a></h2>
 <p><a class="reference external" href="../begin/levels.html#tinkerer"><img alt="Propeller Beanie" src="../_images/tinkerer-level.png" style="width: 135.6px; height: 36.0px;" /></a> <a class="reference external" href="../begin/levels.html#engineer"><img alt="Engineer Hat" src="../_images/engineer-level.png" style="width: 135.6px; height: 36.0px;" /></a></p>
 <section id="debug">
-<h3><a class="toc-backref" href="#id17" role="doc-backlink">DEBUG</a><a class="headerlink" href="#debug" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id18" role="doc-backlink">DEBUG</a><a class="headerlink" href="#debug" title="Permalink to this heading"></a></h3>
 <p><cite>Default: Disabled</cite></p>
 <p>If debug level output is requested as part of a support ticket or when troubleshooting in general, uncomment this line by removing the “//” from in front of “#define”.</p>
 </section>
 <section id="sanity-steps">
-<h3><a class="toc-backref" href="#id18" role="doc-backlink">SANITY_STEPS</a><a class="headerlink" href="#sanity-steps" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id19" role="doc-backlink">SANITY_STEPS</a><a class="headerlink" href="#sanity-steps" title="Permalink to this heading"></a></h3>
 <p><cite>Default: 10000 (Disabled)</cite></p>
-<p><cite>Valid values: 1 to 65535</cite></p>
+<p><cite>Valid values: 1 to 32767</cite></p>
 <p>This is the maximum number of steps the stepper motor will move during homing and calibration before flagging a failure.</p>
 <p>If you have a stepper driver/motor combination that is configured for a large number of steps, or if you have a gear ratio that results in a high number of steps, you may need to increase this number in order for the calibration process to succeed.</p>
 </section>
 <section id="home-sensitivity">
-<h3><a class="toc-backref" href="#id19" role="doc-backlink">HOME_SENSITIVITY</a><a class="headerlink" href="#home-sensitivity" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id20" role="doc-backlink">HOME_SENSITIVITY</a><a class="headerlink" href="#home-sensitivity" title="Permalink to this heading"></a></h3>
 <p><cite>Default: 150 (Disabled)</cite></p>
 <p><cite>Valid values: 1 to 65535</cite></p>
 <p>This is the minimum number of steps required for the turntable to rotate away from the homing sensor before it deactivates, which is used during the calibration sequence.</p>
 <p>If you have a stepper driver/motor combination that is configured for a large number of steps, or if you have a gear ratio that results in a high number of steps, you may need to increase this number in order for the calibration process to succeed.</p>
 </section>
 <section id="full-step-count">
-<h3><a class="toc-backref" href="#id20" role="doc-backlink">FULL_STEP_COUNT</a><a class="headerlink" href="#full-step-count" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id21" role="doc-backlink">FULL_STEP_COUNT</a><a class="headerlink" href="#full-step-count" title="Permalink to this heading"></a></h3>
 <p><cite>Default: 4096 (Disabled)</cite></p>
-<p><cite>Valid values: 1 to 65535</cite></p>
+<p><cite>Valid values: 1 to 32767</cite></p>
 <p>If for some reason the automatic calibration sequence is not recording the correct number of steps required for a full 360 degree rotation, or if there is some other requirement to override this value, then uncomment this line and define the desired number of steps.</p>
 <p>If you enable this option, the calibration sequence will never run automatically even if the step count is not recorded in EEPROM, and this setting will always override that on startup.</p>
-<p>You can initiate the calibration command manually while this option is enabled, it will perform the calibration sequence and record the calibrated step count in EEPROM, and that setting will take effect whilst <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;Turntable</span></span> is running. However, the calibrated value in EEPROM will be overridden at the next startup unless this option is disabled.</p>
+<p>You can initiate the calibration command manually while this option is enabled, it will perform the calibration sequence and record the calibrated step count in EEPROM, and that setting will take effect whilst <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Turntable</span> is running. However, the calibrated value in EEPROM will be overridden at the next startup unless this option is disabled.</p>
 </section>
 <section id="debounce-delay">
-<h3><a class="toc-backref" href="#id21" role="doc-backlink">DEBOUNCE_DELAY</a><a class="headerlink" href="#debounce-delay" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id22" role="doc-backlink">DEBOUNCE_DELAY</a><a class="headerlink" href="#debounce-delay" title="Permalink to this heading"></a></h3>
 <p><cite>Default: 10 (Disabled)</cite> - TRAVERSER mode</p>
 <p><cite>Default: 0 (Disabled)</cite> - TURNTABLE mode</p>
 <p><cite>Valid values: 0 to 50</cite> (any higher and you will compromise the response time of the limit sensors)</p>
@@ -734,7 +772,7 @@
 </section>
 </section>
 <section id="defining-custom-stepper-drivers">
-<h2><a class="toc-backref" href="#id22" role="doc-backlink">Defining custom stepper drivers</a><a class="headerlink" href="#defining-custom-stepper-drivers" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id23" role="doc-backlink">Defining custom stepper drivers</a><a class="headerlink" href="#defining-custom-stepper-drivers" title="Permalink to this heading"></a></h2>
 <p><a class="reference external" href="../begin/levels.html#tinkerer"><img alt="Propeller Beanie" src="../_images/tinkerer-level.png" style="width: 135.6px; height: 36.0px;" /></a> <a class="reference external" href="../begin/levels.html#engineer"><img alt="Engineer Hat" src="../_images/engineer-level.png" style="width: 135.6px; height: 36.0px;" /></a></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -742,10 +780,10 @@
 <p>If you’re reading this section because your driver/motor combination is not explicitly supported, we encourage you to see if it is compatible with a supported combination prior to defining a custom entry, and to share that information with the team.</p>
 <p>Over time, we expect to build a more complete list of drivers and motors that are compatible with what we have tested.</p>
 </div>
-<p>If you have a need to use a stepper driver and motor combination that isn’t on the supported list and isn’t “pin-compatible” with an existing supported driver/motor combination, you may need to define a custom entry in “config.h” to allow <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;Turntable</span></span> to work correctly.</p>
+<p>If you have a need to use a stepper driver and motor combination that isn’t on the supported list and isn’t “pin-compatible” with an existing supported driver/motor combination, you may need to define a custom entry in “config.h” to allow <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Turntable</span> to work correctly.</p>
 <p>To do this, you will need to add a valid AccelStepper() definition with the appropriate parameters provided, and this entry needs to be  defined as your <cite>STEPPER_DRIVER</cite> option.</p>
 <p>The list of parameters required are documented on the <a class="reference external" href="http://www.airspayce.com/mikem/arduino/AccelStepper/">AccelStepper</a> web page.</p>
-<p><strong>Note:</strong> There has been a slight modification to the AccelStepper library included with <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;Turntable</span></span>. If you have a need to invert the enable option, then provide this as the last parameter. The modified library sets the enable pin (if defined) when the stepper object is instantiated, and if it needs to be inverted, this happens at the same time. We do not call the setEnablePin() or setPinsInverted() functions at any point. You can see this in use in the “standard_steppers.h” file as defined for the “TWO_WIRE_INV” driver option.</p>
+<p><strong>Note:</strong> There has been a slight modification to the AccelStepper library included with <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Turntable</span>. If you have a need to invert the enable option, then provide this as the last parameter. The modified library sets the enable pin (if defined) when the stepper object is instantiated, and if it needs to be inverted, this happens at the same time. We do not call the setEnablePin() or setPinsInverted() functions at any point. You can see this in use in the “standard_steppers.h” file as defined for the “TWO_WIRE_INV” driver option.</p>
 <p>To add this to “config.h”, add your new definition <strong>before</strong> the <cite>STEPPER_DRIVER</cite> line, and update <cite>STEPPER_DRIVER</cite> to use your definition, and ensure all standard options are commented out:</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">/////////////////////////////////////////////////////////////////////////////////////</span>
 <span class="c1">//  Define the stepper controller in use according to those available below, refer to the</span>

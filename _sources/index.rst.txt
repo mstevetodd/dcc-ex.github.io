@@ -1,5 +1,7 @@
 .. include:: /include/include.rst
 .. include:: /include/include-l0.rst
+.. include:: /include/include-description.rst
+
 |donate-button|
 
 ************************
@@ -21,14 +23,14 @@ DCC-EX Model Railroading
     :columns: 12 12 12 4
     :class-card: sd-shadow-md sd-rounded-3 sd-width-auto sd-text-center
 
-    Releases
+    EX-CommandStation Releases
     ^^^
     
     .. rst-class:: dcclink
 
-      :ref:`Production <download/ex-commandstation:latest ex-commandstation official release>`
-
-      :ref:`Development <download/ex-commandstation:latest ex-commandstation unreleased development version>`
+      :dcc-ex-text-size-60pct:`Automated:` :ref:`EX-Installer <download/ex-commandstation:EX-Installer>` 
+      
+      :dcc-ex-text-size-60pct:`Manual:` :ref:`Prod <download/ex-commandstation:latest ex-commandstation official release>` , :ref:`Devel <download/ex-commandstation:latest ex-commandstation unreleased development version>`
 
   .. grid-item-card:: 
     :columns: 12 12 12 7
@@ -58,7 +60,7 @@ DCC-EX Model Railroading
       :excerpts:
       :expand: Continue reading...
 
-    Read the full DCC-EX News feed `here <news.html>`_. |BR| Subscribe to the DCC-EX News RSS/Atom feed using :dcc-ex-text-size-80pct:`"https://dcc-ex.com/news/atom.xml"`.
+    Read the full DCC-EX News feed `here <news.html>`_. :dcc-ex-text-size-80pct:`RSS/Atom feed - Subscribe with "https://dcc-ex.com/news/atom.xml"`.
 
   .. grid-item-card:: 
     :columns: 12
@@ -96,6 +98,7 @@ DCC-EX Model Railroading
    :caption: EX-CommandStation Add-Ons
 
    ex-rail/index
+   trackmanager/index
    ex-turntable/index
    ex-ioexpander/index
    ex-fastclock/index
@@ -105,9 +108,9 @@ DCC-EX Model Railroading
    :maxdepth: 4
    :caption: Support & Info
 
+   throttles/index
    support/index
    big-picture/index
-   throttles/index
 
 .. toctree::
    :hidden:
@@ -119,11 +122,19 @@ DCC-EX Model Railroading
 .. toctree::
    :hidden:
    :maxdepth: 4
-   :caption: Reference
+   :caption: Detailed Information
 
    reference/index
    under-development/index
    projects/index
+
+.. toctree::
+   :hidden:
+   :maxdepth: 4
+   :caption: External References
+
+   external-references/index
+   reference/accessories/index
 
 .. toctree::
    :hidden:

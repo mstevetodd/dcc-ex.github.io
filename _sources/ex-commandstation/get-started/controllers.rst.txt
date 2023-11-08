@@ -1,9 +1,7 @@
-.. include:: /include/include-ex-cs.rst
-.. meta::
-   :keywords: EX-CommandStation Command Station Controllers
-
 .. include:: /include/include.rst
 .. include:: /include/include-l2.rst
+.. include:: /include/include-throttles.rst
+
 |EX-CS-LOGO|
 
 *********************************
@@ -76,6 +74,18 @@ Here is an image that represents a direct connection.
 
 There are number of excellent :doc:`phone apps and physical hardware devices </throttles/index>` that can be used a wifi Throttle (Controller) for the |EX-CS|.  On this page we are only going to cover two. 
 
+.. warning:: 
+
+   Please be aware that the Espressif firmware shipped with these devices **will probably NOT work** with |EX-CS| out of the box.
+
+   If you see a WiFi network Name (SSID) of "DCCEX-SAYS-BROKEN-FIRMWARE" then you have one of the problematic AT firmware versions.
+
+   This can be corrected, but is probably beyond Conductor level and requires additional hardware.  
+
+   See :doc:`/support/wifi-at-version` for details on how to check the version and how to correct it if needed.
+
+   We are currently investigating other options.
+
 Compatible Wifi Throttles
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -126,8 +136,8 @@ Compatible USB Throttles
 
 There is currently only one USB compatible Throttle (Controller) for the |EX-CS|.
 
-Our EX-WebThrottle (DCC++ | USB/Serial)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Our EX-WebThrottle (DCC-EX Native Commands | USB/Serial)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The simplest option is to just use a throttle connected directly to the Command Station. The simplest of all is arguably |EX-WT|, connected via a USB cable from your computer and web browser directly to the Command Station. You have control of multiple locomotives and can operate turnouts. There is a way to replace the USB cable with a wireless connection, but we will cover that later in the Wireless USB Bridge section. Below is a picture of |EX-WT| with the side menu open. You can click on the image to see it full size.
 

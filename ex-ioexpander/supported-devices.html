@@ -2,9 +2,9 @@
 <html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-<meta content="DCC-EX is a team of dedicated enthusiasts producing, easy to use, affordable, do-it-yourself, open source, DCC solutions to allow you to run your complete model railroad layout." name="description" />
-<meta content="DCC DCC++ EX DCC++EX DCC-EX" name="keywords" />
-<meta content="EX-CommandStation Command Station EX-IOExpander" name="keywords" />
+<meta content="DCC-EX DCC DCC++ EX DCC++EX" name="keywords" />
+<meta content="An EX-IOExpander is an additional microcontroller used to expand the I/O port capability of an EX-CommandStation. [DCC-EX is a team of dedicated enthusiasts producing, easy to use, affordable, do-it-yourself, open source, DCC solutions to allow you to run your complete model railroad layout.]" name="description" />
+<meta content="EX-IOExpander IO Expander EX-CommandStation Command Station" name="keywords" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Supported Devices &mdash; DCC-EX Model Railroading  documentation</title>
@@ -14,6 +14,8 @@
       <link rel="stylesheet" href="../_static/css/dccex_theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/big_picture_theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/sphinx_design_overrides.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/dark_mode_css/general.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/dark_mode_css/dark.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="canonical" href="https://dcc-ex.com/ex-ioexpander/supported-devices.html" />
   <!--[if lt IE 9]>
@@ -29,6 +31,8 @@
         <script src="../_static/design-tabs.js"></script>
         <script src="../_static/js/platform.js"></script>
         <script src="../_static/js/extra.js"></script>
+        <script src="../_static/dark_mode_js/default_light.js"></script>
+        <script src="../_static/dark_mode_js/theme_switcher.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -69,14 +73,25 @@
           <a href="../index.html">
             
               <img src="../_static/logo.png" class="logo" alt="Logo"/>
-          </a>
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
+          </a><script async src="https://cse.google.com/cse.js?cx=f19437345086341ed">
+</script>
+<div class="gcse-search"></div>
+
+<!-- DDG search widget,@author Juri Wornowitski,@version 3.0,@link https://www.plainlight.com/ddg -->
+<!-- <div id="widdget" style="width:100%;margin:10px 0;">
+    <style type="text/css">
+        #widdget input {display:block;height:30px;padding:4px;outline:none;border:1px solid #8d8d8d;border-right:0;box-sizing:border-box;border-radius:3px 0 0 3px;width:calc(100% - 41px);font-size:15px;} 
+        #widdget button {float:left;cursor:pointer;width:43px;height:30px;color:#fff;background-image:linear-gradient(#cacaca,#929292);border:0;border-radius:0 3px 3px 0;padding:0;} 
+        #widdget button:active {background-image:linear-gradient(#909090,#585858);} 
+        #widdget button:focus {outline:none;}
+    </style>
+    <form style="position:relative" onsubmit="this.elements[0].click();">
+        <div style="float:right;position:absolute;top:0;right:-2px;z-index:3">
+            <button type="submit" onclick="var v=this.parentElement.parentElement.elements[1].value;if (typeof gtag !== 'undefined') try{gtag('event','search',{'event_label':v});} catch(e){} else if (typeof ga !== 'undefined') try{ga('send','event','engagement','search',v);} catch(e){} window.open('https://duckduckgo.com?q='+encodeURIComponent(v)+'+site%3Ahttps%3A%2F%2Fdcc-ex.com%2F&kj=00a3b9ff&kx=%236c00a2&k9=%2300353d&k8=%23262626');return false;">&#128269;</button>
+        </div>
+        <input type="text" name="q" placeholder="Search with Duck Duck Go" />
+    </form>
+</div> -->
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
     
               <ul>
@@ -94,6 +109,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../ex-commandstation/get-started/controllers.html">Choosing a Throttle (Controller)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../ex-commandstation/get-started/testing.html">Test Your Setup</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../support/ex-cs-troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../support/wifi-at-version.html">ESP8266 (WiFi Boards) - AT Version Issues and Solutions</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../ex-commandstation/advanced-setup/index.html">Advanced Options</a><ul>
@@ -140,6 +156,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/wifi-boards/esp-01.html">ESP-01 and ESP-01s</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/wifi-boards/mega-wifi.html">Mega+WiFi Combo Board</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../ex-commandstation/advanced-setup/supported-wifi/wifi-config.html">WiFi Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../support/wifi-at-version.html">ESP8266 (WiFi Boards) - AT Version Issues and Solutions</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../ex-commandstation/advanced-setup/supported-ethernet/index.html">Supported Ethernet Boards</a><ul>
@@ -165,8 +182,9 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../ex-commandstation/advanced-setup/startup-config.html">Startup Configuration</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../ex-commandstation/advanced-setup/controllers.html">Choosing a Throttle (Controller) - Advanced</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../reference/software/command-reference.html">DCC-EX Command Reference</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../reference/software/command-summary.html">DCC-EX Command Summary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/software/command-reference.html"></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/software/command-reference.html#dcc-ex-native-command-reference">DCC-EX Native Command Reference</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/software/command-summary.html">DCC-EX Native Command Summary</a></li>
 </ul>
 </li>
 <li class="toctree-l2 current"><a class="reference internal" href="../ex-commandstation/accessories/index.html">Adding and Controlling Accessories</a><ul class="current">
@@ -204,20 +222,26 @@
 <li class="toctree-l5"><a class="reference internal" href="../support/ex-io-troubleshooting.html">EX-IOExpander FAQ and Troubleshooting</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../ex-turntable/index.html">EX-Turntable</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../ex-turntable/overview.html">Overview</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../ex-turntable/purchasing.html">Purchasing</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../ex-turntable/assembly.html">Assembly &amp; Setup</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../ex-turntable/test-and-tune.html">Testing, Tuning, and Control</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../ex-turntable/layout-wiring.html">Layout Connections and Wiring</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../ex-turntable/configure.html">Configuration options</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../support/ex-tt-troubleshooting.html">EX-Turntable FAQ and Troubleshooting</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../ex-turntable/traverser.html">Traversers and Limited Rotation Turntables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../ex-commandstation/accessories/inputs-outputs/duinonodes.html">Lew’s Duino Gear duinoNodes</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../ex-commandstation/accessories/animation.html">Automation and Animation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ex-commandstation/accessories/turntables/index.html">Turntables and traversers</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../ex-commandstation/accessories/turntables/overview.html">Overview - types and options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../ex-commandstation/accessories/turntables/dcc-turntables.html">DCC Turntables/traversers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../ex-turntable/index.html">EX-Turntable</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../ex-turntable/overview.html">Overview</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../ex-turntable/purchasing.html">Purchasing</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../ex-turntable/assembly.html">Assembly &amp; Setup</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../ex-turntable/test-and-tune.html">Testing, Tuning, and Control</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../ex-turntable/layout-wiring.html">Layout Connections and Wiring</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../ex-turntable/configure.html">Configuration options</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../support/ex-tt-troubleshooting.html">EX-Turntable FAQ and Troubleshooting</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../ex-turntable/traverser.html">Traversers and Limited Rotation Turntables</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -245,11 +269,11 @@
 <li class="toctree-l2"><a class="reference internal" href="../ex-rail/getting-started.html">Sequences - an Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ex-rail/examples.html">Example Objects and Sequences</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ex-rail/tips.html">Tips and Techniques</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ex-rail/EX-RAIL-reference.html">EX-RAIL Detailed Reference</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ex-rail/EX-RAIL-summary.html">EX-RAIL Command List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ex-rail/EX-RAIL-command-reference.html">EX-RAIL Command Reference</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ex-rail/about.html">About and History</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../trackmanager/index.html">TrackManager (DCC &amp; DC)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../ex-turntable/index.html">EX-Turntable</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ex-turntable/overview.html">Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ex-turntable/purchasing.html">Purchasing</a></li>
@@ -279,6 +303,34 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Support &amp; Info</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../throttles/index.html">Throttles (Controllers)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../throttles/protocols.html">WiThrottle Server, Web Server, DCC-EX Native Protocol Explained</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../throttles/software/index.html">Throttles (Software)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/software/ex-webthrottle.html">EX-Web-Throttle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/software/jmri.html">JMRI (Java Model Railroad Interface)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/software/engine-driver.html">Engine Driver (Android)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/software/dccpp-cab.html">DCCpp CAB (android)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/software/cab-engineer.html">Cab Engineer: DCC Throttle (Android)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/software/digitrainspro.html">DigiTrainsPro (Android)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/software/withrottle.html">WiThrottle (iOS)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/software/locontrol.html">Locontrol (iOS)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/software/srcpclient.html">SRCP Client (iOS)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/software/rtdrive-dccpp.html">RtDtive DCC++ (Android)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/software/train-driver.html">Train Driver (iOS)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../throttles/hardware/index.html">Throttles (Hardware)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/hardware/minithrottle.html">miniThrottle (Physical)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/hardware/witcontroller.html">WiTcontroller (Physical)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/hardware/engine-driver-physical-knobs.html">Adding a Physical Dial/Knob to Engine Driver</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/hardware/streamdeck.html">Elgato Stream Deck</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/hardware/uwt50.html">TCS UWT-50 &amp; UWT-100 WiFi Throttles (Physical)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../throttles/connect_wifi_throttle_via_usb.html">Connecting WiFi Throttles via USB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../throttles/tech-reference.html">Technical Reference for Throttle Developers</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../support/index.html">Troubleshooting &amp; Getting Help</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../support/index-ex-cs.html">EX-CommandStation</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../support/ex-cs-faq.html">Frequently Asked Questions (FAQ)</a></li>
@@ -315,33 +367,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../throttles/index.html">Throttles (Controllers)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../throttles/protocols.html">WiThrottle Server, Web Server, DCC++ API Explained</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../throttles/software/index.html">Throttles (Software)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/software/ex-webthrottle.html">EX-Web-Throttle</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/software/jmri.html">JMRI</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/software/engine-driver.html">Engine Driver (Android)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/software/dccpp-cab.html">DCCpp CAB (android)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/software/cab-engineer.html">Cab Engineer: DCC Throttle (Android)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/software/digitrainspro.html">DigiTrainsPro (Android)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/software/withrottle.html">WiThrottle (iOS)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/software/locontrol.html">Locontrol (iOS)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/software/srcpclient.html">SRCP Client (iOS)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/software/rtdrive-dccpp.html">RtDtive DCC++ (Android)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/software/train-driver.html">Train Driver (iOS)</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../throttles/hardware/index.html">Throttles (Hardware)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/hardware/minithrottle.html">miniThrottle (Physical)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/hardware/witcontroller.html">WiTcontroller (Physical)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/hardware/engine-driver-physical-knobs.html">Adding a Physical Dial/Knob to Engine Driver</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/hardware/streamdeck.html">Elgato Stream Deck</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../throttles/hardware/uwt50.html">TCS UWT-50 &amp; UWT-100 WiFi Throttles (Physical)</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../throttles/tech-reference.html">Technical Reference for Throttle Developers</a></li>
-</ul>
-</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Downloads</span></p>
 <ul>
@@ -354,7 +379,7 @@
 </ul>
 </li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<p class="caption" role="heading"><span class="caption-text">Detailed Information</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../reference/index.html">Reference</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../reference/glossary.html">Glossary</a></li>
@@ -371,9 +396,10 @@
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/arduino-mega.html">Arduino Mega Setup</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/arduino-uno.html">Arduino Uno Setup</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/nano.html">Arduino Nano Setup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/microcontrollers.html">Beta microcontrollers - STM32 Nucleo, ESP32, and SAMD</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/wifi-mega.html">Mega+WiFi Setup</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/nano-every.html">Nano Every</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/teensy.html">Teensy</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/wifi-mega.html">Mega+WiFi Setup</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../reference/hardware/pin-vpin-allocations.html">Default Pin/VPin Allocations and Recommendations</a></li>
@@ -425,6 +451,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/i2c-devices.html">I2C Devices</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/gpio-module.html">I2C GPIO Expander Modules</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/servo-module.html">Connecting a Servo Module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/hardware/i2c-multiplexers.html">I2C Multiplexers</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../reference/hardware/accessory-controllers.html">Accessory Controllers</a></li>
@@ -436,18 +463,15 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../reference/software/index.html">Software</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../reference/software/programming-locos.html">Programming Locos (CVs)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/software/programming-locos.html"></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/software/programming-locos.html#programming-locos-cvs">Programming Locos (CVs)</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../reference/software/index-dcpp-commands.html">DCC++ Commands</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../reference/software/command-reference.html">DCC-EX Command Reference</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../reference/software/command-summary.html">DCC-EX Command Summary</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../reference/software/command-summary-consolidated.html">DCC-EX Consolidated Command Summary</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="../reference/software/command-summary-consolidated.html">DCC-EX Native Commands - Consolidated Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ex-rail/EX-RAIL-command-reference.html">EX-RAIL Command Reference</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../reference/developers/index.html">Developer and API reference</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../throttles/tech-reference.html">Technical Reference for Throttle Developers</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../reference/developers/api.html">EX-CommandStation API Reference</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/developers/api.html">DCC-EX Native API Reference</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../reference/developers/hal.html">DCC-EX HAL Architecture</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../reference/developers/hal-config.html">I/O Device Drivers and HAL</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../reference/developers/writing-hal-driver.html">Writing a HAL Driver</a></li>
@@ -470,17 +494,21 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../under-development/index.html">Features under development</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../under-development/microcontrollers.html"><em>Under Development:</em> Microcontrollers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../under-development/track-manager.html"><em>Under Development:</em> DCC-EX TrackManager</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../under-development/duinonodes.html"><em>Under Development:</em> Lew’s Duino Gear duinoNodes</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../under-development/index.html">Features under development</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../projects/index.html">Related Projects</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../projects/railsnail-bluetooth.html">RailSnail’s Complete Bluetooth EX-CommandStation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../throttles/hardware/minithrottle.html">miniThrottle (Physical)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../throttles/hardware/witcontroller.html">WiTcontroller (Physical)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../throttles/hardware/streamdeck.html">Elgato Stream Deck</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">External References</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../external-references/index.html">Articles and Videos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/accessories/index.html">DCC-EX Third Party Suppliers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../reference/accessories/suppliers-full-cs.html">Full Command Stations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../reference/accessories/suppliers-cases.html">Cases / Enclosures</a></li>
 </ul>
 </li>
 </ul>
@@ -563,32 +591,34 @@
 <nav class="contents local" id="on-this-page">
 <p class="topic-title">On this page</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#arduino-nano" id="id14">Arduino Nano</a></p></li>
-<li><p><a class="reference internal" href="#arduino-pro-mini" id="id15">Arduino Pro Mini</a></p></li>
-<li><p><a class="reference internal" href="#arduino-uno" id="id16">Arduino Uno</a></p></li>
-<li><p><a class="reference internal" href="#arduino-mega2560" id="id17">Arduino Mega2560</a></p></li>
-<li><p><a class="reference internal" href="#stmicroelectronics-nucleo-f411re" id="id18">STMicroelectronics NUCLEO-F411RE</a></p></li>
-<li><p><a class="reference internal" href="#stmicroelectronics-nucleo-f412zg" id="id19">STMicroelectronics NUCLEO-F412ZG</a></p></li>
-<li><p><a class="reference internal" href="#arduino-zero-or-samd-based-clone" id="id20">Arduino Zero (or SAMD based clone)</a></p></li>
-<li><p><a class="reference internal" href="#adding-new-devices" id="id21">Adding new devices</a></p>
+<li><p><a class="reference internal" href="#arduino-nano" id="id16">Arduino Nano</a></p></li>
+<li><p><a class="reference internal" href="#arduino-pro-mini" id="id17">Arduino Pro Mini</a></p></li>
+<li><p><a class="reference internal" href="#arduino-uno" id="id18">Arduino Uno</a></p></li>
+<li><p><a class="reference internal" href="#arduino-mega2560" id="id19">Arduino Mega2560</a></p></li>
+<li><p><a class="reference internal" href="#stmicroelectronics-nucleo-f411re" id="id20">STMicroelectronics NUCLEO-F411RE</a></p></li>
+<li><p><a class="reference internal" href="#stmicroelectronics-nucleo-f412zg" id="id21">STMicroelectronics NUCLEO-F412ZG</a></p></li>
+<li><p><a class="reference internal" href="#arduino-zero-or-samd-based-clone" id="id22">Arduino Zero (or SAMD based clone)</a></p></li>
+<li><p><a class="reference internal" href="#stmicroelectronics-stm32f103c8t6-bluepill" id="id23">STMicroelectronics STM32F103C8T6 (Bluepill)</a></p></li>
+<li><p><a class="reference internal" href="#adding-new-devices" id="id24">Adding new devices</a></p>
 <ul>
-<li><p><a class="reference internal" href="#files-to-be-created-modified" id="id22">Files to be created/modified</a></p></li>
-<li><p><a class="reference internal" href="#enabling-software-reboots" id="id23">Enabling software reboots</a></p></li>
-<li><p><a class="reference internal" href="#enabling-serial-input-output-in-defines-h" id="id24">Enabling serial input/output in defines.h</a></p></li>
-<li><p><a class="reference internal" href="#defining-the-device-macros-in-defines-h" id="id25">Defining the device macros in defines.h</a></p></li>
-<li><p><a class="reference internal" href="#defining-the-device-type-and-pin-map-in-device-name-h" id="id26">Defining the device type and pin map in &lt;device_name&gt;.h</a></p></li>
-<li><p><a class="reference internal" href="#pin-capability-table" id="id27">Pin capability table</a></p></li>
+<li><p><a class="reference internal" href="#files-to-be-created-modified" id="id25">Files to be created/modified</a></p></li>
+<li><p><a class="reference internal" href="#enabling-software-reboots" id="id26">Enabling software reboots</a></p></li>
+<li><p><a class="reference internal" href="#enabling-serial-input-output-in-defines-h" id="id27">Enabling serial input/output in defines.h</a></p></li>
+<li><p><a class="reference internal" href="#defining-the-device-macros-in-defines-h" id="id28">Defining the device macros in defines.h</a></p></li>
+<li><p><a class="reference internal" href="#defining-the-device-type-and-pin-map-in-device-name-h" id="id29">Defining the device type and pin map in &lt;device_name&gt;.h</a></p></li>
+<li><p><a class="reference internal" href="#pin-capability-table" id="id30">Pin capability table</a></p></li>
+<li><p><a class="reference internal" href="#including-the-device-specific-file-in-ex-ioexpander-ino" id="id31">Including the device specific file in EX-IOExpander.ino</a></p></li>
 </ul>
 </li>
 </ul>
 </nav>
 </aside>
-<p>This page outlines the microcontrollers that are supported for use with <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;IOExpander</span></span>, including outlining the pins available for use.</p>
-<p>When uploading the <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;IOExpander</span></span> software, the device type is detected by the compiler in either the Arduino IDE or PlatformIO, so no configuration is necessary on the <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;IOExpander</span></span> device itself (aside from the I<sup>2</sup>C address of course).</p>
+<p>This page outlines the microcontrollers that are supported for use with <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;IOExpander</span>, including outlining the pins available for use.</p>
+<p>When uploading the <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;IOExpander</span> software, the device type is detected by the compiler in either the Arduino IDE or PlatformIO, so no configuration is necessary on the <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;IOExpander</span> device itself (aside from the I<sup>2</sup>C address of course).</p>
 <p>All allocation of pins is done via the device driver (see <a class="reference internal" href="overview.html#ex-commandstation-device-driver"><span class="std std-ref">EX-CommandStation device driver</span></a>).</p>
-<p>All Vpins outlined on this page assume use of the default starting Vpin of 800, so you will need to review the Vpin map displayed in the <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;IOExpander</span></span> serial console if using a different starting Vpin.</p>
+<p>All Vpins outlined on this page assume use of the default starting Vpin of 800, so you will need to review the Vpin map displayed in the <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;IOExpander</span> serial console if using a different starting Vpin.</p>
 <section id="arduino-nano">
-<h2><a class="toc-backref" href="#id14" role="doc-backlink">Arduino Nano</a><a class="headerlink" href="#arduino-nano" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id16" role="doc-backlink">Arduino Nano</a><a class="headerlink" href="#arduino-nano" title="Permalink to this heading"></a></h2>
 <a class="reference internal image-reference" href="../_images/ex-ioexpander-nano.png"><img alt="EX-IOExpander on Arduino Nano" src="../_images/ex-ioexpander-nano.png" style="width: 590.35px; height: 225.05px;" /></a>
 <table class="command-table docutils align-default" id="id1">
 <caption><span class="caption-number">Table 23 </span><span class="caption-text">Arduino Nano pin allocations</span><a class="headerlink" href="#id1" title="Permalink to this table"></a></caption>
@@ -733,7 +763,7 @@
 </div>
 </section>
 <section id="arduino-pro-mini">
-<h2><a class="toc-backref" href="#id15" role="doc-backlink">Arduino Pro Mini</a><a class="headerlink" href="#arduino-pro-mini" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id17" role="doc-backlink">Arduino Pro Mini</a><a class="headerlink" href="#arduino-pro-mini" title="Permalink to this heading"></a></h2>
 <p>The Arduino Pro Mini comes in two variations; a 3.3V running at 8MHz, and a 5V running at 16MHz.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -745,7 +775,7 @@
 </div>
 </section>
 <section id="arduino-uno">
-<h2><a class="toc-backref" href="#id16" role="doc-backlink">Arduino Uno</a><a class="headerlink" href="#arduino-uno" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id18" role="doc-backlink">Arduino Uno</a><a class="headerlink" href="#arduino-uno" title="Permalink to this heading"></a></h2>
 <a class="reference internal image-reference" href="../_images/ex-ioexpander-uno.png"><img alt="EX-IOExpander on Arduino Uno" src="../_images/ex-ioexpander-uno.png" style="width: 607.8000000000001px; height: 232.4px;" /></a>
 <table class="command-table docutils align-default" id="id3">
 <caption><span class="caption-number">Table 25 </span><span class="caption-text">Arduino Uno pin allocations</span><a class="headerlink" href="#id3" title="Permalink to this table"></a></caption>
@@ -878,7 +908,7 @@
 </div>
 </section>
 <section id="arduino-mega2560">
-<h2><a class="toc-backref" href="#id17" role="doc-backlink">Arduino Mega2560</a><a class="headerlink" href="#arduino-mega2560" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id19" role="doc-backlink">Arduino Mega2560</a><a class="headerlink" href="#arduino-mega2560" title="Permalink to this heading"></a></h2>
 <a class="reference internal image-reference" href="../_images/ex-ioexpander-mega.png"><img alt="EX-IOExpander on Arduino Mega2560" src="../_images/ex-ioexpander-mega.png" style="width: 701.2px; height: 250.55px;" /></a>
 <table class="command-table docutils align-default" id="id5">
 <caption><span class="caption-number">Table 27 </span><span class="caption-text">Arduino Mega pin allocations</span><a class="headerlink" href="#id5" title="Permalink to this table"></a></caption>
@@ -1261,13 +1291,15 @@
 </div>
 </section>
 <section id="stmicroelectronics-nucleo-f411re">
-<h2><a class="toc-backref" href="#id18" role="doc-backlink">STMicroelectronics NUCLEO-F411RE</a><a class="headerlink" href="#stmicroelectronics-nucleo-f411re" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id20" role="doc-backlink">STMicroelectronics NUCLEO-F411RE</a><a class="headerlink" href="#stmicroelectronics-nucleo-f411re" title="Permalink to this heading"></a></h2>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Support for the F411RE is experimental at best right now. While the software compiles and it appears to operate normally, no actual I/O testing has been performed.</p>
+<p>Support for the F411RE is experimental at best right now. While the software compiles and it appears to operate normally, only basic I/O testing has been performed.</p>
+<p>Note also that as a 3.3V microcontroller, not all pins are 5V tolerant.</p>
 </div>
 <a class="reference internal image-reference" href="../_images/nucleo-f411re-pinout.png"><img alt="Nucleo F411RE pin out" src="../_images/nucleo-f411re-pinout.png" style="width: 402.59999999999997px; height: 341.4px;" /></a>
-<p>The Nucleo F411RE is a 3v3 microcontroller with more available I/O pins than an Arduino Uno. The pin numbers used are defined using the Morpho pin names, in ascending order of the pin number for each Morpho connector, hence the pin names aren’t sequential.</p>
+<p>The Nucleo F411RE is a 3v3 microcontroller with more available I/O pins than an Arduino Uno in a similar, but slightly larger form factor. The pin numbers used are defined using the Morpho pin names associated with connectors CN7 and CN10.</p>
+<p>Vpins are allocated in ascending order from the STLink/USB connector end of each Morpho connector, with the odd numbered pin row first, then the even number row, hence the pin names aren’t sequential.</p>
 <p>Numerous I/O pins are connected to other devices or perform multiple functions which result in pin conflicts, so the only pins included are those that are able to successfully be set to input mode on startup.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1293,229 +1325,231 @@
 </table>
 <table class="docutils align-default" id="id8">
 <caption><span class="caption-number">Table 30 </span><span class="caption-text">F411RE EX-IOExpander pin map at Vpin 800</span><a class="headerlink" href="#id8" title="Permalink to this table"></a></caption>
-<tbody>
-<tr class="row-odd"><th class="stub"><p>Vpin</p></th>
-<td><p>Pin</p></td>
-<td><p>Digital</p></td>
-<td><p>Analogue</p></td>
-<td><p>PWM</p></td>
-<td><p>Vpin</p></td>
-<td><p>Pin</p></td>
-<td><p>Digital</p></td>
-<td><p>Analogue</p></td>
-<td><p>PWM</p></td>
+<thead>
+<tr class="row-odd"><th class="head"><p>Vpin</p></th>
+<th class="head"><p>Pin</p></th>
+<th class="head"><p>Digital</p></th>
+<th class="head"><p>Analogue</p></th>
+<th class="head"><p>PWM</p></th>
+<th class="head"><p>Vpin</p></th>
+<th class="head"><p>Pin</p></th>
+<th class="head"><p>Digital</p></th>
+<th class="head"><p>Analogue</p></th>
+<th class="head"><p>PWM</p></th>
 </tr>
-<tr class="row-even"><th class="stub"><p>800</p></th>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>800</p></td>
 <td><p>PC10</p></td>
 <td><p>Y</p></td>
 <td><p>N</p></td>
 <td><p>N</p></td>
 <td><p>820</p></td>
-<td><p>PA12</p></td>
+<td><p>PC7</p></td>
 <td><p>Y</p></td>
 <td><p>N</p></td>
 <td><p>N</p></td>
 </tr>
-<tr class="row-odd"><th class="stub"><p>801</p></th>
-<td><p>PC11</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>N</p></td>
-<td><p>821</p></td>
-<td><p>PA6</p></td>
-<td><p>Y</p></td>
-<td><p>Y</p></td>
-<td><p>Y</p></td>
-</tr>
-<tr class="row-even"><th class="stub"><p>802</p></th>
+<tr class="row-odd"><td><p>801</p></td>
 <td><p>PC12</p></td>
 <td><p>Y</p></td>
 <td><p>N</p></td>
 <td><p>N</p></td>
-<td><p>822</p></td>
-<td><p>PA11</p></td>
+<td><p>821</p></td>
+<td><p>PA9</p></td>
 <td><p>Y</p></td>
-<td><p>N</p></td>
 <td><p>Y</p></td>
-</tr>
-<tr class="row-odd"><th class="stub"><p>803</p></th>
-<td><p>PD2</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>N</p></td>
-<td><p>823</p></td>
-<td><p>PA7</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
 <td><p>Y</p></td>
 </tr>
-<tr class="row-even"><th class="stub"><p>804</p></th>
+<tr class="row-even"><td><p>802</p></td>
 <td><p>PA15</p></td>
 <td><p>Y</p></td>
 <td><p>N</p></td>
-<td><p>Y</p></td>
-<td><p>824</p></td>
-<td><p>PB12</p></td>
-<td><p>Y</p></td>
 <td><p>N</p></td>
-<td><p>N</p></td>
-</tr>
-<tr class="row-odd"><th class="stub"><p>805</p></th>
-<td><p>PB7</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>Y</p></td>
-<td><p>825</p></td>
-<td><p>PB6</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>Y</p></td>
-</tr>
-<tr class="row-even"><th class="stub"><p>806</p></th>
-<td><p>PC15</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>N</p></td>
-<td><p>826</p></td>
-<td><p>PC7</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>Y</p></td>
-</tr>
-<tr class="row-odd"><th class="stub"><p>807</p></th>
-<td><p>PA0</p></td>
-<td><p>Y</p></td>
-<td><p>Y</p></td>
-<td><p>Y</p></td>
-<td><p>827</p></td>
-<td><p>PA9</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>Y</p></td>
-</tr>
-<tr class="row-even"><th class="stub"><p>808</p></th>
-<td><p>PA1</p></td>
-<td><p>Y</p></td>
-<td><p>Y</p></td>
-<td><p>Y</p></td>
-<td><p>828</p></td>
-<td><p>PB2</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>N</p></td>
-</tr>
-<tr class="row-odd"><th class="stub"><p>809</p></th>
-<td><p>PA4</p></td>
-<td><p>Y</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>829</p></td>
+<td><p>822</p></td>
 <td><p>PA8</p></td>
 <td><p>Y</p></td>
 <td><p>N</p></td>
 <td><p>Y</p></td>
 </tr>
-<tr class="row-even"><th class="stub"><p>810</p></th>
-<td><p>PB0</p></td>
-<td><p>Y</p></td>
-<td><p>Y</p></td>
-<td><p>Y</p></td>
-<td><p>830</p></td>
-<td><p>PB1</p></td>
-<td><p>Y</p></td>
-<td><p>Y</p></td>
-<td><p>Y</p></td>
-</tr>
-<tr class="row-odd"><th class="stub"><p>811</p></th>
-<td><p>PC2</p></td>
-<td><p>Y</p></td>
+<tr class="row-odd"><td><p>803</p></td>
+<td><p>PB7</p></td>
 <td><p>Y</p></td>
 <td><p>N</p></td>
-<td><p>831</p></td>
+<td><p>N</p></td>
+<td><p>823</p></td>
 <td><p>PB10</p></td>
 <td><p>Y</p></td>
 <td><p>N</p></td>
 <td><p>Y</p></td>
 </tr>
-<tr class="row-even"><th class="stub"><p>812</p></th>
-<td><p>PC1</p></td>
-<td><p>Y</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>832</p></td>
-<td><p>PB15</p></td>
+<tr class="row-even"><td><p>804</p></td>
+<td><p>PC15</p></td>
 <td><p>Y</p></td>
 <td><p>N</p></td>
 <td><p>Y</p></td>
-</tr>
-<tr class="row-odd"><th class="stub"><p>813</p></th>
-<td><p>PC3</p></td>
-<td><p>Y</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>833</p></td>
+<td><p>824</p></td>
 <td><p>PB4</p></td>
 <td><p>Y</p></td>
 <td><p>N</p></td>
-<td><p>Y</p></td>
+<td><p>N</p></td>
 </tr>
-<tr class="row-even"><th class="stub"><p>814</p></th>
-<td><p>PC0</p></td>
-<td><p>Y</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>834</p></td>
-<td><p>PB14</p></td>
+<tr class="row-odd"><td><p>805</p></td>
+<td><p>PC2</p></td>
 <td><p>Y</p></td>
 <td><p>N</p></td>
 <td><p>Y</p></td>
-</tr>
-<tr class="row-odd"><th class="stub"><p>815</p></th>
-<td><p>PC9</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>Y</p></td>
-<td><p>835</p></td>
+<td><p>825</p></td>
 <td><p>PB5</p></td>
 <td><p>Y</p></td>
 <td><p>N</p></td>
 <td><p>Y</p></td>
 </tr>
-<tr class="row-even"><th class="stub"><p>816</p></th>
-<td><p>PC8</p></td>
+<tr class="row-even"><td><p>806</p></td>
+<td><p>PC3</p></td>
 <td><p>Y</p></td>
 <td><p>N</p></td>
-<td><p>Y</p></td>
-<td><p>836</p></td>
-<td><p>PB13</p></td>
-<td><p>Y</p></td>
 <td><p>N</p></td>
-<td><p>Y</p></td>
-</tr>
-<tr class="row-odd"><th class="stub"><p>817</p></th>
-<td><p>PC6</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>Y</p></td>
-<td><p>837</p></td>
+<td><p>826</p></td>
 <td><p>PB3</p></td>
 <td><p>Y</p></td>
 <td><p>N</p></td>
 <td><p>Y</p></td>
 </tr>
-<tr class="row-even"><th class="stub"><p>818</p></th>
-<td><p>PC5</p></td>
+<tr class="row-odd"><td><p>807</p></td>
+<td><p>PC11</p></td>
 <td><p>Y</p></td>
 <td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>838</p></td>
+<td><p>Y</p></td>
+<td><p>827</p></td>
 <td><p>PA10</p></td>
 <td><p>Y</p></td>
 <td><p>N</p></td>
 <td><p>Y</p></td>
 </tr>
-<tr class="row-odd"><th class="stub"><p>819</p></th>
+<tr class="row-even"><td><p>808</p></td>
+<td><p>PD2</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>828</p></td>
+<td><p>PC8</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+</tr>
+<tr class="row-odd"><td><p>809</p></td>
+<td><p>PA0</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>829</p></td>
+<td><p>PC6</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-even"><td><p>810</p></td>
+<td><p>PA1</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>830</p></td>
+<td><p>PC5</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-odd"><td><p>811</p></td>
+<td><p>PA4</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>831</p></td>
+<td><p>PA12</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-even"><td><p>812</p></td>
+<td><p>PB0</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>832</p></td>
+<td><p>PA11</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-odd"><td><p>813</p></td>
+<td><p>PC1</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>833</p></td>
+<td><p>PB12</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-even"><td><p>814</p></td>
+<td><p>PC0</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>834</p></td>
+<td><p>PB2</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-odd"><td><p>815</p></td>
+<td><p>PC9</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+<td><p>835</p></td>
+<td><p>PB1</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-even"><td><p>816</p></td>
 <td><p>PA5</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+<td><p>836</p></td>
+<td><p>PB15</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-odd"><td><p>817</p></td>
+<td><p>PA6</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+<td><p>837</p></td>
+<td><p>PB14</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-even"><td><p>818</p></td>
+<td><p>PA7</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>838</p></td>
+<td><p>PB13</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-odd"><td><p>819</p></td>
+<td><p>PB6</p></td>
 <td><p>Y</p></td>
 <td><p>Y</p></td>
 <td><p>Y</p></td>
@@ -1532,12 +1566,14 @@
 </div>
 </section>
 <section id="stmicroelectronics-nucleo-f412zg">
-<h2><a class="toc-backref" href="#id19" role="doc-backlink">STMicroelectronics NUCLEO-F412ZG</a><a class="headerlink" href="#stmicroelectronics-nucleo-f412zg" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id21" role="doc-backlink">STMicroelectronics NUCLEO-F412ZG</a><a class="headerlink" href="#stmicroelectronics-nucleo-f412zg" title="Permalink to this heading"></a></h2>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Support for the F412ZG is experimental at best right now. While the software compiles and it appears to operate normally, no actual I/O testing has been performed.</p>
+<p>Support for the F412ZG is experimental at best right now. While the software compiles and it appears to operate normally, only basic I/O testing has been performed.</p>
+<p>Note also that as a 3.3V microcontroller, not all pins are 5V tolerant.</p>
 </div>
-<p>The Nucleo F412ZG is a 3v3 microcontroller with significantly more available I/O pins than an Arduino Mega. The pin numbers used are defined using the Morpho pin names, in ascending order of the pin number for each Morpho connector, hence the pin names aren’t sequential.</p>
+<p>The Nucleo F412ZG is a 3v3 microcontroller with significantly more available I/O pins than an Arduino Mega. The pin numbers used are defined using the Morpho pin names associated with connectors CN11 and CN12.</p>
+<p>Vpins are allocated in ascending order from the STLink/USB connector end of each Morpho connector, with the odd numbered pin row first, then the even number row, hence the pin names aren’t sequential.</p>
 <p>Numerous I/O pins are connected to other devices or perform multiple functions which result in pin conflicts, so the only pins included are those that are able to successfully be set to input mode on startup.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1563,548 +1599,550 @@
 </table>
 <table class="docutils align-default" id="id10">
 <caption><span class="caption-number">Table 32 </span><span class="caption-text">F412ZG EX-IOExpander pin map at Vpin 800</span><a class="headerlink" href="#id10" title="Permalink to this table"></a></caption>
-<tbody>
-<tr class="row-odd"><th class="stub"><p>Vpin</p></th>
-<td><p>Pin</p></td>
-<td><p>Digital</p></td>
-<td><p>Analogue</p></td>
-<td><p>PWM</p></td>
-<td><p>Vpin</p></td>
-<td><p>Pin</p></td>
-<td><p>Digital</p></td>
-<td><p>Analogue</p></td>
-<td><p>PWM</p></td>
+<thead>
+<tr class="row-odd"><th class="head"><p>Vpin</p></th>
+<th class="head"><p>Pin</p></th>
+<th class="head"><p>Digital</p></th>
+<th class="head"><p>Analogue</p></th>
+<th class="head"><p>PWM</p></th>
+<th class="head"><p>Vpin</p></th>
+<th class="head"><p>Pin</p></th>
+<th class="head"><p>Digital</p></th>
+<th class="head"><p>Analogue</p></th>
+<th class="head"><p>PWM</p></th>
 </tr>
-<tr class="row-even"><th class="stub"><p>800</p></th>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>800</p></td>
 <td><p>PC10</p></td>
 <td><p>Y</p></td>
 <td><p>N</p></td>
 <td><p>N</p></td>
 <td><p>849</p></td>
-<td><p>PA5</p></td>
+<td><p>PB6</p></td>
 <td><p>Y</p></td>
 <td><p>Y</p></td>
 <td><p>Y</p></td>
 </tr>
-<tr class="row-odd"><th class="stub"><p>801</p></th>
-<td><p>PC11</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>N</p></td>
-<td><p>850</p></td>
-<td><p>PA6</p></td>
-<td><p>Y</p></td>
-<td><p>Y</p></td>
-<td><p>Y</p></td>
-</tr>
-<tr class="row-even"><th class="stub"><p>802</p></th>
+<tr class="row-odd"><td><p>801</p></td>
 <td><p>PC12</p></td>
 <td><p>Y</p></td>
 <td><p>N</p></td>
 <td><p>N</p></td>
-<td><p>851</p></td>
-<td><p>PA7</p></td>
+<td><p>850</p></td>
+<td><p>PC7</p></td>
 <td><p>Y</p></td>
 <td><p>Y</p></td>
 <td><p>Y</p></td>
 </tr>
-<tr class="row-odd"><th class="stub"><p>803</p></th>
-<td><p>PD2</p></td>
+<tr class="row-even"><td><p>802</p></td>
+<td><p>PF6</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+<td><p>851</p></td>
+<td><p>PB10</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-odd"><td><p>803</p></td>
+<td><p>PF7</p></td>
 <td><p>Y</p></td>
 <td><p>N</p></td>
 <td><p>N</p></td>
 <td><p>852</p></td>
-<td><p>PB12</p></td>
+<td><p>PB4</p></td>
 <td><p>Y</p></td>
 <td><p>N</p></td>
 <td><p>N</p></td>
 </tr>
-<tr class="row-even"><th class="stub"><p>804</p></th>
-<td><p>PF6</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>Y</p></td>
-<td><p>853</p></td>
-<td><p>PB6</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>Y</p></td>
-</tr>
-<tr class="row-odd"><th class="stub"><p>805</p></th>
-<td><p>PF7</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>Y</p></td>
-<td><p>854</p></td>
-<td><p>PB11</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>Y</p></td>
-</tr>
-<tr class="row-even"><th class="stub"><p>806</p></th>
+<tr class="row-even"><td><p>804</p></td>
 <td><p>PA15</p></td>
 <td><p>Y</p></td>
 <td><p>N</p></td>
 <td><p>Y</p></td>
-<td><p>855</p></td>
-<td><p>PC7</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>Y</p></td>
-</tr>
-<tr class="row-odd"><th class="stub"><p>807</p></th>
-<td><p>PB7</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>Y</p></td>
-<td><p>856</p></td>
-<td><p>PB2</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>N</p></td>
-</tr>
-<tr class="row-even"><th class="stub"><p>808</p></th>
-<td><p>PC13</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>N</p></td>
-<td><p>857</p></td>
-<td><p>PB1</p></td>
-<td><p>Y</p></td>
-<td><p>Y</p></td>
-<td><p>Y</p></td>
-</tr>
-<tr class="row-odd"><th class="stub"><p>809</p></th>
-<td><p>PA0</p></td>
-<td><p>Y</p></td>
-<td><p>Y</p></td>
-<td><p>Y</p></td>
-<td><p>858</p></td>
-<td><p>PB10</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>Y</p></td>
-</tr>
-<tr class="row-even"><th class="stub"><p>810</p></th>
-<td><p>PA1</p></td>
-<td><p>Y</p></td>
-<td><p>Y</p></td>
-<td><p>Y</p></td>
-<td><p>859</p></td>
-<td><p>PB15</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>Y</p></td>
-</tr>
-<tr class="row-odd"><th class="stub"><p>811</p></th>
-<td><p>PA4</p></td>
-<td><p>Y</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>860</p></td>
-<td><p>PB4</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>Y</p></td>
-</tr>
-<tr class="row-even"><th class="stub"><p>812</p></th>
-<td><p>PB0</p></td>
-<td><p>Y</p></td>
-<td><p>Y</p></td>
-<td><p>Y</p></td>
-<td><p>861</p></td>
-<td><p>PB14</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>Y</p></td>
-</tr>
-<tr class="row-odd"><th class="stub"><p>813</p></th>
-<td><p>PC2</p></td>
-<td><p>Y</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>862</p></td>
+<td><p>853</p></td>
 <td><p>PB5</p></td>
 <td><p>Y</p></td>
 <td><p>N</p></td>
 <td><p>Y</p></td>
 </tr>
-<tr class="row-even"><th class="stub"><p>814</p></th>
-<td><p>PC1</p></td>
-<td><p>Y</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>863</p></td>
-<td><p>PB13</p></td>
+<tr class="row-odd"><td><p>805</p></td>
+<td><p>PB7</p></td>
 <td><p>Y</p></td>
 <td><p>N</p></td>
 <td><p>Y</p></td>
-</tr>
-<tr class="row-odd"><th class="stub"><p>815</p></th>
-<td><p>PC3</p></td>
-<td><p>Y</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>864</p></td>
+<td><p>854</p></td>
 <td><p>PB3</p></td>
 <td><p>Y</p></td>
 <td><p>N</p></td>
 <td><p>Y</p></td>
 </tr>
-<tr class="row-even"><th class="stub"><p>816</p></th>
-<td><p>PC0</p></td>
-<td><p>Y</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>865</p></td>
-<td><p>PC4</p></td>
-<td><p>Y</p></td>
+<tr class="row-even"><td><p>806</p></td>
+<td><p>PC13</p></td>
 <td><p>Y</p></td>
 <td><p>N</p></td>
-</tr>
-<tr class="row-odd"><th class="stub"><p>817</p></th>
-<td><p>PD4</p></td>
 <td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>N</p></td>
-<td><p>866</p></td>
+<td><p>855</p></td>
 <td><p>PA2</p></td>
 <td><p>Y</p></td>
-<td><p>Y</p></td>
+<td><p>N</p></td>
 <td><p>Y</p></td>
 </tr>
-<tr class="row-even"><th class="stub"><p>818</p></th>
-<td><p>PD3</p></td>
+<tr class="row-odd"><td><p>807</p></td>
+<td><p>PC2</p></td>
 <td><p>Y</p></td>
 <td><p>N</p></td>
-<td><p>N</p></td>
-<td><p>867</p></td>
-<td><p>PF5</p></td>
 <td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>N</p></td>
-</tr>
-<tr class="row-odd"><th class="stub"><p>819</p></th>
-<td><p>PD5</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>N</p></td>
-<td><p>868</p></td>
+<td><p>856</p></td>
 <td><p>PA3</p></td>
 <td><p>Y</p></td>
-<td><p>Y</p></td>
-<td><p>Y</p></td>
-</tr>
-<tr class="row-even"><th class="stub"><p>820</p></th>
-<td><p>PG2</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>N</p></td>
-<td><p>869</p></td>
-<td><p>PF4</p></td>
-<td><p>Y</p></td>
 <td><p>N</p></td>
 <td><p>N</p></td>
 </tr>
-<tr class="row-odd"><th class="stub"><p>821</p></th>
-<td><p>PD6</p></td>
+<tr class="row-even"><td><p>808</p></td>
+<td><p>PC3</p></td>
 <td><p>Y</p></td>
 <td><p>N</p></td>
 <td><p>N</p></td>
-<td><p>870</p></td>
-<td><p>PE8</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>Y</p></td>
-</tr>
-<tr class="row-even"><th class="stub"><p>822</p></th>
-<td><p>PG3</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>N</p></td>
-<td><p>871</p></td>
+<td><p>857</p></td>
 <td><p>PD13</p></td>
 <td><p>Y</p></td>
-<td><p>N</p></td>
+<td><p>Y</p></td>
 <td><p>Y</p></td>
 </tr>
-<tr class="row-odd"><th class="stub"><p>823</p></th>
-<td><p>PD7</p></td>
+<tr class="row-odd"><td><p>809</p></td>
+<td><p>PD4</p></td>
 <td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>N</p></td>
-<td><p>872</p></td>
-<td><p>PF10</p></td>
 <td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>N</p></td>
-</tr>
-<tr class="row-even"><th class="stub"><p>824</p></th>
-<td><p>PE2</p></td>
 <td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>N</p></td>
-<td><p>873</p></td>
+<td><p>858</p></td>
 <td><p>PD12</p></td>
 <td><p>Y</p></td>
 <td><p>N</p></td>
 <td><p>Y</p></td>
 </tr>
-<tr class="row-odd"><th class="stub"><p>825</p></th>
-<td><p>PE3</p></td>
+<tr class="row-even"><td><p>810</p></td>
+<td><p>PD5</p></td>
 <td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>N</p></td>
-<td><p>874</p></td>
-<td><p>PE7</p></td>
 <td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>N</p></td>
-</tr>
-<tr class="row-even"><th class="stub"><p>826</p></th>
-<td><p>PE4</p></td>
 <td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>N</p></td>
-<td><p>875</p></td>
+<td><p>859</p></td>
 <td><p>PD11</p></td>
 <td><p>Y</p></td>
 <td><p>N</p></td>
-<td><p>N</p></td>
-</tr>
-<tr class="row-odd"><th class="stub"><p>827</p></th>
-<td><p>PE5</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>Y</p></td>
-<td><p>876</p></td>
-<td><p>PD14</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
 <td><p>Y</p></td>
 </tr>
-<tr class="row-even"><th class="stub"><p>828</p></th>
-<td><p>PF1</p></td>
+<tr class="row-odd"><td><p>811</p></td>
+<td><p>PD6</p></td>
+<td><p>Y</p></td>
 <td><p>Y</p></td>
 <td><p>N</p></td>
-<td><p>N</p></td>
-<td><p>877</p></td>
+<td><p>860</p></td>
 <td><p>PE10</p></td>
 <td><p>Y</p></td>
 <td><p>N</p></td>
 <td><p>Y</p></td>
 </tr>
-<tr class="row-odd"><th class="stub"><p>829</p></th>
-<td><p>PF2</p></td>
+<tr class="row-even"><td><p>812</p></td>
+<td><p>PD7</p></td>
 <td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>N</p></td>
-<td><p>878</p></td>
-<td><p>PD15</p></td>
 <td><p>Y</p></td>
-<td><p>N</p></td>
 <td><p>Y</p></td>
-</tr>
-<tr class="row-even"><th class="stub"><p>830</p></th>
-<td><p>PF0</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>N</p></td>
-<td><p>879</p></td>
+<td><p>861</p></td>
 <td><p>PE12</p></td>
 <td><p>Y</p></td>
 <td><p>N</p></td>
 <td><p>Y</p></td>
 </tr>
-<tr class="row-odd"><th class="stub"><p>831</p></th>
-<td><p>PF8</p></td>
+<tr class="row-odd"><td><p>813</p></td>
+<td><p>PE3</p></td>
+<td><p>Y</p></td>
 <td><p>Y</p></td>
 <td><p>N</p></td>
-<td><p>Y</p></td>
-<td><p>880</p></td>
-<td><p>PF14</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>N</p></td>
-</tr>
-<tr class="row-even"><th class="stub"><p>832</p></th>
-<td><p>PD1</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>N</p></td>
-<td><p>881</p></td>
+<td><p>862</p></td>
 <td><p>PE14</p></td>
 <td><p>Y</p></td>
 <td><p>N</p></td>
 <td><p>Y</p></td>
 </tr>
-<tr class="row-odd"><th class="stub"><p>833</p></th>
-<td><p>PF9</p></td>
+<tr class="row-even"><td><p>814</p></td>
+<td><p>PF1</p></td>
+<td><p>Y</p></td>
 <td><p>Y</p></td>
 <td><p>N</p></td>
-<td><p>Y</p></td>
-<td><p>882</p></td>
-<td><p>PE9</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>Y</p></td>
-</tr>
-<tr class="row-even"><th class="stub"><p>834</p></th>
-<td><p>PD0</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>N</p></td>
-<td><p>883</p></td>
+<td><p>863</p></td>
 <td><p>PE15</p></td>
 <td><p>Y</p></td>
 <td><p>N</p></td>
-<td><p>N</p></td>
+<td><p>Y</p></td>
 </tr>
-<tr class="row-odd"><th class="stub"><p>835</p></th>
-<td><p>PG1</p></td>
+<tr class="row-odd"><td><p>815</p></td>
+<td><p>PF0</p></td>
+<td><p>Y</p></td>
 <td><p>Y</p></td>
 <td><p>N</p></td>
-<td><p>N</p></td>
-<td><p>884</p></td>
+<td><p>864</p></td>
 <td><p>PE13</p></td>
 <td><p>Y</p></td>
 <td><p>N</p></td>
 <td><p>Y</p></td>
 </tr>
-<tr class="row-even"><th class="stub"><p>836</p></th>
+<tr class="row-even"><td><p>816</p></td>
+<td><p>PD1</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>865</p></td>
+<td><p>PF13</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+</tr>
+<tr class="row-odd"><td><p>817</p></td>
+<td><p>PD0</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+<td><p>866</p></td>
+<td><p>PF12</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-even"><td><p>818</p></td>
 <td><p>PG0</p></td>
 <td><p>Y</p></td>
 <td><p>N</p></td>
 <td><p>N</p></td>
-<td><p>885</p></td>
-<td><p>PE11</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>Y</p></td>
-</tr>
-<tr class="row-odd"><th class="stub"><p>837</p></th>
-<td><p>PE1</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>N</p></td>
-<td><p>886</p></td>
-<td><p>PF13</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>N</p></td>
-</tr>
-<tr class="row-even"><th class="stub"><p>838</p></th>
-<td><p>PE6</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>Y</p></td>
-<td><p>887</p></td>
-<td><p>PF3</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>N</p></td>
-</tr>
-<tr class="row-odd"><th class="stub"><p>839</p></th>
-<td><p>PG9</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>N</p></td>
-<td><p>888</p></td>
-<td><p>PF12</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>N</p></td>
-</tr>
-<tr class="row-even"><th class="stub"><p>840</p></th>
-<td><p>PG15</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>N</p></td>
-<td><p>889</p></td>
-<td><p>PF15</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>N</p></td>
-</tr>
-<tr class="row-odd"><th class="stub"><p>841</p></th>
-<td><p>PG12</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>N</p></td>
-<td><p>890</p></td>
+<td><p>867</p></td>
 <td><p>PG14</p></td>
 <td><p>Y</p></td>
 <td><p>N</p></td>
 <td><p>N</p></td>
 </tr>
-<tr class="row-even"><th class="stub"><p>842</p></th>
-<td><p>PG10</p></td>
+<tr class="row-odd"><td><p>819</p></td>
+<td><p>PE1</p></td>
 <td><p>Y</p></td>
 <td><p>N</p></td>
 <td><p>N</p></td>
-<td><p>891</p></td>
-<td><p>PF11</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>N</p></td>
-</tr>
-<tr class="row-odd"><th class="stub"><p>843</p></th>
-<td><p>PG13</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>N</p></td>
-<td><p>892</p></td>
-<td><p>PE0</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>N</p></td>
-</tr>
-<tr class="row-even"><th class="stub"><p>844</p></th>
-<td><p>PG11</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>N</p></td>
-<td><p>893</p></td>
+<td><p>868</p></td>
 <td><p>PD10</p></td>
 <td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>N</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
 </tr>
-<tr class="row-odd"><th class="stub"><p>845</p></th>
-<td><p>PC9</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>Y</p></td>
-<td><p>894</p></td>
-<td><p>PG8</p></td>
+<tr class="row-even"><td><p>820</p></td>
+<td><p>PG9</p></td>
 <td><p>Y</p></td>
 <td><p>N</p></td>
 <td><p>N</p></td>
-</tr>
-<tr class="row-even"><th class="stub"><p>846</p></th>
-<td><p>PC8</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>Y</p></td>
-<td><p>895</p></td>
-<td><p>PG5</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>N</p></td>
-</tr>
-<tr class="row-odd"><th class="stub"><p>847</p></th>
-<td><p>PC6</p></td>
-<td><p>Y</p></td>
-<td><p>N</p></td>
-<td><p>Y</p></td>
-<td><p>896</p></td>
+<td><p>869</p></td>
 <td><p>PG4</p></td>
 <td><p>Y</p></td>
 <td><p>N</p></td>
 <td><p>N</p></td>
 </tr>
-<tr class="row-even"><th class="stub"><p>848</p></th>
+<tr class="row-odd"><td><p>821</p></td>
+<td><p>PG12</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+<td><p>870</p></td>
+<td><p>PC8</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-even"><td><p>822</p></td>
+<td><p>PC11</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+<td><p>871</p></td>
+<td><p>PC6</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-odd"><td><p>823</p></td>
+<td><p>PD2</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+<td><p>872</p></td>
 <td><p>PC5</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+</tr>
+<tr class="row-even"><td><p>824</p></td>
+<td><p>PA0</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+<td><p>873</p></td>
+<td><p>PB12</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-odd"><td><p>825</p></td>
+<td><p>PA1</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+<td><p>874</p></td>
+<td><p>PB11</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+</tr>
+<tr class="row-even"><td><p>826</p></td>
+<td><p>PA4</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+<td><p>875</p></td>
+<td><p>PB2</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+</tr>
+<tr class="row-odd"><td><p>827</p></td>
+<td><p>PB0</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+<td><p>876</p></td>
+<td><p>PB1</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-even"><td><p>828</p></td>
+<td><p>PC1</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+<td><p>877</p></td>
+<td><p>PB15</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-odd"><td><p>829</p></td>
+<td><p>PC0</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+<td><p>878</p></td>
+<td><p>PB14</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-even"><td><p>830</p></td>
+<td><p>PD3</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+<td><p>879</p></td>
+<td><p>PB13</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-odd"><td><p>831</p></td>
+<td><p>PG2</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+<td><p>880</p></td>
+<td><p>PC4</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+</tr>
+<tr class="row-even"><td><p>832</p></td>
+<td><p>PG3</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+<td><p>881</p></td>
+<td><p>PF5</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-odd"><td><p>833</p></td>
+<td><p>PE2</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+<td><p>882</p></td>
+<td><p>PF4</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-even"><td><p>834</p></td>
+<td><p>PE4</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+<td><p>883</p></td>
+<td><p>PE8</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+</tr>
+<tr class="row-odd"><td><p>835</p></td>
+<td><p>PE5</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+<td><p>884</p></td>
+<td><p>PF10</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-even"><td><p>836</p></td>
+<td><p>PF2</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+<td><p>885</p></td>
+<td><p>PE7</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-odd"><td><p>837</p></td>
+<td><p>PF8</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+<td><p>886</p></td>
+<td><p>PD14</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+</tr>
+<tr class="row-even"><td><p>838</p></td>
+<td><p>PF9</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+<td><p>887</p></td>
+<td><p>PD15</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+</tr>
+<tr class="row-odd"><td><p>839</p></td>
+<td><p>PG1</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+<td><p>888</p></td>
+<td><p>PF14</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+</tr>
+<tr class="row-even"><td><p>840</p></td>
+<td><p>PE6</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+<td><p>889</p></td>
+<td><p>PE9</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+</tr>
+<tr class="row-odd"><td><p>841</p></td>
+<td><p>PG15</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+<td><p>890</p></td>
+<td><p>PE11</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+</tr>
+<tr class="row-even"><td><p>842</p></td>
+<td><p>PG10</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+<td><p>891</p></td>
+<td><p>PF3</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+</tr>
+<tr class="row-odd"><td><p>843</p></td>
+<td><p>PG13</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+<td><p>892</p></td>
+<td><p>PF15</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+</tr>
+<tr class="row-even"><td><p>844</p></td>
+<td><p>PG11</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+<td><p>893</p></td>
+<td><p>PF11</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+</tr>
+<tr class="row-odd"><td><p>845</p></td>
+<td><p>PC9</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+<td><p>894</p></td>
+<td><p>PE0</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+</tr>
+<tr class="row-even"><td><p>846</p></td>
+<td><p>PA5</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+<td><p>895</p></td>
+<td><p>PG8</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+</tr>
+<tr class="row-odd"><td><p>847</p></td>
+<td><p>PA6</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+<td><p>896</p></td>
+<td><p>PG5</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+</tr>
+<tr class="row-even"><td><p>848</p></td>
+<td><p>PA7</p></td>
 <td><p>Y</p></td>
 <td><p>Y</p></td>
 <td><p>N</p></td>
@@ -2121,7 +2159,7 @@
 </div>
 </section>
 <section id="arduino-zero-or-samd-based-clone">
-<h2><a class="toc-backref" href="#id20" role="doc-backlink">Arduino Zero (or SAMD based clone)</a><a class="headerlink" href="#arduino-zero-or-samd-based-clone" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id22" role="doc-backlink">Arduino Zero (or SAMD based clone)</a><a class="headerlink" href="#arduino-zero-or-samd-based-clone" title="Permalink to this heading"></a></h2>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>The Arduino Zero (and SAMD based clones) are 3v3 only and <strong>are not 5V tolerant</strong>.</p>
@@ -2235,40 +2273,243 @@
 <div class="line"><br /></div>
 </div>
 </section>
+<section id="stmicroelectronics-stm32f103c8t6-bluepill">
+<h2><a class="toc-backref" href="#id23" role="doc-backlink">STMicroelectronics STM32F103C8T6 (Bluepill)</a><a class="headerlink" href="#stmicroelectronics-stm32f103c8t6-bluepill" title="Permalink to this heading"></a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Support for the STM32F103C8T6 Bluepill is experimental at best right now. While the software compiles and it appears to operate normally, only basic I/O testing has been performed.</p>
+<p>Note also that as a 3.3V microcontroller, not all pins are 5V tolerant.</p>
+</div>
+<a class="reference internal image-reference" href="../_images/stm32f103c8t6_pinout_voltage01.png"><img alt="EX-IOExpander on STM32F103C8T6 Bluepill" src="../_images/stm32f103c8t6_pinout_voltage01.png" style="width: 640.0px; height: 340.5px;" /></a>
+<p>Image courtesy of <a class="reference external" href="https://os.mbed.com/users/hudakz/code/STM32F103C8T6_Hello/">arm MBED</a></p>
+<table class="command-table docutils align-default" id="id13">
+<caption><span class="caption-number">Table 35 </span><span class="caption-text">STM32F103C8T6 Bluepill pin allocations</span><a class="headerlink" href="#id13" title="Permalink to this table"></a></caption>
+<tbody>
+<tr class="row-odd"><th class="stub"><p>Total pins</p></th>
+<td><p>28</p></td>
+</tr>
+<tr class="row-even"><th class="stub"><p>Digital capable pins</p></th>
+<td><p>28</p></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>Analogue capable pins</p></th>
+<td><p>10</p></td>
+</tr>
+<tr class="row-even"><th class="stub"><p>PWM capable pins</p></th>
+<td><p>19</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default" id="id14">
+<caption><span class="caption-number">Table 36 </span><span class="caption-text">STM32F103C8T6 Bluepill EX-IOExpander pin map at Vpin 800</span><a class="headerlink" href="#id14" title="Permalink to this table"></a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Vpin</p></th>
+<th class="head"><p>Pin</p></th>
+<th class="head"><p>Digital</p></th>
+<th class="head"><p>Analogue</p></th>
+<th class="head"><p>PWM</p></th>
+<th class="head"><p>Vpin</p></th>
+<th class="head"><p>Pin</p></th>
+<th class="head"><p>Digital</p></th>
+<th class="head"><p>Analogue</p></th>
+<th class="head"><p>PWM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>800</p></td>
+<td><p>PC13</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+<td><p>814</p></td>
+<td><p>PB11</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-odd"><td><p>801</p></td>
+<td><p>PC14</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+<td><p>815</p></td>
+<td><p>PB9</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+</tr>
+<tr class="row-even"><td><p>802</p></td>
+<td><p>PA15</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+<td><p>816</p></td>
+<td><p>PB8</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+</tr>
+<tr class="row-odd"><td><p>803</p></td>
+<td><p>PA0</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>817</p></td>
+<td><p>PB5</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-even"><td><p>804</p></td>
+<td><p>PA1</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>818</p></td>
+<td><p>PB4</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-odd"><td><p>805</p></td>
+<td><p>PA2</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>819</p></td>
+<td><p>PB3</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-even"><td><p>806</p></td>
+<td><p>PA3</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>820</p></td>
+<td><p>PA15</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-odd"><td><p>807</p></td>
+<td><p>PA4</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>821</p></td>
+<td><p>PA10</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-even"><td><p>808</p></td>
+<td><p>PA5</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>822</p></td>
+<td><p>PA9</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-odd"><td><p>809</p></td>
+<td><p>PA6</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>823</p></td>
+<td><p>PA8</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-even"><td><p>810</p></td>
+<td><p>PA7</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>824</p></td>
+<td><p>PB15</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-odd"><td><p>811</p></td>
+<td><p>PB0</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>825</p></td>
+<td><p>PB14</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-even"><td><p>812</p></td>
+<td><p>PB1</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>826</p></td>
+<td><p>PB13</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-odd"><td><p>813</p></td>
+<td><p>PB10</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+<td><p>827</p></td>
+<td><p>PB12</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
 <section id="adding-new-devices">
-<h2><a class="toc-backref" href="#id21" role="doc-backlink">Adding new devices</a><a class="headerlink" href="#adding-new-devices" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id24" role="doc-backlink">Adding new devices</a><a class="headerlink" href="#adding-new-devices" title="Permalink to this heading"></a></h2>
 <p><a class="reference external" href="../begin/levels.html#tinkerer"><img alt="Propeller Beanie" src="../_images/tinkerer-level.png" style="width: 135.6px; height: 36.0px;" /></a> <a class="reference external" href="../begin/levels.html#engineer"><img alt="Engineer Hat" src="../_images/engineer-level.png" style="width: 135.6px; height: 36.0px;" /></a></p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>When considering adding new devices to <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;IOExpander</span></span>, be sure to take into account whether they are 5V or 3.3V devices, and whether their I/O and I<sup>2</sup>C pins are 5V tolerant if they are 3.3V devices. New generation microcontrollers tend to be 3.3V, and some have 5V tolerant I/O pins (eg. STM32 Nucleo), but some are not 5V tolerant (eg. SAMD).</p>
-<p>To connect 3.3V devices to a 5V <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;CommandStation</span></span>, they need to either be 5V tolerant, or you will need to use a level shifter to avoid letting the magic smoke out.</p>
+<p>When considering adding new devices to <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;IOExpander</span>, be sure to take into account whether they are 5V or 3.3V devices, and whether their I/O and I<sup>2</sup>C pins are 5V tolerant if they are 3.3V devices. New generation microcontrollers tend to be 3.3V, and some have 5V tolerant I/O pins (eg. STM32 Nucleo), but some are not 5V tolerant (eg. SAMD).</p>
+<p>To connect 3.3V devices to a 5V <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;CommandStation</span>, they need to either be 5V tolerant, or you will need to use a level shifter to avoid letting the magic smoke out.</p>
 </div>
-<p>Adding new devices to the <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;IOExpander</span></span> software only requires additional information in the <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;IOExpander</span></span> software itself, with no changes required to the device driver loaded in your <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;CommandStation</span></span>.</p>
-<p>In order to successfully add an additional device, you need to know the C++ preprocessor macro definitions for the architecture or platform, and for the specific variant or board itself. In addition, you need to define the pins available for use on the <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;IOExpander</span></span> device, and define the capabilities available for each pin.</p>
+<p>Adding new devices to the <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;IOExpander</span> software only requires additional information in the <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;IOExpander</span> software itself, with no changes required to the device driver loaded in your <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;CommandStation</span>.</p>
+<p>In order to successfully add an additional device, you need to know the C++ preprocessor macro definitions for the architecture or platform, and for the specific variant or board itself. In addition, you need to define the pins available for use on the <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;IOExpander</span> device, and define the capabilities available for each pin.</p>
 <p>For example, the AVR series (Uno, Mega, Nano) have the architure or platform macro defined as “ARDUINO_ARCH_AVR”, with the Nano having the variant or board specific macro “ARDUINO_AVR_NANO”, and there is a pin map defined that maps to this macro definition.</p>
 <section id="files-to-be-created-modified">
-<h3><a class="toc-backref" href="#id22" role="doc-backlink">Files to be created/modified</a><a class="headerlink" href="#files-to-be-created-modified" title="Permalink to this heading"></a></h3>
-<p>When adding new devices to <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;IOExpander</span></span>, there are potentially three files to be added or modified:</p>
+<h3><a class="toc-backref" href="#id25" role="doc-backlink">Files to be created/modified</a><a class="headerlink" href="#files-to-be-created-modified" title="Permalink to this heading"></a></h3>
+<p>When adding new devices to <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;IOExpander</span>, there are potentially three files to be added or modified:</p>
 <ul class="simple">
 <li><p>device_functions.cpp - Contains the architecture/platform specific function to reboot via software</p></li>
 <li><p>defines.h - Contains some device specific macro definitions</p></li>
 <li><p>&lt;device_type&gt;.h - Contains the device specific macro definitions and the pin map</p></li>
+<li><p>EX-IOExpander.ino - Loads the device specific files</p></li>
 </ul>
 </section>
 <section id="enabling-software-reboots">
-<h3><a class="toc-backref" href="#id23" role="doc-backlink">Enabling software reboots</a><a class="headerlink" href="#enabling-software-reboots" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id26" role="doc-backlink">Enabling software reboots</a><a class="headerlink" href="#enabling-software-reboots" title="Permalink to this heading"></a></h3>
 <p>The architecture or platform macro is used to determine the correct method to reboot the device via the <code class="docutils literal notranslate"><span class="pre">&lt;Z&gt;</span></code> command, which is defined in the file “device_functions.cpp”.</p>
 <p>If a new architecture or platform is being added, then this file will need to be updated with the suitable software command in the “reset()” function, otherwise a reboot via <code class="docutils literal notranslate"><span class="pre">&lt;Z&gt;</span></code> will not be available.</p>
 <p>If the architecture or platform already exists, or there is no desire to reboot via software, then the only change required is to add the variant or board specific information.</p>
 </section>
 <section id="enabling-serial-input-output-in-defines-h">
-<h3><a class="toc-backref" href="#id24" role="doc-backlink">Enabling serial input/output in defines.h</a><a class="headerlink" href="#enabling-serial-input-output-in-defines-h" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id27" role="doc-backlink">Enabling serial input/output in defines.h</a><a class="headerlink" href="#enabling-serial-input-output-in-defines-h" title="Permalink to this heading"></a></h3>
 <p>Some microcontrollers have different serial implementations, and therefore it may be necessary to specify the type of USB or serial port in use.</p>
 <p>Currently, unless the device’s architecture is defined as “ARDUINO_ARCH_SAMD”, it will utilise the default Arduino “Serial” implementation. SAMD uses the “SerialUSB” implementation.</p>
 <p>If additional serial support is required, this will need to be defined in “defines.h” as “USB_SERIAL”.</p>
 </section>
 <section id="defining-the-device-macros-in-defines-h">
-<h3><a class="toc-backref" href="#id25" role="doc-backlink">Defining the device macros in defines.h</a><a class="headerlink" href="#defining-the-device-macros-in-defines-h" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id28" role="doc-backlink">Defining the device macros in defines.h</a><a class="headerlink" href="#defining-the-device-macros-in-defines-h" title="Permalink to this heading"></a></h3>
 <p>There are three parameters to be defined in this file for each device type:</p>
 <ul class="simple">
 <li><p>TOTAL_PINS - The total number of pins available on the device</p></li>
@@ -2286,8 +2527,8 @@
 </div>
 </section>
 <section id="defining-the-device-type-and-pin-map-in-device-name-h">
-<h3><a class="toc-backref" href="#id26" role="doc-backlink">Defining the device type and pin map in &lt;device_name&gt;.h</a><a class="headerlink" href="#defining-the-device-type-and-pin-map-in-device-name-h" title="Permalink to this heading"></a></h3>
-<p>A pin map is used to map the Vpins from the device driver in the <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;CommandStation</span></span> to the appropriate physical pins on the <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;IOExpander</span></span> device, and therefore defining this in the correct order in the <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;IOExpander</span></span> software is critical. It is equally critical to ensure that the correct variant or board macro is used to ensure the correct pin map is used when compiling and uploading the software to the <span style="font-weight: bold; color: #00a3b9; font-size: 110%;">EX<span style="color: #00353d;">&#8209;IOExpander</span></span> device.</p>
+<h3><a class="toc-backref" href="#id29" role="doc-backlink">Defining the device type and pin map in &lt;device_name&gt;.h</a><a class="headerlink" href="#defining-the-device-type-and-pin-map-in-device-name-h" title="Permalink to this heading"></a></h3>
+<p>A pin map is used to map the Vpins from the device driver in the <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;CommandStation</span> to the appropriate physical pins on the <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;IOExpander</span> device, and therefore defining this in the correct order in the <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;IOExpander</span> software is critical. It is equally critical to ensure that the correct variant or board macro is used to ensure the correct pin map is used when compiling and uploading the software to the <span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;IOExpander</span> device.</p>
 <p>Each unique device needs a file created containing the “BOARD_TYPE” macro definition and the device specific pin map.</p>
 <p>Files should be named according to the platform and CPU type eg. “arduino_avr_nano.h” or “arduino_nucleo_f412zg.h”.</p>
 <p>As per <a class="reference internal" href="overview.html#pin-vpin-allocation"><span class="std std-ref">Pin/Vpin allocation</span></a>, Vpins are allocated to physical pins in ascending order.</p>
@@ -2327,11 +2568,11 @@
 </ul>
 </section>
 <section id="pin-capability-table">
-<h3><a class="toc-backref" href="#id27" role="doc-backlink">Pin capability table</a><a class="headerlink" href="#pin-capability-table" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id30" role="doc-backlink">Pin capability table</a><a class="headerlink" href="#pin-capability-table" title="Permalink to this heading"></a></h3>
 <p>When defining the capabilities available for a specific pin, one of these macros from this table must be utilised. These capability macros are defined in “defines.h”.</p>
 <p>This ensures attempting to use a pin for something it’s not capable of will generate an error rather than try to drive a pin with capability that is not possible, as depending on the scenario, this may let the magic smoke out.</p>
-<table class="docutils align-default" id="id13">
-<caption><span class="caption-number">Table 35 </span><span class="caption-text">Pin capability table</span><a class="headerlink" href="#id13" title="Permalink to this table"></a></caption>
+<table class="docutils align-default" id="id15">
+<caption><span class="caption-number">Table 37 </span><span class="caption-text">Pin capability table</span><a class="headerlink" href="#id15" title="Permalink to this table"></a></caption>
 <thead>
 <tr class="row-odd"><th class="head"><p>Macro</p></th>
 <th class="head"><p>Capabilities</p></th>
@@ -2388,6 +2629,9 @@
 </tr>
 </tbody>
 </table>
+</section>
+<section id="including-the-device-specific-file-in-ex-ioexpander-ino">
+<h3><a class="toc-backref" href="#id31" role="doc-backlink">Including the device specific file in EX-IOExpander.ino</a><a class="headerlink" href="#including-the-device-specific-file-in-ex-ioexpander-ino" title="Permalink to this heading"></a></h3>
 </section>
 </section>
 </section>

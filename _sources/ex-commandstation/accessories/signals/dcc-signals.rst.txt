@@ -3,17 +3,18 @@
 .. include:: /include/include-description.rst
 |EX-CS-LOGO|
 
-|conductor| |tinkerer| |engineer|
-
 *********************
 DCC accessory signals
 *********************
 
-.. sidebar:: 
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button|
 
-  .. contents:: On this page
-    :depth: 2
-    :local:
+.. sidebar::
+   :class: sidebar-on-this-page
+
+   .. contents:: On this page
+      :depth: 2
+      :local:
 
 Important considerations for DCC accessory signals
 ==================================================

@@ -7,9 +7,10 @@
 Connecting a Servo Module
 *************************
 
-|tinkerer| |engineer|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. sidebar::
+   :class: sidebar-on-this-page
 
    .. contents:: On this page
       :depth: 1
@@ -47,7 +48,7 @@ In |EX-CS|, the drivers for the PCA9685 module is already installed, and made av
 
 Once you've made all of the connections, apply power to the Arduino.
 
-Then, in the Serial Monitor, enter the command `<D SERVO 100 450>`.  The servo should move, as long as it isn't (by some fluke) already in that position.
+Then, in the |Serial Monitor|, enter the command `<D SERVO 100 450>`.  The servo should move, as long as it isn't (by some fluke) already in that position.
 
 Enter `<D SERVO 100 110>` and this time it should definitely move.  For the last parameter (servo position) you can use any value between about 105 and 490.
 
@@ -70,10 +71,10 @@ servo mounting bracket, were 3d-printed on a Creality Ender-3 printer.
 
    Servo mount to operate a Semaphore Signal
 
-Using Servos with EX-RAIL
+Using Servos with EXRAIL
 ==========================
 
-EX-RAIL supports three methods of controlling servos:
+|EX-R| supports three methods of controlling servos:
 
 * Turnouts via the SERVO_TURNOUT directive
 * Signals via the SERVO_SIGNAL directive
@@ -82,7 +83,7 @@ EX-RAIL supports three methods of controlling servos:
 Controlling servos for turnouts
 -------------------------------
 
-The SERVO_TURNOUT directive defines a servo based turnout in EX-RAIL, which will appear in |WiThrottle Protocol| apps, |Engine Driver|, and |JMRI| in addition to being defined as a turnout within the CommandStation.
+The SERVO_TURNOUT directive defines a servo based turnout in |EX-R|, which will appear in |WiThrottle Protocol| apps, |Engine Driver|, and |JMRI| in addition to being defined as a turnout within the CommandStation.
 
 As per the |EX-R| reference, turnouts are defined with the following syntax:
 
@@ -108,19 +109,19 @@ An example definition for a servo connected to the second control pins of the fi
 Controlling servos for signals
 ------------------------------
 
-The SERVO_SIGNAL directive defines a servo based signal in EX-RAIL to drive semaphore type signals as part of sequences or routes, or simply be set via a signal or similar.
+The SERVO_SIGNAL directive defines a servo based signal in EXRAIL to drive semaphore type signals as part of sequences or routes, or simply be set via a signal or similar.
 
 Similar to pin based signals, servo signals are controlled by the ID of the red pin only.
 
 Unlike servo based turnouts, there is no ID or description (they don't appear in throttles), and they use the "Bounce" profile with no other options available at the present time:
 
-.. code-block:: 
+.. code-block:: cpp
 
    SERVO_SIGNAL(vpin, redpos, amberpos, greenpos)
 
 A simple example using the third control pins of the first PCA9685 connected to the CommandStation would be:
 
-.. code-block:: 
+.. code-block:: cpp
 
    SERVO_SIGNAL(102, 400, 250, 100)
 
@@ -141,8 +142,8 @@ As per the |EX-R| reference, these are defined with the following syntax:
 The valid parameters are:
 
 - vpin = The ID of the pin the servo is connected to, which would typically be the VPin ID of the PCA9685 controller board.
-- position = The angle to which the servo will move when the turnout is thrown (refer below for further detailed information).
-- profile = There are five profiles to choose from that determine the speed at which a turnout will move: Instant, Fast, Medium, Slow, and Bounce.
+- position = The angle to which the servo will move when it is activated (refer below for further detailed information).
+- profile = There are five profiles to choose from that determine the speed at which a servo will move: Instant, Fast, Medium, Slow, and Bounce.
 - duration = The time (in milliseconds (ms)) for the servo to be actively rotating.
 
 As an example, consider a lineside worker that needs to be moved away from the track when a train approaches, which is controlled by an infrared sensor.
@@ -159,7 +160,39 @@ The SERVO is attached to VPin 101 (second control pin on first PCA9685), with a 
    SERVO(101, 100, Slow)
    DONE
 
-This tells EX-RAIL that when the sensor at VPin 164 is activated, the lineside worker moves quickly back from the track for safety, and then after the sensor has been deactivated, he can leisurely move back to his working position (no one wants to rush back to work right?).
+This tells |EX-R| that when the sensor at VPin 164 is activated, the lineside worker moves quickly back from the track for safety, and then after the sensor has been deactivated, he can leisurely move back to his working position (no one wants to rush back to work right?).
+
+
+Animation Servo with a Mimic Panel Push Button
+----------------------------------------------
+
+As per the |EX-R| reference, accessory animation servos are defined with the following syntax:
+
+.. code-block:: cpp
+
+   SERVO2(pin, active_angle, duration)  // For Animation Servo, Do Not Use for Turnouts
+
+The valid parameters are:
+
+- pin = The ID of the pin the servo is connected to, which would typically be the VPin ID of the PCA9685 controller board.
+- position = The angle to which the servo will move when the servo is activated.
+- duration = time to move to the designated position in milliseconds ms: 10000 is 10sec for a person walking or crossing gate moving.
+
+An example definition for a servo connected to the fifth control pin 5 or vpin105 of the first PCA9685 connected to the CommandStation, using the duration profile for animation operation:
+
+Use SERVO2 function with Mega D35 pin for a panel button to operate animation accessory servo 'Railfan Walking'.
+
+.. code-block:: cpp
+
+   AUTOSTART
+   SEQUENCE(35)  // When panel button on Mega Dpin 35 is pressed alternate between the two positions taking 10 seconds
+   AFTER(35)
+    SERVO2(105, 490, 10000)  PRINT("Railfan Walking Back To Annex") // Walk Counter-Clockwise {Thrown}
+   AFTER(35)
+    SERVO2(105, 110, 10000)  PRINT("Railfan Walking To Train") // Walk Clockwise {Close}
+   FOLLOW(35)
+
+----
 
 Using a servo module for LEDs
 =============================
@@ -179,7 +212,7 @@ Another use case for the PCA9685 is to drive LEDs using PWM to control the inten
 Connecting LEDs and setting intensity
 -------------------------------------
 
-LEDs can be connected with either the anode (postive) or cathode (negative) to the PWM pin of the PCA9685, and to set the required intensity for the LED, you will need to add a configuration setting to your "mySetup.h" file. Refer to :doc:`/ex-commandstation/advanced-setup/startup-config` for further information on this file.
+LEDs can be connected with either the anode (positive) or cathode (negative) to the PWM pin of the PCA9685, and to set the required intensity for the LED, you will need to add a configuration setting to your "mySetup.h" file. Refer to :doc:`/ex-commandstation/advanced-setup/startup-config` for further information on this file.
 
 If connecting the anode (positive) side of the LED to the PWM pin, the cathode (negative) side connects to the ground pin, and you do not need a current limiting resistor in this scenario.
 
@@ -193,9 +226,14 @@ You will need to add this line to "mySetup.h" for each LED you wish to configure
 
 The parameters required are:
 
-- vpin = The VPin the LED is connected to, eg. 101 for the second pin on the first PCA9685 servo module
+- vpin = The VPin the LED is connected to, e.g. 101 for the second pin on the first PCA9685 servo module
 - OnValue = The desired intensity (brightness) of the LED when turned on, with 0 being off, and 4095 being 100%
 - OffValue = The desired intensity (brightness) of the LED when turned off
+
+|NEW-IN-V5-4|
+
+There is now an option to configure these LED's from within the myAutomation.h file instead of the mySetup.h file.  See CONFIGURE_SERVO in EXRAIL Command Reference.
+
 
 Here are some examples:
 
@@ -218,7 +256,7 @@ Using these for JMRI signal heads and signal masts
 
 If the LEDs are to be used for signal heads or signal masts in JMRI, they can be added to the Turnout Table by defining these as outputs also in "mySetup.h".
 
-An output is defined by using the ``<Z id vpin iflag>`` command. Refer to :ref:`reference/software/command-reference:outputs (dio pin) commands` for further information on this command.
+An output is defined by using the ``<Z id vpin iflag>`` command. Refer to :ref:`reference/software/command-summary-consolidated:outputs (configuring the ex-commandstation)` for further information on this command.
 
 This command will associate the provided output ID with the LED connected to the VPin as defined in the configuration commands in the section above.
 
@@ -228,14 +266,14 @@ To define an output with ID 101 to match the LED connected to VPin 101, add this
 
    SETUP("<Z 101 101 0>");
 
-Using these with EX-RAIL
+Using these with EXRAIL
 ------------------------
 
 |EX-R| includes the ``FADE(vpin, value, ms)`` command which can is used to adjust the LED's brightness to the provided value over the time specified in milliseconds.
 
 The example below simulates a camp fire by continuously varying the LED brightness for random delay times, and this starts automatically when the |EX-CS| starts by using the ``AUTOSTART`` directive.
 
-.. code-block:: 
+.. code-block:: cpp
 
    SEQUENCE(3)
       AUTOSTART
@@ -260,7 +298,7 @@ There are three types of servos, standard or "Positional Rotation", "Continuous 
 **A Standard, positional rotation servo** allows a shaft to spin around a central axis to position something like an arm or disk at specific angles. A standard servo can be positioned between 0 and 180 degrees. An example is the SG90 9g Micro Servo
 
 
-**A Continuous Rotation Servo** can spin around a full circle continuously like a motor. Instead of providing an angular position that the servo should rotate to, the continuous rotation servo simply has a speed and direction, clockwise or counterclockwise.
+**A Continuous Rotation Servo** can spin around a full circle continuously like a motor. Instead of providing an angular position that the servo should rotate to, the continuous rotation servo simply has a speed and direction, clockwise or counter-clockwise.
 
 **Linear Servos** use a rack and pinion gear that converts rotary motion to linear motion. A linear servo works just like a Standard Servo and you can control its position along a straight line, forward and back in a similar way by giving it a position.
 

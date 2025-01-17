@@ -7,13 +7,18 @@
 Throttles (Hardware)
 ********************
 
-|conductor| |tinkerer| |engineer|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button| 
 
 .. toctree::
   :maxdepth: 1
 
   minithrottle
   witcontroller
+  dccexcontroller
+  handcab
+  mybluepillthrottle
   engine-driver-physical-knobs
   streamdeck 
+  lodi-con-wifi-throttle
+  ex-t3-wifi
   uwt50

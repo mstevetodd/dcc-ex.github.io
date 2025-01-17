@@ -5,13 +5,14 @@
 Solenoid or coil turnouts/points
 ********************************
 
-|conductor| |tinkerer|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button|
 
-.. sidebar:: 
+.. sidebar::
+   :class: sidebar-on-this-page
 
-  .. contents:: On this page
-    :depth: 3
-    :local:
+   .. contents:: On this page
+      :depth: 3
+      :local:
 
 Important considerations for solenoid/coil turnouts/points
 ==========================================================
@@ -30,7 +31,7 @@ To define solenoid/coil based turnouts directly in your |EX-CS| via the serial c
 - ``<T id VPIN vpin>`` - use this command when using a turnout/point controller that uses a single pin, whether connected directly to your |EX-CS| or via an I/O expander device
 - ``<T id DCC linear_address>`` - use this command when using DCC accessory decoders to control the turnout/point
 
-Refer to :ref:`reference/software/command-reference:defining (setting up) a turnout` for details on these commands.
+Refer to :ref:`reference/software/command-summary-consolidated:turnouts/points (configuring the ex-commandstation)` for details on these commands.
 
 To define solenoid/coil based turnouts using |EX-R| (whether or not they are to be automated) via the "myAutomation.h" file, use the appropriate one of these commands:
 
@@ -38,7 +39,7 @@ To define solenoid/coil based turnouts using |EX-R| (whether or not they are to 
 - ``VIRTUAL_TURNOUT(id [, "description"])`` - use this command when you need to define a custom macro that controls the various pins and duration required to switch a turnout
 - ``TURNOUT(id, addr, sub_addr [, "description"])`` - use this command when using DCC accessory decoders to control the servos
 
-Refer to :ref:`ex-rail/ex-rail-command-reference:turnout/point objects - definition and control` for details on these commands, along with :ref:`ex-rail/creating-elements:adding turnouts/points` for some further information and examples.
+Refer to :ref:`exrail/exrail-command-reference:turnout/point objects - definition and control` for details on these commands, along with :ref:`exrail/creating-elements:adding turnouts/points` for some further information and examples.
 
 Connecting and controlling the hardware
 =======================================
@@ -60,7 +61,7 @@ The voltage provided to "External Power" is the voltage required to operate the 
 
 Here is an example |EX-R| macro that will configure a virtual turnout, setting the correct pins for the two turnouts to operate correctly:
 
-.. code-block:: 
+.. code-block:: cpp
 
   #define PULSE 10    // Set the duration of the pulse to 10ms
 
@@ -90,7 +91,7 @@ Using an L293D motor driver - dual solenoid/coil turnouts
 
 Like the single solenoid/coil turnouts, a single L293D motor driver IC can be used to control two turnouts/points. This will still require six digital output pins either directly from your |EX-CS| (as per the diagram above), or these can also be connected via an I/O expander such as an MCP23017 or |EX-IO|.
 
-To operate the turnouts/points in this manner, the direction of the turnout (close/throw) is still configured by setting the input pins (2 and 7, 10 and 15) high or low, and briefly setting the appropriate enable pin high (1 or 9). The key difference for dual solenoid/coil turnouts is the common (thrid) wire of the turnout being connected to ground as per the diagram above.
+To operate the turnouts/points in this manner, the direction of the turnout (close/throw) is still configured by setting the input pins (2 and 7, 10 and 15) high or low, and briefly setting the appropriate enable pin high (1 or 9). The key difference for dual solenoid/coil turnouts is the common (third) wire of the turnout being connected to ground as per the diagram above.
 
 Note that the 10K pull down resistors connected from ground to the enable pins are there as a safety feature to ensure that any unknown states during start up don't cause the enable pins to be set to a high state, causing the coils to overheat and burn out.
 
@@ -98,7 +99,7 @@ The voltage provided to "External Power" is the voltage required to operate the 
 
 Here is an example |EX-R| macro that will configure a virtual turnout, setting the correct pins for the two turnouts to operate correctly (note it is identical to the single coil version, but renamed):
 
-.. code-block:: 
+.. code-block:: cpp
 
   #define PULSE 10    // Set the duration of the pulse to 10ms
 
@@ -130,11 +131,11 @@ Using a Capacitive Discharge Unit (CDU) - dual solenoid/coil turnouts
 Option 1 - DIY CDU by "Rosscoe" (DCC-EX user on Discord)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The infomation here is based on the combined driver and CDU as outlined in this GitHub repository, with a PCB available from `PCBWay <https://www.pcbway.com/>`_
+The information here is based on the combined driver and CDU as outlined in this GitHub repository, with a PCB available from `PCBWay <https://www.pcbway.com/>`_ |EXTERNAL-LINK|
 
 .. rst-class:: dcclink
 
-  `DCC Solenoid Turnout Driver <https://github.com/Rosscoetrain/DCC-Solenoid-Turnout-Driver>`_
+  `DCC Solenoid Turnout Driver <https://github.com/Rosscoetrain/DCC-Solenoid-Turnout-Driver>`_ |EXTERNAL-LINK|
 
 .. image:: /_static/images/turnouts/block_diagram_switch_final.png
   :alt: Block Diagram
@@ -148,7 +149,7 @@ On the turnout/point solenoids, there will be three wires: a common wire, a wire
 
 With the above driver board, the common is positive and the control wires are connected to ground by the darlington drivers.
 
-The EX-RAIL macro below creates a turnout object that closes/throws the turnout/point via the MCP23017 vpins on the board.
+The |EX-R| macro below creates a turnout object that closes/throws the turnout/point via the MCP23017 vpins on the board.
 
 The DUAL_SOLENOID_TURNOUT definition is:
 
@@ -156,9 +157,9 @@ The DUAL_SOLENOID_TURNOUT definition is:
 - pc - pin for CLOSE command
 - pt - pin for THROW command
 - desc - description
-- ali - alias that can be used for the turnout in EX-RAIL
+- ali - alias that can be used for the turnout in EXRAIL
 
-.. code-block:: 
+.. code-block:: cpp
 
   #define PULSE 10 //10 mSec
   #define DUAL_SOLENOID_TURNOUT(id,pc,pt,desc,ali)\

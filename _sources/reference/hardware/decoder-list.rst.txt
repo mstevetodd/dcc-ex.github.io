@@ -7,7 +7,7 @@
 List of Tested Decoders
 ***********************
 
-|conductor| |tinkerer| |engineer|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button| 
 
 We often receive reports on DCC multifunction decoders via Discord and our support channels as well as requests for help when things don't quite work "out of the box".
 
@@ -77,6 +77,24 @@ Note to manufacturers: This list is not designed in any way to disparage or favo
     - 2.5/3
     - Half point deduction due to non-standard method for indexed CVs, and increased ACK pulse time.   |
   * - Digitrax
+    - DH126D
+    - MF
+    - Default for 2021/2022
+    - JST-9
+    - Default
+    - 3
+    - | I have noticed that these decoders switch on the rear light at power on with no commands, which can be a useful behaviour for troubleshooting. They run nicely as installed. The learning curve I had on the 1st was entirely using DCC-EX + JMRI to configure them, additional installations and changes have been smooth.
+      | DH126D is meant to be an economy decoder with fewer functions and features than the DH166D.
+      | 1st and 2nd in November of 2022, 3rd was installed in December 2023.
+  * - Digitrax
+    - DH166D
+    - MF
+    - 51
+    - N/A (bare wires)
+    - Default
+    - 3
+    - Worked exactly as expected. No problems with programming or operation.
+  * - Digitrax
     - SDXH186MT
     - MFS
     - New in 2021
@@ -99,7 +117,7 @@ Note to manufacturers: This list is not designed in any way to disparage or favo
     - Screw terminal
     - Default
     - 3/3
-    - I can recommend them, because they are very simple, easy to use, small (4cm x 7cm(4-out) / 11cm(8-out)) and in comparison to the ones from Maerklin very cheap.
+    - I can recommend them, because they are very simple, easy to use, small (4cm x 7cm(4-out) / 11cm(8-out)) and in comparison to the ones from Märklin very cheap.
   * - Märklin
     - MSD3/MLD3
     - MFS/MF
@@ -107,7 +125,7 @@ Note to manufacturers: This list is not designed in any way to disparage or favo
     - Märklin standard
     - Default
     - 3/3
-    - No difficulties. On some decoders I have disabled all protocols but DCC, because I previously used a Maerklin MobileStation they connected to automatically via mfx, but the decoders are also working perfecty with all enabled. If you should encounter problems, take a look at the CV reference section in the manual. Protocols other than DCC can be disabled with CV50.
+    - No difficulties. On some decoders I have disabled all protocols but DCC, because I previously used a Märklin MobileStation they connected to automatically via mfx, but the decoders are also working perfectly with all enabled. If you should encounter problems, take a look at the CV reference section in the manual. Protocols other than DCC can be disabled with CV50.
   * - Bachmann
     - 4 Function decoder (36-550)
     - MF
@@ -123,15 +141,7 @@ Note to manufacturers: This list is not designed in any way to disparage or favo
     - N/A (bare wires)
     - Default
     - 3
-    - Works perfectly, was my first decoder testet with DCC++EX. Reported it because I couldn't find this decoder in the list yet.
-  * - Digitrax
-    - DH166D
-    - MF
-    - 51
-    - N/A (bare wires)
-    - Default
-    - 3
-    - Worked exactly as expected. No problems with programming or operation.
+    - Works perfectly, was my first decoder tested with DCC++EX. Reported it because I couldn't find this decoder in the list yet.
   * - LaisDCC
     - 860011
     - Accessory

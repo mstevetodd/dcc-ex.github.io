@@ -7,13 +7,14 @@
 Overview
 *********
 
-|conductor| |tinkerer| |engineer|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button|
 
 .. sidebar::
+   :class: sidebar-on-this-page
 
-  .. contents:: On this page
-    :depth: 1
-    :local:
+   .. contents:: On this page
+     :depth: 1
+     :local:
 
 
 What can I contribute to?
@@ -54,7 +55,7 @@ There is a repository within the DCC-EX GitHub organisation where we are slowly 
 
 This repository will contain the various workflows, templates, and testing items we will use to ensure we release quality code with as few bugs (or "hidden features") as possible, and to ensure code is consistent across an internationally dispersed team.
 
-This is our `Support Planning <https://github.com/DCC-EX/Support-Planning>`_ repository.
+This is our `Support Planning <https://github.com/DCC-EX/Support-Planning>`_ |EXTERNAL-LINK| repository.
 
 Contacting the team
 ====================
@@ -66,4 +67,4 @@ Managing code and our website
 
 We manage all of our code and our website via GitHub, and anyone can contribute to this whether an official part of our team or not.
 
-Click the "Next" button to read how we use GitHub.
+Click the 'Next' button to read how we use GitHub.

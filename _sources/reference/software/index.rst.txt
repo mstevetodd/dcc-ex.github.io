@@ -7,9 +7,13 @@
 Software
 ********
 
-|conductor| |tinkerer| |engineer|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button| 
 
 .. toctree::
     :maxdepth: 1
 
+    command-summary-consolidated
+    /throttles/native-protocol-library
     programming-locos
+    /exrail/exrail-command-reference
+    withrottle-vs-native-commands

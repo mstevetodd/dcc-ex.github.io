@@ -7,13 +7,14 @@
 DCC-EX Native API Reference
 ***************************
 
-|engineer|
+|SUITABLE| |engineer| |support-button|
 
 .. sidebar:: 
+   :class: sidebar-on-this-page
 
-  .. contents:: On this page
-    :depth: 1
-    :local:
+   .. contents:: On this page
+      :depth: 1
+      :local:
 
 This page documents the API syntax and usage for |EX-CS|.
 
@@ -23,7 +24,7 @@ The current API has resulted from a mix of new commands and commands inherited f
 
   Legacy commands and responses that do not comply with this documented syntax will be deprecated in future versions.
 
-If you are looking for information on the WiThrottle protocol, you will find that documented on the `JMRI website <https://www.jmri.org/help/en/package/jmri/jmrit/withrottle/Protocol.shtml>`_.
+If you are looking for information on the WiThrottle protocol, you will find that documented on the `JMRI website <https://www.jmri.org/help/en/package/jmri/jmrit/withrottle/Protocol.shtml>`_ |EXTERNAL-LINK|.
 
 For detailed information on the various commands and responses available with |EX-CS|, refer to the :doc:`/reference/software/command-summary-consolidated` page.
 
@@ -36,7 +37,7 @@ API clients may include:
 
 - Throttles (both wired and wireless)
 - |JMRI|
-- Other integrations (eg. RedHat)
+- Other integrations (e.g. RedHat)
 
 2. Serial port and WiFi/Ethernet monitoring
 ============================================
@@ -101,7 +102,7 @@ There are three types of parameters in use:
 6.1. Keyword
 ------------
 
-These are a consecutive sequence of one or more non-blank characters consisting of ``a-z``, ``A-Z``, ``0-9``, or ``_``, eg. "JOIN", "WIFI", "ON", "SPEED28".
+These are a consecutive sequence of one or more non-blank characters consisting of ``a-z``, ``A-Z``, ``0-9``, or ``_``, e.g. "JOIN", "WIFI", "ON", "SPEED28".
 
 Keyword parameters are internally hashed to created integers and may start with any of these characters. The |EX-CS| code does not differentiate between keywords and numbers internally.
 
@@ -115,7 +116,7 @@ These are a consecutive sequence of one or more digits, with an optional leading
 6.3. String
 -----------
 
-These are surrounded by a leading and trailing ``"`` and may contain text including spaces eg. "This is a turnout description".
+These are surrounded by a leading and trailing ``"`` and may contain text including spaces e.g. "This is a turnout description".
 
 Appendix A. Exceptions
 =======================
@@ -125,7 +126,7 @@ A.1. Parameter values
 
 Due to legacy code and backwards compatibility requirements, there are two OPCODES that expect hexadecimal parameter values.
 
-These are the ``<M>`` and ``<P>`` commands documented in the :ref:`reference/software/command-reference:send packet to the track` section of the Command Reference.
+These are the ``<M>`` and ``<P>`` commands documented in the :ref:`reference/software/command-summary-consolidated:write direct dcc packet` section of the Command Reference.
 
 Appendix B. Suggested parameter parsing sequence
 =================================================

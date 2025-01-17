@@ -7,15 +7,16 @@
 Hardware
 ********
 
-|conductor| |tinkerer| |engineer|
+|SUITABLE| |conductor| |tinkerer| |engineer| |support-button| 
 
 .. toctree::
     :maxdepth: 1
     
+    index-decoder
     wire-gauge
     power-supplies
 
-|tinkerer| |engineer|
+|SUITABLE| |tinkerer| |engineer| |support-button|
 
 .. toctree::
     :maxdepth: 1
@@ -28,4 +29,18 @@ Hardware
     bluetooth
     index-i2c
     accessory-controllers
-    index-decoder
+
+|HR-DASHED|
+
+Microcontroller List
+====================
+
+.. include:: include_table_microcontrollers.rst
+
+|HR-DASHED|
+
+Motor Board List
+================
+
+.. include:: include_table_motor_boards.rst
+

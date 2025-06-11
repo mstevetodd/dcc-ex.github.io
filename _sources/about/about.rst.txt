@@ -35,7 +35,7 @@ EX-CommandStation
 
 Lead Developer
 
-* Chris Harlow - Bournemouth, UK (UKBloke)
+* Chris Harlow - Nottingham, UK (UKBloke)
 
 Developers
 
@@ -43,7 +43,6 @@ Developers
 * Neil McKechnie -  Worcestershire, UK
 * Fred Decker - Holly Springs, North Carolina, USA (FlightRisk)
 * Herb Morton - Kingwood, Texas, USA (Ash++)
-* Peter Cole - Brisbane, QLD, Australia (peteGSX)
 
 EX-Installer 
 ===============
@@ -59,7 +58,6 @@ EX-WebThrottle
 Developers
 
 * Fred Decker - Holly Springs, North Carolina, USA (FlightRisk)
-* Peter Cole - Brisbane, QLD, Australia (peteGSX)
 * Mani Kumar - Bangalor, India (Mani / Mani Kumar)
 * Matt Hu - Somewhere in Europe
 
@@ -77,11 +75,11 @@ EX-Toolbox
 
 Developers
 
-* Peter Akers - Brisbane, QLD, Australia (flash62au)
+* Not Maintained
 
 EX-IOExpander
 ==============
-
+ 
 Developers
 
 * Peter Cole - Brisbane, QLD, Australia (peteGSX)
@@ -108,6 +106,13 @@ Developers
 
 * Barry Daniel- Gold Coast, Australia (BarryD)
 
+DCCEXProtocol
+=============
+
+Developers
+
+* Peter Cole - Brisbane, QLD, Australia (peteGSX)
+* Chris Harlow - Nottingham, UK (UKBloke)
 
 DCC++ Classic
 ==============
@@ -130,11 +135,8 @@ Website
 Developers
 
 * Peter Cole - Brisbane, QLD, Australia (peteGSX)
-* Peter Akers - Brisbane, QLD, Australia (flash62au)
 * Fred Decker - Holly Springs, North Carolina, USA (FlightRisk)
 * Mani Kumar - Bangalor, India (Mani / Mani Kumar)
-
-
 
 Hardware / Electronics
 =========================
@@ -189,4 +191,4 @@ Making sure this software works well with |EX-CS|
 * |Engine Driver| (ED)
   
   * M Steve Todd - USA (MSteveTodd)
-  * Peter Akers - Brisbane, QLD, Australia (flash62au)
+  * Peter Akers - South East QLD, Australia (flash62au)

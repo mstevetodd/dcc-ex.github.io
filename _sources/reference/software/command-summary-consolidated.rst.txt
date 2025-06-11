@@ -62,17 +62,23 @@ Also allows joining the MAIN and PROG tracks together.
   |_| |_| |_| |_| • blank = Both Main and Programming Tracks  |BR|
   |_| |_| |_| |_| • MAIN = Main track  |BR|
   |_| |_| |_| |_| • PROG = Programming Track  |BR|
-  |_| |_| |_| |_| • JOIN = Join the Main and Programming tracks temporarily |BR|
+  |_| |_| |_| |_| • JOIN = Join the Main and Programming tracks temporarily |BR| Note: While ``<1 JOIN>`` is valid, ``<0 JOIN>`` is not. |BR|
 
   *Response:* 
-    |_| The following is not a direct response, but rather a broadcast that will be triggered as a result of any power state changes. |BR|
-    |_| ``<pOnOFF [track]>`` |BR|
+
+    The following is not a direct response, but rather a broadcast that will be triggered as a result of any power state changes.
+    
+    ``<pOnOFF [track]>`` |BR|
 
   *Notes:*
 
-    The use of the JOIN function ensures that the DCC signal for the MAIN track is also sent to the PROG track. This allows the prog track to act as a siding (or similar) in the main layout even though it is isolated electrically and connected to the programming track output. However, it is important that the prog track wiring be in the same phase as the main track i.e. when the left rail is high on MAIN, it is also high on PROG. You may have to swap the wires to your prog track to make this work. If you drive onto a programming track that is "joined" and enter a programming command, the track will automatically switch to a programming track. If you use a compatible Throttle, you can then send the join command again and drive off the track onto the rest of your layout!
-
-    In some split |motor shield| hardware configurations JOIN will not be able to work.
+  * The use of the JOIN function allows the DCC signal for the MAIN track to also be sent to the PROG track. This allows the prog track to act as a siding (or similar) in the main layout even though it is isolated electrically and connected to the programming track output. 
+  
+    However, it is important that the prog track wiring be in the same phase as the main track i.e. when the left rail is high on MAIN, it is also high on PROG. You may have to swap the wires to your prog track to make this work. 
+  
+  * If you drive onto a programming track that is "joined" and enter a programming command, the track will automatically switch to a programming track. If you use a compatible Throttle, you can then send the join command again and drive off the track onto the rest of your layout!
+  * In some split |motor shield| hardware configurations JOIN will not be able to work.
+  * While ``<1 JOIN>`` is valid, ``<0 JOIN>`` is not.
 
   *Examples:* |BR|
   |_| all tracks off: ``<0>`` |BR|
@@ -132,6 +138,11 @@ Note:  Previously referred to as 'DC-District'.
 
 ``<= trackletter mode [cab]>`` - Configure Track Manager 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. important::
+  :class: important-float-right
+
+  Whenever the track mode is changed, track power is automatically turned off.
 
   *Parameters:* |BR|
   |_| > **trackletter:** 'A' through 'H' represent one of the outputs of the/a |motor shield|. |BR|
@@ -261,9 +272,9 @@ Cab (Loco) Commands
   |_| ``<l cab reg speedByte functMap>`` |BR|
   |_| > **cab:** DCC Address of the decoder/loco. The short (1-127) or long (128-10293) address of the engine decoder (this has to be already programmed in the decoder) |BR|
   |_| > **reg:** not used. We no longer use this but need something here for compatibility with legacy systems. Enter any single digit.
-  |_| > **speedbyte:** Speed in DCC speedstep format . |BR|
-  |_| |_| |_| |_| • reverse - 2-127 = speed 1-126, 0 = stop  |BR|
-  |_| |_| |_| |_| • forward - 130-255 = speed 1-126,  128 = stop |BR|
+  |_| > **speedbyte:** Speed in DCC speedstep format |BR|
+  |_| |_| |_| |_| • reverse - 2-127 = speed 1-126, 0 = stop, 1 = Emergency Stop |BR|
+  |_| |_| |_| |_| • forward - 130-255 = speed 1-126,  128 = stop, 129 = Emergency Stop |BR|
   |_| > **FunctiMap:** individual function states represented by the bits in a byte
   
   *Notes:*
@@ -281,7 +292,7 @@ Cab (Loco) Commands
 
   *Parameters:* |BR|
   |_| > **cab:** DCC Address of the decoder/loco |BR|
-  |_| > **speed:** 0-127 |BR|
+  |_| > **speed:** 0-127 or -1 for Emergency Stop |BR|
   |_| > **dir:** one of |BR|
   |_| |_| |_| |_| • 1=forward  |BR|
   |_| |_| |_| |_| • 0=reverse
@@ -291,9 +302,9 @@ Cab (Loco) Commands
   |_|  |BR|
   |_| ``<l cab reg speedByte functMap>`` |BR|
   |_| > **cab:** DCC Address of the decoder/loco |BR|
-  |_| > **speedbyte:** Speed in DCC speedstep format . |BR|
-  |_| |_| |_| |_| • reverse - 2-127 = speed 1-126, 0 = stop  |BR|
-  |_| |_| |_| |_| • forward - 130-255 = speed 1-126,  128 = stop |BR|
+  |_| > **speedbyte:** Speed in DCC speedstep format |BR|
+  |_| |_| |_| |_| • reverse - 2-127 = speed 1-126, 0 = stop, 1 = Emergency Stop |BR|
+  |_| |_| |_| |_| • forward - 130-255 = speed 1-126,  128 = stop, 129 = Emergency Stop |BR|
   |_| > **FunctiMap:** individual function states represented by the the bits in a byte
   
   *Notes:*
@@ -774,7 +785,7 @@ For details on how to configure turntables/traversers see: :ref:`reference/softw
   *Parameters:* |BR|
   |_| > **id:** - Identifier of the Turntable/traverser |BR|
   |_| > **position:** - Position to rotate to |BR|
-  |_| > **activity:** - The activity for EX-Turntable to perform (refer :ref:`ex-turntable/test-and-tune:ex-turntable commands`) |BR|
+  |_| > **activity:** - The activity for EX-Turntable to perform (refer :ref:`ex-turntable/test-and-tune:ex-turntable activity reference`) |BR|
   
   *Response:* |BR|
   |_| ``<I id position moving>`` |BR|
@@ -1286,7 +1297,7 @@ Writing CVs - Program on the main
   |_| > **bit:** ???  |BR|
   |_| > **value:** The value to be written to the Configuration Variable memory location (0-255)
   
-  *Response:* ???
+  *Response:* N/A
 
 |hr-dashed|
 
@@ -1327,13 +1338,14 @@ By design, for safety reasons, the NMRA specification prevents locos from respon
   |_| > **cv:** CV number
 
   *Response:* |BR|
-  |_| ``<r cv value>`` |BR|
-  |_| > **cv:** The number of the Configuration Variable memory location in the decoder to write to (1-1024) |BR|
+  |_| ``<v cv value>`` |BR|
+  |_| > **cv:** The number of the Configuration Variable memory location in the decoder (1-1024) |BR|
   |_| > **value:** one of |BR|
   |_| |_| |_| |_| • value of the CV |BR|
   |_| |_| |_| |_| • -1: if the write failed
 
-  *Example:* ``<r 3450>`` shows that Loco with ID **3450** is on the programming track.
+  *Example:* ``<v 1 3>`` shows that the value ``3`` is stored in CV ``1``. |BR|
+  *Example:* ``<v 1 -1>`` shows that reading the value stored in CV ``1`` failed.
 
 |hr-dashed|
 
@@ -1373,9 +1385,17 @@ By design, for safety reasons, the NMRA specification prevents locos from respon
   |_| |_| |_| |_| • 0=off
  
   *Response:* |BR|
-  |_| Response (successful): **0 | 1** |BR|
-  |_| Response (fail): **<V -1>**
+  |_| ``<v cv bit onOff>`` |BR|
+  |_| > **cv:** CV number |BR|
+  |_| > **bit:** bit to verify in the CV |BR|
+  |_| > **onOff:** one of |BR|
+  |_| |_| |_| |_| • 1=on  |BR|
+  |_| |_| |_| |_| • 0=off |BR|
+  |_| |_| |_| |_| • -1=error
 
+  *Example:* ``<v 1 3 1>`` shows that the value ``1`` is stored in bit ``3`` of CV ``1``. |BR|
+  *Example:* ``<v 1 3 -1>`` shows verifying the value stored in bit ``3`` of CV ``1`` failed.
+  
   *Notes:*
 
     This command is designed to offer faster verification of the value held in a CV and can be used instead of the ``<R>`` commands. Instead of reading a bit value, it compares the bit to an expected value. It will attempt to verify the value first, an if it is successful, will return the value as if it was simply “read”. If the verify fails, it will perform a read bit command (see above) and return the value read.
@@ -1397,7 +1417,10 @@ By design, for safety reasons, the NMRA specification prevents locos from respon
   |_| > **cv:** CV number |BR|
   |_| > **value:** one of |BR|
   |_| |_| |_| |_| • actual value of the CV |BR|
-  |_| |_| |_| |_| • -1: if the write failed
+  |_| |_| |_| |_| • -1: if the verify failed
+
+  *Example:* ``<v 1 3>`` shows that the value ``3`` is stored in CV ``1``. |BR|
+  *Example:* ``<v 1 -1>`` shows verifying the value stored in CV ``1`` failed.
 
   *Notes:*
 
@@ -1417,7 +1440,20 @@ By design, for safety reasons, the NMRA specification prevents locos from respon
   |_| |_| |_| |_| • 1=on  |BR|
   |_| |_| |_| |_| • 0=off
   
-  *Response:* ???
+  *Response:* |BR|
+  |_| ``<r0|0|cv bit onOff>`` |BR|
+  |_| > **cv:** CV number |BR|
+  |_| > **bit:** bit changed |BR|
+  |_| > **onOff:** one of |BR|
+  |_| |_| |_| |_| • 0|1 |BR|
+  |_| |_| |_| |_| • -1: if the write failed
+
+  *Example:* ``<r0|0|1 3 1>`` shows that the value ``1`` was written to bit ``3`` of CV ``1``. |BR|
+  *Example:* ``<r0|0|1 3 -1>`` shows that writing to bit ``3`` of CV ``1`` failed.
+
+  *Notes:*
+
+    The response is a legacy DCC++ formatted response that is hard to parse, and it is recommended to write full CVs where possible.
 
 |hr-dashed|
 
@@ -1431,11 +1467,14 @@ By design, for safety reasons, the NMRA specification prevents locos from respon
   |_| > **value:** value to change the CV to
 
   *Response:* |BR|
-  |_| ``<w cv value>`` |BR|
+  |_| ``<r cv value>`` |BR|
   |_| > **cv:** CV number |BR|
   |_| > **value:** one of |BR|
   |_| |_| |_| |_| • value CV was changed to |BR|
   |_| |_| |_| |_| • -1: if the write failed
+
+  *Example:* ``<r 1 3>`` shows that the value ``3`` was written to CV ``1``. |BR|
+  *Example:* ``<r 1 -1>`` shows writing a value to CV ``1`` failed.
 
 |hr-dashed|
 
@@ -2002,7 +2041,7 @@ To monitor one or more Arduino pins for sensor triggers, first define/edit/delet
 
   *Parameters:* |BR|
   |_| > **id:** identifier of the Sensor (0-32767) (You pick the ID & they are shared between Turnouts, Sensors and Outputs) |BR|
-  |_| > **vpin:** vpin of the input to be controlled by the sensor object For Arduino input pins, this is the same as the digital pin number. For servo inputs and I/O expanders, it is the pin number defined for the HAL device (if present), for example 164-179 for pins on the first MCP23017 GPIO expander module, and 180-195 for the second MCP23017 module.|BR|
+  |_| > **vpin:** vpin of the input to be controlled by the sensor object For Arduino input pins, this is the same as the digital pin number. For servo inputs and I/O expanders, it is the pin number defined for the HAL device (if present), for example 164-179 for pins on the first MCP23017 GPIO expander module, and 180-195 for the second MCP23017 module. |BR|
   |_| > **pullup:** one of  |BR|
   |_| |_| |_| |_| • 1=Use pull-up resistor ACTIVE=LOW  |BR|
   |_| |_| |_| |_| • 0=don't use pull-up resistor ACTIVE=HIGH
@@ -2082,7 +2121,7 @@ Outputs (Configuring the EX-CommandStation)
 -------------------------------------------
 
 .. contents:: In This Section
-    :depth: 4
+    :depth: 5
     :local:
     :class: in-this-section
 
@@ -2093,7 +2132,21 @@ Definitions and state (ACTIVE/INACTIVE) for pins are retained in EEPROM and rest
 The default is to set each defined pin to active or inactive according to its restored state. 
 However, the default behaviour can be modified so that any pin can be forced to be either active or inactive upon power-up regardless of its previous state before power-down.  
 
-To have |EX-CS| utilise one or more Arduino pins as custom outputs, first define/edit/delete output definitions using the following variation of the ``<Z>`` command:  
+To have |EX-CS| utilise one or more Arduino pins as custom outputs, first define/edit/delete output definitions using the following variation of the ``<Z>`` command, or the lowercase ``<z>`` command can be used with no pre-definition required.   
+
+|hr-dashed|
+
+.. _native-command-lower-z-vpin-activate:
+
+``<z vpin> or <z -vpin>`` - Control an output pin; no setup required
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  *Parameters for the lowercase z command:* |BR|
+  |_| > **vpin:** the pin or vpin number of the output |BR|
+  |_| |_| |_| |_| • positive vpin = ACTIVE/HIGH  |BR|
+  |_| |_| |_| |_| • negative vpin = INACTIVE/LOW
+  
+  *Response:* N/A
 
 |hr-dashed|
 
